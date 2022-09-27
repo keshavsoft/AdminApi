@@ -17,7 +17,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json({ limit: '100mb' }));
 
 app.get('/', function (req, res, next) {
-    res.sendFile(path.join(__dirname + `/Html/JSONProject.html`));
+    //res.sendFile(path.join(__dirname + `/Html/JSONProject.html`));
+    res.status(301).redirect(`/JSONProject/Html/Admin/Dashboard.html`);
+    //res.sendFile(path.join(__dirname + `/public/JSONProject/Html/Admin/Dashboard.html`));
 });
 
 app.use("/JSONProject", cors({ origin: '*' }), SubRouteJSONProject);
