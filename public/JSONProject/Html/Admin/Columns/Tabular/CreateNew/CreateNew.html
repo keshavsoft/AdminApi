@@ -1017,7 +1017,7 @@ data-bs-target="#collapse-{{@../../key}}-{{@../key}}-{{@key}}" aria-expanded="fa
 
                 let jVarLocalRoute = jVarGlobalClientObject.Config.RouteStart.Start;
                 let jVarLocalAdminSubRoute = jVarGlobalClientObject.Config.RouteStart.AdminSubRoute;
-                let jVarLocalFetchUrl = `/${jVarLocalRoute}/${jVarLocalAdminSubRoute}/Utility/Json/Columns/Insert?inFolderName=${jVarLocalFolderName}&inJsonFileName=${jVarLocalFileNameWithOutExtension}&inItemName=${jVarLocalItemName}&inScreenName=${jVarLocalScreenName}&ToName=${LocalColumnName}`
+                let jVarLocalFetchUrl = `/${jVarLocalRoute}/${jVarLocalAdminSubRoute}/Utility/Json/Columns/Insert`
 
                 let jVarLocalFetchHeaderObject = {
                     method: "post",
@@ -1034,7 +1034,7 @@ data-bs-target="#collapse-{{@../../key}}-{{@../key}}-{{@key}}" aria-expanded="fa
                     })
                 };
 
-                fetch(jVarLocalFetchUrl).then((response) => {
+                fetch(jVarLocalFetchUrl,jVarLocalFetchHeaderObject).then((response) => {
                     if (!response.ok) {
                         throw new Error(response.statusText);
                     }
