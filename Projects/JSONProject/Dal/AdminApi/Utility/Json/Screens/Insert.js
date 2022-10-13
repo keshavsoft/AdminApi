@@ -9,7 +9,8 @@ let Insert = ({ inJsonConfig, inItemName, inToName, inDataPK }) => {
             CommonInsert.Insert({
                 inJsonConfig,
                 inItemName,
-                inScreenName: inToName, inUserPK
+                inScreenName: inToName, 
+                inUserPK:inDataPK
             }).then(resolve).catch(reject);
 
         };
