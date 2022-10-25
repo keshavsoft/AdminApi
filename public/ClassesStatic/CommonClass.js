@@ -2,7 +2,7 @@ class PrepareClass {
     constructor({ inProjectName }) {
         this.Config = {
             RouteStart: {
-                Start: "JSONProject",
+                Start: "JSONAdminApi",
                 SubRoute: "API",
                 HtmlPath: "",
                 UserCheckRoute: "JSONUser",
