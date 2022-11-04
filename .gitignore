@@ -1,3 +1,10 @@
-node_modules/
 .vscode/
-package-lock.json
+node_modules/
+
+/common
+/KData
+/DataSupply
+/public
+/KeshavSoft
+
+web.config
