@@ -9,7 +9,7 @@ var cookieParser = require('cookie-parser');
 
 var port = normalizePort(process.env.PORT || '4116');
 
-let SubRouteJSONProject = require("./Projects/JSONProject/Routes");
+let SubRouteJSONAdminApi = require("./Projects/JSONAdminApi/Routes");
 
 app.use(cookieParser());
 
@@ -18,11 +18,11 @@ app.use(express.json({ limit: '100mb' }));
 
 app.get('/', function (req, res, next) {
     //res.sendFile(path.join(__dirname + `/Html/JSONProject.html`));
-    res.status(301).redirect(`/JSONProject/Html/Admin/Dashboard.html`);
+    res.status(301).redirect(`/JSONAdminApi/Html/Admin/Dashboard.html`);
     //res.sendFile(path.join(__dirname + `/public/JSONProject/Html/Admin/Dashboard.html`));
 });
 
-app.use("/JSONProject", cors({ origin: '*' }), SubRouteJSONProject);
+app.use("/JSONAdminApi", cors({ origin: '*' }), SubRouteJSONAdminApi);
 
 function normalizePort(val) {
     var port = parseInt(val, 10);
