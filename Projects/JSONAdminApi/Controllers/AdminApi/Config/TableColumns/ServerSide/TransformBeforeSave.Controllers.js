@@ -1,7 +1,7 @@
-// let Repos = require("");
+let Repos = require("../../../../../Repository/AdminApi/Config/TableColumns/ServerSide/TransformBeforeSave");
 
-let GetFunc = () => {
-console.log("get---------");
+let GetFunc = (req,res) => {
+console.log("get-------ss--");
 
     let LocalDataPk = req.KeshavSoft.DataPk;
     let LocalJsonConfig = req.KeshavSoft.JsonConfig;
@@ -25,7 +25,7 @@ console.log("get---------");
 };
 
 
-let PachFunc = () => {
+let PachFunc = (req,res) => {
     console.log("kkkkkkkkkkkkk");
 
     let LocalDataPk = req.KeshavSoft.DataPk;
