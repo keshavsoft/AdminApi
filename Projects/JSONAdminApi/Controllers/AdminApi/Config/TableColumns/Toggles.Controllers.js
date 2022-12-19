@@ -3,8 +3,7 @@ let Repos = require("../../../../Repository/AdminApi/Config/TableColumns/Toggles
 let GetFunc = (req, res) => {
 
 };
-let Update = (req, res) => {
-    console.log("jjjjjjjjjjjjjjj");
+let Update = async (req, res) => {
     let LocalDataPk = req.KeshavSoft.DataPk;
 
     let jVarLocalfolderName = req.body.folderName;
@@ -14,7 +13,7 @@ let Update = (req, res) => {
     let jVarLocalDataAttribute = req.body.DataAttribute;
     let localUpdateBodyAsJson = req.body.BodyAsJson;
 
-    Repos.Update({
+    let LocalFromRepo = await Repos.Update({
         DataPK: LocalDataPk,
         folderName: jVarLocalfolderName,
         FileName: jVarLocalFileName,
@@ -24,8 +23,11 @@ let Update = (req, res) => {
         BodyAsJson: localUpdateBodyAsJson
     });
 
-    console.log("localBodyData", localBodyData);
-
+    if (LocalFromRepo.KTF) {
+        res.sendStatus(200);
+    } else {
+        res.sendStatus(204);
+    };
 };
 
 

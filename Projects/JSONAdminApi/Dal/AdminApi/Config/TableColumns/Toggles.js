@@ -4,6 +4,6 @@ exports.Update = async ({ DataPK, folderName, FileName, ItemName, ScreenName, Da
     let LocalDataPk = DataPK;
 
     if (LocalDataPk > 0) {
-        CommonDataSupply.UpdateKeys({ DataPK, folderName, FileName, ItemName, ScreenName, DataAttribute, BodyAsJson })
+        return await CommonDataSupply.UpdateKeys({ DataPK, folderName, FileName, ItemName, ScreenName, DataAttribute, BodyAsJson })
     };
 };
