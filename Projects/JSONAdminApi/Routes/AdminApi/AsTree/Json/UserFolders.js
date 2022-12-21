@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-let CommonScreensFromDisplayJson = require("./Folders/ScreensFromDisplayJson");
+let CommonScreensFromDisplayJson = require("./UserFolders/ScreensFromDisplayJson");
 
 router.use('/ScreensFromDisplayJson', CommonScreensFromDisplayJson);
 
