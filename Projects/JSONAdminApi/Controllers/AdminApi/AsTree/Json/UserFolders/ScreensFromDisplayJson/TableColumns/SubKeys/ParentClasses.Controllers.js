@@ -1,5 +1,17 @@
 let Repos = require("../../../../../../../../Repository/AdminApi/AsTree/Json/UserFolders/ScreensFromDisplayJson/TableColumns/SubKeys/ParentClasses");
 
+let GetFuncs = async (req, res) => {
+    let LocalDataPk = req.KeshavSoft.DataPk;
+
+    let LocalFromRepo = await Repos.GetFuncs({
+        DataPK: LocalDataPk
+
+    }).then(PromiseData => {
+        res.end(JSON.stringify(PromiseData));
+    }).catch();
+
+};
+
 let Update = async (req, res) => {
     let LocalDataPk = req.KeshavSoft.DataPk;
 
@@ -25,4 +37,4 @@ let Update = async (req, res) => {
         res.sendStatus(204);
     };
 };
-module.exports = { Update };
+module.exports = { GetFuncs, Update };
