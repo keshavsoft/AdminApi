@@ -5,11 +5,9 @@ let GetFuncs = async (req, res) => {
 
     let LocalFromRepo = await Repos.GetFuncs({
         DataPK: LocalDataPk
+    });
 
-    }).then(PromiseData => {
-        res.end(JSON.stringify(PromiseData));
-    }).catch();
-
+    res.json(LocalFromRepo);
 };
 
 let Update = async (req, res) => {

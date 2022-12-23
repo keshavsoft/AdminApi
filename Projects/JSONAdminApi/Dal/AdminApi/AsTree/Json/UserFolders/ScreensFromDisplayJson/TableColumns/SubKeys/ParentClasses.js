@@ -2,8 +2,9 @@ let CommonDataSupply = require("../../../../../../../../../../DataSupply/Fs/Conf
 let CommonDataSupplyForGet = require("../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/getDirectories");
 
 exports.GetFuncs = async ({ DataPK }) => {
-    console.log("DAL-------------", DataPK);
+   // console.log("DAL-------------", DataPK);
     let LocalinDataPk = DataPK;
+    
     if (LocalinDataPk > 0) {
         return await CommonDataSupplyForGet.AsObject({ inDataPK: LocalinDataPk });
     }
