@@ -1,8 +1,29 @@
-//let Repos = require("../../../../../Repository/AdminApi/Utility/Json/File/Insert");
+let Repos = require("../../../../../Repository/AdminApi/Utility/Json/FirmDetails/FromMsSql");
 
-let PostFunc = (req, res, next) => {
+let PostFunc = async (req, res, next) => {
     let LocalBody = req.body;
-    console.log("LocalBody : ", LocalBody);
+
+    let FirmName = LocalBody.FirmName;
+    let FromDate = LocalBody.FromDate;
+
+    let ToDate = LocalBody.ToDate;
+    let AssYear = LocalBody.AssYear;
+    let FinYear = LocalBody.FinYear;
+    let PAN = LocalBody.PAN;
+    let GST = LocalBody.GST;
+    let LocalDataPK = req.KeshavSoft.DataPk;
+    console.log("LocalBody : ", req.KeshavSoft, FirmName, LocalBody);
+
+    Repos.PostFunc({
+        FirmName,
+        FromDate,
+        ToDate,
+        AssYear,
+        FinYear,
+        PAN,
+        GST,
+        inDataPK: LocalDataPK
+    });
 
     // Repos.Bulk({
     //     inFolderName: LocalFolderName,
