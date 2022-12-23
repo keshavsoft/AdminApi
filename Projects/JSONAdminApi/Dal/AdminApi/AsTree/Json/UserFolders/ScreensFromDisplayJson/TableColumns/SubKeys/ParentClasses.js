@@ -1,9 +1,8 @@
 let CommonDataSupply = require("../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/UserFolder/UserFileAsFolder/DisplayJsonFile/ItemName/ScreenName/TableColumns/SubMenu/ParentClasses/Update");
-let CommonDataSupplyForGet = require("../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/getDirectories");
+let CommonDataSupplyForGet = require("../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/AsTree/ForTableColumns/SubMenu/ParentClasses");
 
 exports.GetFuncs = async ({ DataPK }) => {
-   // console.log("DAL-------------", DataPK);
-    let LocalinDataPk = DataPK;
+     let LocalinDataPk = DataPK;
     
     if (LocalinDataPk > 0) {
         return await CommonDataSupplyForGet.AsObject({ inDataPK: LocalinDataPk });
