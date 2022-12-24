@@ -14,6 +14,9 @@ let PostFunc = async ({ FirmName,
             inFirmName: FirmName,
             FromDate,
             ToDate,
+            AssYear,
+            FinYear,
+            PAN,
             inDataPK
         });
 

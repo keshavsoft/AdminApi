@@ -12,7 +12,7 @@ let PostFunc = async (req, res, next) => {
     let PAN = LocalBody.PAN;
     let GST = LocalBody.GST;
     let LocalDataPK = req.KeshavSoft.DataPk;
-    console.log("LocalBody : ", req.KeshavSoft, FirmName, LocalBody);
+    //console.log("LocalBody : ", req.KeshavSoft, FirmName, LocalBody);
 
     Repos.PostFunc({
         FirmName,
