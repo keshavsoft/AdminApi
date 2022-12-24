@@ -1,4 +1,4 @@
-let Repos = require("../../../../../../../Repository/AdminApi/AsTree/Json/UserFolders/ScreensFromDisplayJson/TableColumns/Toggles");
+let Repos = require("../../../../../../../Repository/AdminApi/AsTree/Json/UserFolders/ScreensFromDisplayJson/TableColumns/AllInOneWithValues");
 
 let GetFuncs = async (req, res) => {
     let LocalDataPk = req.KeshavSoft.DataPk;
