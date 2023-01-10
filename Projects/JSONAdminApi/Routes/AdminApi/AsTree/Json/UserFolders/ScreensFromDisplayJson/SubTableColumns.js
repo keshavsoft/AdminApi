@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
-let CommonSubKeys = require("./TableColumns/SubKeys");
-let CommonToggles = require("./TableColumns/Toggles");
-let CommonDataAttributes = require("./TableColumns/DataAttributes");
-let CommonAllInOneWithValues = require("./TableColumns/AllInOneWithValues");
+let CommonSubKeys = require("./SubTableColumns/SubKeys");
+let CommonToggles = require("./SubTableColumns/Toggles");
+let CommonDataAttributes = require("./SubTableColumns/DataAttributes");
+let CommonAllInOneWithValues = require("./SubTableColumns/AllInOneWithValues");
 
 
 router.use('/SubKeys', CommonSubKeys);
