@@ -1,4 +1,4 @@
-// let CommonDataSupplyForGet = require("../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/AsTree/ForTableColumns/SubMenu/ServerSide/TransformBeforeSave");
+let CommonDataSupplyForGet = require("../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/AsTree/ForSubTableColumns/SubMenu/ServerSide/TransformBeforeSave");
 // let CommonDataSupply = require("../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/UserFolder/UserFileAsFolder/DisplayJsonFile/ItemName/ScreenName/TableColumns/SubMenu/ServerSide/TransformBeforeSave/Update");
 
 exports.GetFuncs = async ({ DataPK }) => {
