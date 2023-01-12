@@ -1,5 +1,5 @@
 let CommonDatasupply = require("../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/AsTree/ForSubTableColumns/DataAttributes");
-// let CommonDataSupplyForUpDate = require("../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/UserFolder/UserFileAsFolder/DisplayJsonFile/ItemName/ScreenName/TableColumns/DataAttributes/Update");
+ let CommonDataSupplyForUpDate = require("../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/UserFolder/UserFileAsFolder/DisplayJsonFile/ItemName/ScreenName/SubTableColumns/DataAttributes/Update");
 
 exports.GetFuncs = async ({ DataPK }) => {
     if (DataPK > 0) {
