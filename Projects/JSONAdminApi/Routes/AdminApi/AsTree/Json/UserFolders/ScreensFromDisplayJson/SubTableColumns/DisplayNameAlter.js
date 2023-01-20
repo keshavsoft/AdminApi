@@ -3,7 +3,7 @@ var router = express.Router();
 let CommonControllers = require("../../../../../../../Controllers/AdminApi/AsTree/Json/UserFolders/ScreensFromDisplayJson/SubTableColumns/DisplayNameAlter.Controllers");
 
 router.get('/', CommonControllers.GetFuncs);
-// router.patch('/', CommonControllers.PatchFuncs);
+router.patch('/', CommonControllers.Update);
 
 
 
