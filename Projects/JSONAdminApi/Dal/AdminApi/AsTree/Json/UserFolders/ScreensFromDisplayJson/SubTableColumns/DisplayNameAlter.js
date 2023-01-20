@@ -1,5 +1,5 @@
 let CommonDataSupplyForGet = require("../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/AsTree/ForSubTableColumns/DisplayNameAlter");
-// let CommonDataSupply = require("../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/UserFolder/UserFileAsFolder/DisplayJsonFile/ItemName/ScreenName/SubTableColumns/SubMenu/Widths/Update");
+let CommonDataSupply = require("../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/UserFolder/UserFileAsFolder/DisplayJsonFile/ItemName/ScreenName/SubTableColumns/DisplayNameAlter/Update");
 
 exports.GetFuncs = async ({ DataPK }) => {
     let LocalinDataPk = DataPK;
@@ -9,9 +9,9 @@ exports.GetFuncs = async ({ DataPK }) => {
     }
 };
 
-exports.Update = async ({ DataPK, folderName, FileName, ItemName, ScreenName, subtablecolumnkey, tablecolumnkey, DataAttribute, BodyAsJson }) => {
+exports.Update = async ({ DataPK, folderName, FileName, ItemName, ScreenName, subtablecolumnkey, DataAttribute, BodyAsJson }) => {
     let LocalinDataPk = DataPK;
     if (LocalinDataPk > 0) {
-        return await CommonDataSupply.Update({ DataPK, folderName, FileName, ItemName, ScreenName, subtablecolumnkey, tablecolumnkey, DataAttribute, BodyAsJson });
+        return await CommonDataSupply.Update({ DataPK, folderName, FileName, ItemName, ScreenName, subtablecolumnkey, DataAttribute, BodyAsJson });
     }
 };
