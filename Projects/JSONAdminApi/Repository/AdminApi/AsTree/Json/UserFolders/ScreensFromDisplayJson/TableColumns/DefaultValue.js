@@ -1,4 +1,4 @@
-let Dal = require("../../../../../../../Dal/AdminApi/AsTree/Json/UserFolders/ScreensFromDisplayJson/SubTableColumns/AllInOneWithValues");
+let Dal = require("../../../../../../../Dal/AdminApi/AsTree/Json/UserFolders/ScreensFromDisplayJson/TableColumns/DefaultValue");
 
 exports.GetFuncs = async ({ DataPK }) => {
     return await Dal.GetFuncs({ DataPK });
