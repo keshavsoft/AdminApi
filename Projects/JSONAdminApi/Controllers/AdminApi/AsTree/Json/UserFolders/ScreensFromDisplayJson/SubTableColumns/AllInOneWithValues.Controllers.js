@@ -17,6 +17,7 @@ let PatchFuncs = async (req, res) => {
     let jVarLocalItemName = req.body.ItemName;
     let jVarLocalScreenName = req.body.ScreenName;
     let jVarLocalDataAttribute = req.body.DataAttribute;
+    let jVarLocalsubtablecolumnkey = req.body.subtablecolumnkey;
     let localUpdateBodyAsJson = req.body.BodyAsJson;
 
     let LocalFromRepo = await Repos.Update({
@@ -26,6 +27,7 @@ let PatchFuncs = async (req, res) => {
         ItemName: jVarLocalItemName,
         ScreenName: jVarLocalScreenName,
         DataAttribute: jVarLocalDataAttribute,
+        subtablecolumnkey:jVarLocalsubtablecolumnkey,
         BodyAsJson: localUpdateBodyAsJson
     });
 
