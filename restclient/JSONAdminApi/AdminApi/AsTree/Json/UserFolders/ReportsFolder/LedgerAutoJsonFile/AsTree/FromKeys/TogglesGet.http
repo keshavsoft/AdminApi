@@ -1,0 +1,5 @@
+GET http://localhost:4119/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ReportsFolder/LedgerAutoJsonFile/AsTree/FromKeys/Toggles
+Cookie: KToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6Ik5TUDIyMjMiLCJEYXRhUGsiOjEwMjQsImlhdCI6MTY3NDcyOTM3Nn0.QOSeoMfN6uNzxelcsLKTQRQalCy8rvT1wG9jsLcxwls
+content-type: application/json
+
+{}
