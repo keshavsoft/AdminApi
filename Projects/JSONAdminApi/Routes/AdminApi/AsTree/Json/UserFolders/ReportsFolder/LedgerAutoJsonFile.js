@@ -1,8 +1,8 @@
 let express = require("express");
 let router = express.Router();
 
-let CommonAsTree = require("./LedgerAutoJsonFile/AsTree");
+let CommonFromKeys = require("./LedgerAutoJsonFile/FromKeys");
 
-router.use("AsTree", CommonAsTree)
+router.use("/FromKeys", CommonFromKeys)
 
 module.exports = router;
