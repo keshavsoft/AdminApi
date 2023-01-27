@@ -1,7 +1,6 @@
-let Repos = require("../../../../../../../../../Repository/AdminApi/AsTree/Json/UserFolders/ReportsFolder/LedgerAutoJsonFile/AsTree/FromKeys/Toggles");
+let Repos = require("../../../../../../../../Repository/AdminApi/AsTree/Json/UserFolders/ReportsFolder/LedgerAutoJsonFile/FromKeys/Toggles");
 
 let GetFuncs = async (req, res) => {
-    console.log("dddddddddddddd");
     let LocalDataPk = req.KeshavSoft.DataPk;
 
     let LocalFromRepo = await Repos.GetFuncs({
