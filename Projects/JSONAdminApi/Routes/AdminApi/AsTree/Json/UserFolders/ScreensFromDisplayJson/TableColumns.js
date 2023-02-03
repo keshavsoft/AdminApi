@@ -5,19 +5,14 @@ let CommonToggles = require("./TableColumns/Toggles");
 let CommonDataAttributes = require("./TableColumns/DataAttributes");
 let CommonAllInOneWithValues = require("./TableColumns/AllInOneWithValues");
 let CommonDefaultValue = require("./TableColumns/DefaultValue");
-
-
-
-
+let CommonToSubTable = require("./TableColumns/ToSubTable");
 
 router.use('/SubKeys', CommonSubKeys);
 router.use('/Toggles', CommonToggles);
 router.use('/DataAttributes', CommonDataAttributes);
 router.use('/AllInOneWithValues', CommonAllInOneWithValues);
 router.use('/DefaultValue', CommonDefaultValue);
-
-
-
+router.use('/ToSubTable', CommonToSubTable);
 
 
 module.exports = router;
