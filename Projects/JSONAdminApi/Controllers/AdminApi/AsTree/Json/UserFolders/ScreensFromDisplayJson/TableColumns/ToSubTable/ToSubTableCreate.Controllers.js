@@ -16,17 +16,15 @@ let PatchFuncs = async (req, res) => {
     let jVarLocalFileName = req.body.FileName;
     let jVarLocalItemName = req.body.ItemName;
     let jVarLocalScreenName = req.body.ScreenName;
-    let jVarLocalDataAttribute = req.body.DataAttribute;
-    let localUpdateBodyAsJson = req.body.BodyAsJson;
+    let jVarLocalColumnName = req.body.columnName;
 
-    let LocalFromRepo = await Repos.Update({
+    let LocalFromRepo = await Repos.Create({
         DataPK: LocalDataPk,
         FolderName: jVarLocalfolderName,
         FileName: jVarLocalFileName,
         ItemName: jVarLocalItemName,
         ScreenName: jVarLocalScreenName,
-        DataAttribute: jVarLocalDataAttribute,
-        BodyAsJson: localUpdateBodyAsJson
+        columnName: jVarLocalColumnName
     });
 
     if (LocalFromRepo.KTF) {
