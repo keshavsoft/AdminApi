@@ -13,12 +13,12 @@ let PatchFuncs = async (req, res) => {
     let LocalDataPk = req.KeshavSoft.DataPk;
 
     let jVarLocalReportName = req.body.ReportName;
-    let jVarLocalCloneName = req.body.CloneName;
+    let jVarLocalCloneName = req.body.pk;
 
     let LocalFromRepo = await Repos.Clone({
         DataPK: LocalDataPk,
         ReportName: jVarLocalReportName,
-        CloneName: jVarLocalCloneName
+        inVoucherConsiderpk: jVarLocalCloneName
     });
 
     if (LocalFromRepo.KTF) {
