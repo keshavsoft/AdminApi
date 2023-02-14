@@ -7,7 +7,6 @@ let GetFuncs = async ({ DataPK }) => {
 };
 
 let Clone = async ({ DataPK, ReportName, inVoucherConsiderpk }) => {
-    console.log("lll",DataPK, ReportName, inVoucherConsiderpk);
     let LocalDataPk = DataPK;
 
     if (LocalDataPk > 0) {
