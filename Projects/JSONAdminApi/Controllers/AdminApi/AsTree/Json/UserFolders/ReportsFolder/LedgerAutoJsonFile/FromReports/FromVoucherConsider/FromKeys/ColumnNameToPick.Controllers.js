@@ -1,4 +1,4 @@
-let Repos = require("../../../../../../../../Repository/AdminApi/AsTree/Json/UserFolders/ReportsFolder/LedgerAutoJsonFile/FromKeys/Configuration");
+let Repos = require("../../../../../../../../../../Repository/AdminApi/AsTree/Json/UserFolders/ReportsFolder/LedgerAutoJsonFile/FromReports/FromVoucherConsider/FromKeys/ColumnNameToPick");
 
 let GetFuncs = async (req, res) => {
     let LocalDataPk = req.KeshavSoft.DataPk;
@@ -16,7 +16,7 @@ let PatchFuncs = async (req, res) => {
     let jVarLocalvoucher = req.body.voucher;
 
     let localUpdateBodyAsJson = req.body.BodyAsJson;
-
+    
     let LocalFromRepo = await Repos.Update({
         DataPK: LocalDataPk,
         ItemName: jVarLocalItemName,
