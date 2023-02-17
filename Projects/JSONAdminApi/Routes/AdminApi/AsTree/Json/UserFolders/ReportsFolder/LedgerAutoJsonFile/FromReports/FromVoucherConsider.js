@@ -1,10 +1,9 @@
 let express = require("express");
 let router = express.Router();
 
-let CommonFromVoucherConsider = require("./FromVoucherConsider/FromKeys");
-;
+let CommonFromKeys = require("./FromVoucherConsider/FromKeys");
 
-router.use("/FromReports", CommonFromVoucherConsider)
+router.use("/FromKeys", CommonFromKeys)
 
 
 module.exports = router;

@@ -1,4 +1,4 @@
-let Repos = require("../../../../../../../Repository/AdminApi/AsTree/Json/UserFolders/ReportsFolder/LedgerAutoJsonFile/VouchersConsider");
+let Repos = require("../../../../../../../../Repository/AdminApi/AsTree/Json/UserFolders/ReportsFolder/LedgerAutoJsonFile/FromReports/VouchersConsider");
 
 let GetFuncs = async (req, res) => {
     let LocalDataPk = req.KeshavSoft.DataPk;
