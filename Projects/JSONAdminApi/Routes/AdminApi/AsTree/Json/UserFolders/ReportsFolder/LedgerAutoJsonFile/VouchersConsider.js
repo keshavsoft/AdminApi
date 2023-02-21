@@ -1,8 +1,9 @@
-var express = require('express');
-var router = express.Router();
-let CommonControllers = require("../../../../../../../Controllers/AdminApi/AsTree/Json/UserFolders/ReportsFolder/LedgerAutoJsonFile/VouchersConsider.Controllers");
+let express = require("express");
+let router = express.Router();
 
-router.get('/', CommonControllers.GetFuncs);
-router.patch('/', CommonControllers.PatchFuncs);
+let CommonColumns = require("./VouchersConsider/Columns");
+
+router.use("/Columns", CommonColumns);
+
 
 module.exports = router;
