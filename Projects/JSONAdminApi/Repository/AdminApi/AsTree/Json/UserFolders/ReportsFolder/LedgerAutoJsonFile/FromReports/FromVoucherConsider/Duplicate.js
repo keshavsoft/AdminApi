@@ -4,6 +4,6 @@ exports.GetFuncs = async ({ DataPK }) => {
     return await Dal.GetFuncs({ DataPK });
 };
 
-exports.Update = async ({ DataPK,  ItemName, voucher, BodyAsJson }) => {
-    return await Dal.Update({  DataPK,  ItemName, voucher, BodyAsJson })
+exports.Duplicate = async ({ inDataPK, ReportName, inVoucherConsiderpk  }) => {
+    return await Dal.Duplicate({ inDataPK, ReportName, inVoucherConsiderpk  })
 };
