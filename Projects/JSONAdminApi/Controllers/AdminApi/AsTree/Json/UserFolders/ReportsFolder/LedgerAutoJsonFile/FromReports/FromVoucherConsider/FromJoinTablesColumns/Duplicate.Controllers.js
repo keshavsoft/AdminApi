@@ -12,14 +12,19 @@ let GetFuncs = async (req, res) => {
 let PatchFuncs = async (req, res) => {
     let LocalDataPk = req.KeshavSoft.DataPk;
 
-    let jVarLocalReportname = req.body.ReportName;
-    let jVarLocalVouchersConsiderPK = req.body.VouchersConsiderPK;
+    let jVarLocalinReportName = req.body.inReportName;
+    let jVarLocalinVouchersConsiderPK = req.body.inVouchersConsiderPK;
+    let jVarLocalinVoucherConsiderpk = req.body.inVoucherConsiderpk;
+    let jVarLocaljVarLocalVouchersConsiderPK = req.body.JoinTablesColumnsPK;
 
 
     let LocalFromRepo = await Repos.Duplicate({
         inDataPK: LocalDataPk,
-        ReportName: jVarLocalReportname,
-        inVoucherConsiderpk: jVarLocalVouchersConsiderPK
+        inReportName:jVarLocalinReportName,
+        inVouchersConsiderPK:jVarLocalinVouchersConsiderPK,
+        inVoucherConsiderpk:jVarLocalinVoucherConsiderpk,
+        JoinTablesColumnsPK: jVarLocaljVarLocalVouchersConsiderPK,
+        
     });
 
     if (LocalFromRepo.KTF) {
