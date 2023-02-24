@@ -1,4 +1,4 @@
-let CommonDatasupply = require("../../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ReportsFolder/LedgerAutoJsonFile/AsTree/FromVoucheConsider/Duplicate");
+let CommonDatasupply = require("../../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ReportsFolder/LedgerAutoJsonFile/AsTree/FromVoucheConsider/JoinTablesColumns/Duplicate");
 let CommonDataSupplyForUpdate = require("../../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ReportsFolder/LedgerAutoJsonFile/InsideReport/VouchersConsider/InsideVouchersConsider/JoinTablesColumns/Duplicate");
 
 let GetFuncs = async ({ DataPK }) => {
@@ -7,11 +7,11 @@ let GetFuncs = async ({ DataPK }) => {
     };
 };
 
-let Duplicate = async ({ inDataPK, ReportName, inVoucherConsiderpk }) => {
+let Duplicate = async ({ inDataPK, inReportName, inVouchersConsiderPK, JoinTablesColumnsPK }) => {
     let LocalDataPk = inDataPK;
 
     if (LocalDataPk > 0) {
-        return await CommonDataSupplyForUpdate.StartFunc({ inDataPK: LocalDataPk, ReportName, inVoucherConsiderpk })
+        return await CommonDataSupplyForUpdate.StartFunc({ inDataPK, inReportName, inVouchersConsiderPK, JoinTablesColumnsPK })
     };
 };
 
