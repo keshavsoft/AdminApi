@@ -13,17 +13,20 @@ console.log("jjjjjjjjj");
 let PatchFuncs = async (req, res) => {
     let LocalDataPk = req.KeshavSoft.DataPk;
 
-    let jVarLocalItemName = req.body.ItemName;
-    let jVarLocalvoucher = req.body.voucher;
+    let jVarLocalinReportName = req.body.inReportName;
+    let jVarLocalinVouchersConsiderPK = req.body.inVouchersConsiderPK;
+    let jVarLocalJoinTablesColumnsPK = req.body.JoinTablesColumnsPK;
+    let jVarLocalBodyAsJson = req.body.BodyAsJson;
 
-    let localUpdateBodyAsJson = req.body.BodyAsJson;
 
     let LocalFromRepo = await Repos.Update({
-        DataPK: LocalDataPk,
-        ItemName: jVarLocalItemName,
-        voucher: jVarLocalvoucher,
-        BodyAsJson: localUpdateBodyAsJson
+        inDataPK: LocalDataPk,
+        inReportName: jVarLocalinReportName,
+        inVouchersConsiderPK: jVarLocalinVouchersConsiderPK,
+        JoinTablesColumnsPK:jVarLocalJoinTablesColumnsPK,
+        BodyAsJson: jVarLocalBodyAsJson
     });
+
 
     if (LocalFromRepo.KTF) {
         res.sendStatus(200);
