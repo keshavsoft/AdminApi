@@ -8,11 +8,11 @@ let GetFuncs = async ({ DataPK }) => {
     };
 };
 
-let Update = async ({  DataPK,  ItemName, voucher, BodyAsJson }) => {
-    let LocalDataPk = DataPK;
+let Update = async ({  inDataPK, inReportName, inVouchersConsiderPK, JoinTablesColumnsPK, BodyAsJson }) => {
+    let LocalDataPk = inDataPK;
 
     if (LocalDataPk > 0) {
-        return await CommonDataSupplyForUpdate.StartFunc({ DataPK,  ItemName, voucher, BodyAsJson })
+        return await CommonDataSupplyForUpdate.StartFunc({  inDataPK, inReportName, inVouchersConsiderPK, JoinTablesColumnsPK, BodyAsJson })
     };
 };
 
