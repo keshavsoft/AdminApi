@@ -14,7 +14,6 @@ let PatchFuncs = async (req, res) => {
 
     let jVarLocalinReportName = req.body.inReportName;
     let jVarLocalinVouchersConsiderPK = req.body.inVouchersConsiderPK;
-    let jVarLocalinVoucherConsiderpk = req.body.inVoucherConsiderpk;
     let jVarLocaljVarLocalVouchersConsiderPK = req.body.JoinTablesColumnsPK;
 
 
@@ -22,7 +21,6 @@ let PatchFuncs = async (req, res) => {
         inDataPK: LocalDataPk,
         inReportName:jVarLocalinReportName,
         inVouchersConsiderPK:jVarLocalinVouchersConsiderPK,
-        inVoucherConsiderpk:jVarLocalinVoucherConsiderpk,
         JoinTablesColumnsPK: jVarLocaljVarLocalVouchersConsiderPK,
         
     });
