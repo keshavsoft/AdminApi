@@ -14,14 +14,14 @@ let PatchFuncs = async (req, res) => {
 
     let jVarLocalinReportName = req.body.inReportName;
     let jVarLocalinVouchersConsiderPK = req.body.inVouchersConsiderPK;
-    let jVarLocaljVarLocalVouchersConsiderPK = req.body.JoinTablesColumnsPK;
+    let jVarLocalinJointableskey = req.body.inJointableskey;
 
 
     let LocalFromRepo = await Repos.Duplicate({
         inDataPK: LocalDataPk,
         inReportName:jVarLocalinReportName,
         inVouchersConsiderPK:jVarLocalinVouchersConsiderPK,
-        JoinTablesColumnsPK: jVarLocaljVarLocalVouchersConsiderPK,
+        JoinTablesKey: jVarLocalinJointableskey,
         
     });
 

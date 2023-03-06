@@ -4,6 +4,6 @@ exports.GetFuncs = async ({ DataPK }) => {
     return await Dal.GetFuncs({ DataPK });
 };
 
-exports.Duplicate = async ({ inDataPK, inReportName, inVouchersConsiderPK, JoinTablesColumnsPK  }) => {
-    return await Dal.Duplicate({ inDataPK, inReportName, inVouchersConsiderPK, JoinTablesColumnsPK  })
+exports.Duplicate = async ({ inDataPK, inReportName, inVouchersConsiderPK, JoinTablesKey  }) => {
+    return await Dal.Duplicate({ inDataPK, inReportName, inVouchersConsiderPK, JoinTablesKey  })
 };
