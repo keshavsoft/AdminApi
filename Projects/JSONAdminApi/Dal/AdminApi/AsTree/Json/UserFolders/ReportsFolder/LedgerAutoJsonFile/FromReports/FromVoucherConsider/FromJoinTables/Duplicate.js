@@ -7,11 +7,11 @@ let GetFuncs = async ({ DataPK }) => {
     };
 };
 
-let Duplicate = async ({ inDataPK, inReportName, inVouchersConsiderPK, JoinTablesColumnsPK }) => {
+let Duplicate = async ({ inDataPK, inReportName, inVouchersConsiderPK, JoinTablesKey }) => {
     let LocalDataPk = inDataPK;
 
     if (LocalDataPk > 0) {
-        return await CommonDataSupplyForUpdate.StartFunc({ inDataPK, inReportName, inVouchersConsiderPK, JoinTablesColumnsPK })
+        return await CommonDataSupplyForUpdate.StartFunc({ inDataPK, inReportName, inVouchersConsiderPK, JoinTablesColumnsPK:JoinTablesKey })
     };
 };
 
