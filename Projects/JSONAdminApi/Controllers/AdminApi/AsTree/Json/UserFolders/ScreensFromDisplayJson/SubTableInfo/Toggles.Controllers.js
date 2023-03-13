@@ -1,7 +1,6 @@
 let Repos = require("../../../../../../../Repository/AdminApi/AsTree/Json/UserFolders/ScreensFromDisplayJson/SubTableInfo/Toggles");
 
 let GetFuncs = async (req, res) => {
-    console.log("jjjjjjjjjjj");
     let LocalDataPk = req.KeshavSoft.DataPk;
 
     let LocalFromRepo = await Repos.GetFuncs({
@@ -17,7 +16,7 @@ let PatchFuncs = async (req, res) => {
     let jVarLocalFileName = req.body.FileName;
     let jVarLocalItemName = req.body.ItemName;
     let jVarLocalScreenName = req.body.ScreenName;
-    let jVarLocalDataAttribute = req.body.DataAttribute;
+    let jVarLocalDataAttribute = req.body.GridName;
     let localUpdateBodyAsJson = req.body.BodyAsJson;
 
     let LocalFromRepo = await Repos.Update({
@@ -26,7 +25,7 @@ let PatchFuncs = async (req, res) => {
         FileName: jVarLocalFileName,
         ItemName: jVarLocalItemName,
         ScreenName: jVarLocalScreenName,
-        DataAttribute: jVarLocalDataAttribute,
+        GridName: jVarLocalDataAttribute,
         BodyAsJson: localUpdateBodyAsJson
     });
 
