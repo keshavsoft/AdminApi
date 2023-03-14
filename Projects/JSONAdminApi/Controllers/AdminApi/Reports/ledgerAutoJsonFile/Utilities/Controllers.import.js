@@ -10,7 +10,7 @@ let PostFunc = (req, res) => {
             let localReportConficObject = req.body.ReportConficObject;
 
             Repos.PostFunc({
-                DataPk: LocalDataPk,
+                DataPK: LocalDataPk,
                 ToName: localToName,
                 ReportConficObject: localReportConficObject
 
