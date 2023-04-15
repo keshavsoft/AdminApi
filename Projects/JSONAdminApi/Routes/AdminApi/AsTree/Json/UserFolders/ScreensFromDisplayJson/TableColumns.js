@@ -7,6 +7,7 @@ let CommonAllInOneWithValues = require("./TableColumns/AllInOneWithValues");
 let CommonDefaultValue = require("./TableColumns/DefaultValue");
 let CommonToSubTable = require("./TableColumns/ToSubTable");
 let CommonCreateNew = require("./TableColumns/CreateNew");
+let CommonDuplicate = require("./TableColumns/Duplicate");
 
 router.use('/SubKeys', CommonSubKeys);
 router.use('/Toggles', CommonToggles);
@@ -15,6 +16,7 @@ router.use('/AllInOneWithValues', CommonAllInOneWithValues);
 router.use('/DefaultValue', CommonDefaultValue);
 router.use('/ToSubTable', CommonToSubTable);
 router.use('/CreateNew', CommonCreateNew);
+router.use('/Duplicate', CommonDuplicate);
 
 
 module.exports = router;
