@@ -12,7 +12,6 @@ let GetFuncs = async (req, res) => {
 
 let PatchFuncs = async (req, res) => {
     let LocalDataPk = req.KeshavSoft.DataPk;
-    console.log("req.body-------------", req.body);
 
     let jVarLocalfolderName = req.body.folderName;
     let jVarLocalinToFolderName = req.body.inToFolderName;
