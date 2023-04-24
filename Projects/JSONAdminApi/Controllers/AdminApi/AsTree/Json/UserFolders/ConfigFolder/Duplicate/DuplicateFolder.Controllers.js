@@ -1,4 +1,4 @@
-let Repos = require("../../../../../../Repository/AdminApi/AsTree/Json/UserFolders/Duplicate/DuplicateFolder");
+let Repos = require("../../../../../../../Repository/AdminApi/AsTree/Json/UserFolders/ConfigFolder/Duplicate/DuplicateFolder");
 
 let GetFuncs = async (req, res) => {
     let LocalDataPk = req.KeshavSoft.DataPk;
