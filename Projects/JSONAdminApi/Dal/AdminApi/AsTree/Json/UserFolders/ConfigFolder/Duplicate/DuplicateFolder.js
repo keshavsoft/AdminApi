@@ -1,5 +1,5 @@
-let CommonDatasupply = require("../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/AsTree/ForTableColumns/Duplicate/DuplicateFolder");
-let CommonDataSupplyForUpdate = require("../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/UserFolder/Duplicate/DuplicateUserFolder");
+let CommonDatasupply = require("../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/AsTree/ForTableColumns/Duplicate/DuplicateFolder");
+let CommonDataSupplyForUpdate = require("../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/UserFolder/Duplicate/DuplicateUserFolder");
 
 let GetFuncs = async ({ DataPK }) => {
     if (DataPK > 0) {
