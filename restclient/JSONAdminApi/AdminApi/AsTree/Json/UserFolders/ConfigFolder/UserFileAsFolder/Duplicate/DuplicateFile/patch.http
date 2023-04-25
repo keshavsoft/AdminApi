@@ -1,6 +1,8 @@
 PATCH http://localhost:4119/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ConfigFolder/UserFileAsFolder/Duplicate/DuplicateFile
-Cookie: KToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IkRVUkdBUEtMMjIyMyIsIkRhdGFQayI6MTAyMiwiaWF0IjoxNjgyNDAzODM3fQ.hyek57NF8MWfjQNo3ZjaDcJIfaRS16if7DIne7pW0Jo
+Cookie: KToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IkRVUkdBUEtMIiwiRGF0YVBrIjoxMDIyLCJpYXQiOjE2ODI0Mjg0MjB9.nJC_oi2TBac8sG5PH9fij0BehpIQEmYSKKyFgMbPOlI
 content-type: application/json
 
 {
+    
+ 
 }
