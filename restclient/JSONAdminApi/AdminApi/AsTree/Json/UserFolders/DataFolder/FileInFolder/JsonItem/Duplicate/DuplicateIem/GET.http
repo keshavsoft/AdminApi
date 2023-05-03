@@ -1,0 +1,7 @@
+GET http://localhost:4119/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/DataFolder/FileInFolder/JsonItem/Duplicate/DuplicateItem
+Cookie: KToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IkRVUkdBUEtMIiwiRGF0YVBrIjoxMDIyLCJpYXQiOjE2ODMwOTY1ODR9.R5n5UZbk30DTcR-OPOJu9Ehh1BYZh7CpXKnrc1MdKjA
+content-type: application/json
+
+{
+   
+} 
