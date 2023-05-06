@@ -1,9 +1,9 @@
-// let CommonDatasupply = require("../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/AsTree/ForTableColumns/CreateNew/DuplicateSreen");
-// let CommonDataSupplyForUpdate = require("../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/UserFolder/UserFileAsFolder/DisplayJsonFile/Duplicate/DuplicateItemName");
+ let CommonDatasupply = require("../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/DataFolder/AsTree/UserFolder/UserFile/ItemInFile/ForDuplicate");
+ let CommonDataSupplyForUpdate = require("../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/DataFolder/UserFolder/UserJsonFile/ItemName/Duplicate/DuplicateItemName");
 
 let GetFuncs = async ({ DataPK }) => {
     if (DataPK > 0) {
-        return await CommonDatasupply.AsObject({ inDataPK: DataPK });
+        return await CommonDatasupply.StartFunc({ inDataPK: DataPK });
     };
 };
 
