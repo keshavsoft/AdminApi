@@ -6,7 +6,9 @@ let GetFuncs = async (req, res) => {
     let LocalFromRepo = await Repos.GetFuncs({
         DataPK: LocalDataPk
     });
-    res.json(LocalFromRepo)
+    console.log("ssssssssssss : ", LocalFromRepo);
+    res.json(LocalFromRepo);
+
 };
 
 let PatchFuncs = async (req, res) => {

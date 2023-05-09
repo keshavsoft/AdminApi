@@ -4,7 +4,11 @@ let CommonDataSupplyForUpdate = require("../../../../../../../../../../../DataSu
 
 let GetFuncs = async ({ DataPK }) => {
     if (DataPK > 0) {
-        return await CommonDatasupply.AsObject({ inDataPK: DataPK });
+        // let LocalFromDataSupply = await CommonDatasupply.AsObject({ inDataPK: DataPK });
+        let LocalFromDataSupply = await CommonDatasupply.AsObjectFromCommonCode({ inDataPK: DataPK });
+
+        return await LocalFromDataSupply;
+        // return await CommonDatasupply.AsObjectFromCommonCode({ inDataPK: DataPK });
     };
 };
 
