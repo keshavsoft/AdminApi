@@ -1,8 +1,8 @@
 let express = require("express");
 let router = express.Router();
 
-let CommonTable = require("./FromReturnData/Table");
+let CommonVertical = require("./FromReturnData/Vertical");
 
-router.use("/Table", CommonTable)
+router.use("/Vertical", CommonVertical)
 
 module.exports = router;

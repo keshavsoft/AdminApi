@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
-let CommonControllers = require("../../../../../../../Controllers/AdminApi/AsTree/Json/UserFolders/ConfigFolder/FromReturnData/Vertical.Controllers");
 
-router.get('/', CommonControllers.GetFuncs);
-router.patch('/', CommonControllers.PatchFuncs);
+let commonFooter = require("./Vertical/Footer")
+
+router.use('/Footer', commonFooter);
 
 
 
