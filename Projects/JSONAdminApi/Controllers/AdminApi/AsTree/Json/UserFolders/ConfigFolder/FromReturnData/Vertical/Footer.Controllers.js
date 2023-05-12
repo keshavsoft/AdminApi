@@ -6,7 +6,6 @@ let GetFuncs = async (req, res) => {
     let LocalFromRepo = await Repos.GetFuncs({
         inDataPK: LocalDataPk
     });
-    // console.log("LocalFromRepo:",LocalFromRepo.Folders.Masters.Files.Accounts.Items.Accounts.Screens.Create);
     res.json(LocalFromRepo)
 };
 

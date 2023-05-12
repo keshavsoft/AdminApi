@@ -4,7 +4,7 @@ let GetFuncs = async (req, res) => {
     let LocalDataPk = req.KeshavSoft.DataPk;
 
     let LocalFromRepo = await Repos.GetFuncs({
-        DataPK: LocalDataPk
+        inDataPK: LocalDataPk
     });
     res.json(LocalFromRepo)
 };
