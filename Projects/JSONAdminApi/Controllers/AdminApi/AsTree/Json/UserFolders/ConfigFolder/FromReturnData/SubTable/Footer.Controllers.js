@@ -1,10 +1,10 @@
-let Repos = require("../../../../../../../../Repository/AdminApi/AsTree/Json/UserFolders/ConfigFolder/FromReturnData/Vertical/Footer");
+let Repos = require("../../../../../../../../Repository/AdminApi/AsTree/Json/UserFolders/ConfigFolder/FromReturnData/SubTable/Footer");
 
 let GetFuncs = async (req, res) => {
     let LocalDataPk = req.KeshavSoft.DataPk;
 
     let LocalFromRepo = await Repos.GetFuncs({
-        inDataPK: LocalDataPk
+        DataPK: LocalDataPk
     });
     // console.log("LocalFromRepo:",LocalFromRepo.Folders.Masters.Files.Accounts.Items.Accounts.Screens.Create);
     res.json(LocalFromRepo)
