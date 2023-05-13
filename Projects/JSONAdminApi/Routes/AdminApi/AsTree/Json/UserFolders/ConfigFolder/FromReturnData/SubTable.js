@@ -1,9 +1,11 @@
 var express = require('express');
 var router = express.Router();
-let CommonControllers = require("../../../../../../../Controllers/AdminApi/AsTree/Json/UserFolders/ConfigFolder/FromReturnData/SubTable.Controllers");
 
-router.get('/', CommonControllers.GetFuncs);
-router.patch('/', CommonControllers.PatchFuncs);
+let commonRow = require("./SubTable/Row")
+let commonFooter = require("./SubTable/Footer")
+
+router.use('/Row', commonRow);
+router.use('/Footer', commonFooter);
 
 
 
