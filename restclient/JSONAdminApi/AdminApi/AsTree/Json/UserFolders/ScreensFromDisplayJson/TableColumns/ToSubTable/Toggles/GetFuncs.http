@@ -1,0 +1,7 @@
+GET http://localhost:4119/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ScreensFromDisplayJson/TableColumns/Toggles/GetFuncs
+Cookie: KToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IkZBUSIsIkRhdGFQayI6MTksImlhdCI6MTY4NDIzNzg5M30.qT8xoAdzx-2uRE3CxasYai563atqS4KEbyItDwYQR3w
+content-type: application/json
+
+{
+    
+}
