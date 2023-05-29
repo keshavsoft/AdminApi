@@ -1,0 +1,7 @@
+GET http://localhost:4119/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ScreensFromDisplayJson/TableInfo/SubMenu/SearchRowArray/Search
+Cookie: KToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IksyMyIsIkRhdGFQayI6MjAsImlhdCI6MTY4NTM1NTI0NX0.XcNaG29JUvoPYMWvqPAjXB0eq-SrH-7CCi3NqHgsCgU
+content-type: application/json
+
+{
+  
+}
