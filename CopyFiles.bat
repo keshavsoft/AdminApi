@@ -1,0 +1,1 @@
+xcopy Projects\JSONAdminApi  ..\JsonApi\Projects\JSONAdminApi\  /s /e /Y
