@@ -1,11 +1,14 @@
-let CommonDatasupply = require("../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/AsTree/ForTableColumns/Duplicate/DuplicateFolder");
+let CommonDatasupply = require("../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigAndData/UserFolder/CreateFolder");
 
-let GetFuncs = async ({ DataPK }) => {
+let PostFunc = async ({ DataPK }) => {
     if (DataPK > 0) {
-        return await CommonDatasupply.AsObject({ inDataPK: DataPK });
+        return await CommonDatasupply.StartFunc({
+            inDataPK: DataPK,
+            inFolderName: "Transactions"
+        });
     };
 };
 
 module.exports = {
-    GetFuncs, Clone
+    PostFunc
 };

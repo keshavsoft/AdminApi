@@ -1,9 +1,9 @@
 let Repos = require("../../../../../../../Repository/AdminApi/AsTree/Json/UserFolders/ConfigAndDataFolders/CreateNew/CreateFolder");
 
-let GetFuncs = async (req, res) => {
+let PostFunc = async (req, res) => {
     let LocalDataPk = req.KeshavSoft.DataPk;
 
-    let LocalFromRepo = await Repos.GetFuncs({
+    let LocalFromRepo = await Repos.PostFunc({
         DataPK: LocalDataPk
     });
 
@@ -14,4 +14,4 @@ let GetFuncs = async (req, res) => {
 
 
 
-module.exports = { GetFuncs };
+module.exports = { PostFunc };
