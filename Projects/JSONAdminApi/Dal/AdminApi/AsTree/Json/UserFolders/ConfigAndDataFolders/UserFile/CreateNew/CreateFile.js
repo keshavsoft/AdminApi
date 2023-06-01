@@ -8,7 +8,7 @@ let PostFunc = async ({ DataPK, inFolderName, inNewFileName }) => {
         return await CommonDatasupply.StartFunc({
             inDataPK: DataPK,
             inFolderName: LocalFolderName,
-            inFileName: LocalFileName
+            inNewFileName: LocalFileName
         });
         // return await (inFileName)
     };
