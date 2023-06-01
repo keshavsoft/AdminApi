@@ -1,2 +1,2 @@
 ROBOCOPY ..\JSONDataSupply\DataSupply DataSupply\  /MIR
-xcopy ..\JsonApi\common common\  /s /e /Y
+xcopy ..\JsonApi\common common\  /MIR
