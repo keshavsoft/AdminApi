@@ -8,7 +8,7 @@ let PostFunc = async (req, res) => {
     let LocalFromRepo = await Repos.PostFunc({
         DataPK: LocalDataPk,
         inFolderName: LocalFolderName,
-        inFileName: LocalFileName
+        inNewFileName: LocalFileName
     });
 
     res.json(LocalFromRepo);

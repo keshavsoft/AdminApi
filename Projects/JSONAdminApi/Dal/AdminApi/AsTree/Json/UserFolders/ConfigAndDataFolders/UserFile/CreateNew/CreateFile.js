@@ -1,8 +1,8 @@
 let CommonDatasupply = require("../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigAndData/UserFolder/UserFile/CreateFile");
 
-let PostFunc = async ({ DataPK, inFolderName, inFileName }) => {
+let PostFunc = async ({ DataPK, inFolderName, inNewFileName }) => {
     let LocalFolderName = inFolderName;
-    let LocalFileName = inFileName;
+    let LocalFileName = inNewFileName;
 
     if (DataPK > 0) {
         return await CommonDatasupply.StartFunc({

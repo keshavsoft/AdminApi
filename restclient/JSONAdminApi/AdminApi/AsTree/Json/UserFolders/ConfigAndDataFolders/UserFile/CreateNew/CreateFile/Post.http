@@ -4,5 +4,5 @@ content-type: application/json
 
 {
     "FolderName":"Masters",
-    "NewFileName":"Items"
+    "NewFileName":"Products"
 }

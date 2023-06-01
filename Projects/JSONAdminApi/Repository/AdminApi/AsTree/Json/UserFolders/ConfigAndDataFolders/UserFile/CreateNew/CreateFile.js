@@ -1,10 +1,11 @@
 let Dal = require("../../../../../../../../Dal/AdminApi/AsTree/Json/UserFolders/ConfigAndDataFolders/UserFile/CreateNew/CreateFile");
 
-exports.PostFunc = async ({ DataPK, inFolderName,inFileName }) => {
+exports.PostFunc = async ({ DataPK, inFolderName, inNewFileName }) => {
     let LocalFolderName = inFolderName;
-    let LocalFileName = inFileName;
+    let LocalFileName = inNewFileName;
 
     return await Dal.PostFunc({
-        DataPK, inFolderName: LocalFolderName,inFileName: LocalFileName
+        DataPK, inFolderName: LocalFolderName,
+        inNewFileName: LocalFileName
     });
 };
