@@ -1,7 +1,8 @@
 POST  http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ConfigAndDataFolders/UserFile/CreateNew/CreateFile
-Cookie: KToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IkZBUSIsIkRhdGFQayI6MTksImlhdCI6MTY4NTYyMzc3Nn0.dRtAELOWi3mygyhE_QeVTzwWSYrNgQgsFwXT1GOnqx0
+Cookie: KToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IksyMDE2IiwiRGF0YVBrIjoyMDE2LCJpYXQiOjE2ODU2MjcwMDh9.0LZlvoOJIGAaOfg2Dq2AHiYt_XizWvKIyVMY4BdHfmQ
 content-type: application/json
 
 {
-    "FolderName":"Masters"
+    "FolderName":"Masters",
+    "NewFileName":"Items"
 }
