@@ -1,10 +1,12 @@
 let CommonDatasupply = require("../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigAndData/UserFolder/CreateFolder");
 
-let PostFunc = async ({ DataPK }) => {
+let PostFunc = async ({ DataPK, inFolderName }) => {
+    let LocalFolderName = inFolderName;
+
     if (DataPK > 0) {
         return await CommonDatasupply.StartFunc({
             inDataPK: DataPK,
-            inFolderName: "Transactions"
+            inFolderName: LocalFolderName
         });
     };
 };
