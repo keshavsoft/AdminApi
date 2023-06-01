@@ -2,8 +2,9 @@ let express = require("express");
 let router = express.Router();
 
 let CommonCreateNew = require("./ConfigAndDataFolders/CreateNew");
-let CommonCreateNew = require("./ConfigAndDataFolders/UserFile");
+let CommonUserFile = require("./ConfigAndDataFolders/UserFile");
 
-router.use("/CreateNew", CommonCreateNew)
+router.use("/CreateNew", CommonCreateNew);
+router.use("/UserFile", CommonUserFile);
 
 module.exports = router;
