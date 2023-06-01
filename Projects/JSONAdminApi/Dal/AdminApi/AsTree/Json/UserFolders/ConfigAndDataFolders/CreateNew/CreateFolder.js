@@ -9,4 +9,3 @@ let GetFuncs = async ({ DataPK }) => {
 module.exports = {
     GetFuncs, Clone
 };
-
