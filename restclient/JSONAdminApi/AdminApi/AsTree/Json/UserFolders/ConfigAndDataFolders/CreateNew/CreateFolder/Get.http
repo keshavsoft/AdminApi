@@ -3,5 +3,5 @@ Cookie: KToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IkZBUSIsIkRh
 content-type: application/json
 
 {
-    
+    "NewFolderName":"folder55"
 }
