@@ -1,4 +1,4 @@
-let CommonDatasupply = require("../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigAndData/UserFolder/CreateFolder");
+let CommonDatasupply = require("../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigAndData/UserFolder/CreateFolder");
 
 let PostFunc = async ({ DataPK, inFolderName, inFileName }) => {
     let LocalFolderName = inFolderName;
@@ -10,7 +10,7 @@ let PostFunc = async ({ DataPK, inFolderName, inFileName }) => {
         //     inFolderName: LocalFolderName,
         //     inFileName: LocalFileName
         // });
-        return await(" form dal")
+        return await (" form dal")
     };
 };
 
