@@ -7,7 +7,7 @@ let GetFuncs = async (req, res) => {
         DataPK: LocalDataPk
     });
 
-    res.json(LocalFromRepo)
+    res.json(LocalFromRepo);
     //res.end("test")
 };
 
