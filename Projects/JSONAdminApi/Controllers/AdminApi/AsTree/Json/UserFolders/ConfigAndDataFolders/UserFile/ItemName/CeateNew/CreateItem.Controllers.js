@@ -1,4 +1,4 @@
-let Repos = require("../../../../../../../../../Controllers/AdminApi/AsTree/Json/UserFolders/ConfigAndDataFolders/UserFile/ItemName/CeateNew/CreateItem.Controllers");
+//let Repos = require("../../../../../../../../../Controllers/AdminApi/AsTree/Json/UserFolders/ConfigAndDataFolders/UserFile/ItemName/CeateNew/CreateItem.Controllers");
 
 let PostFunc = async (req, res) => {
     // let LocalDataPk = req.KeshavSoft.DataPk;
@@ -10,7 +10,7 @@ let PostFunc = async (req, res) => {
     // });
 
     //res.json(LocalFromRepo);
-    res.end("test")
+    res.end("testItme")
 };
 
 
