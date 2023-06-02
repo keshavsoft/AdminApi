@@ -1,0 +1,9 @@
+POST  http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ConfigAndDataFolders/UserFile/ItemName/CeateNew/CreateItem
+Cookie: KToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IksyMDE2IiwiRGF0YVBrIjoyMDE2LCJpYXQiOjE2ODU2MjcwMDh9.0LZlvoOJIGAaOfg2Dq2AHiYt_XizWvKIyVMY4BdHfmQ
+content-type: application/json
+
+{
+    "FolderName":"Masters",
+    "NewFileName":"Accounts"
+    
+}
