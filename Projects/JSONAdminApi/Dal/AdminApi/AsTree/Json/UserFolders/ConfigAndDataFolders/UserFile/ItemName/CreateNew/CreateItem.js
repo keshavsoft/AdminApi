@@ -1,18 +1,18 @@
-//let CommonDatasupply = require("../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigAndData/UserFolder/UserFile/CreateFile");
+let CommonDatasupply = require("../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigAndData/UserFolder/UserFile/ItemName/CreateItem");
 
-let PostFunc = async ({ DataPK, inFolderName, inNewFileName,inNewItemName }) => {
+let PostFunc = async ({ DataPK, inFolderName, inFileName, inNewItemName }) => {
     let LocalFolderName = inFolderName;
-    let LocalFileName = inNewFileName;
+    let LocalFileName = inFileName;
     let LocalItemName = inNewItemName;
 
     if (DataPK > 0) {
-        // return await CommonDatasupply.StartFunc({
-        //     inDataPK: DataPK,
-        //     inFolderName: LocalFolderName,
-        //     inNewFileName: LocalFileName,
-        //     inNewItemName: LocalItemName
-        // });
-         return await (inItemName)
+        return await CommonDatasupply.StartFunc({
+            inDataPK: DataPK,
+            inFolderName: LocalFolderName,
+            inFileName: LocalFileName,
+            inNewItemName: LocalItemName
+        });
+        // return await (LocalItemName);
     };
 };
 
