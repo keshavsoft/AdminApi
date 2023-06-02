@@ -9,7 +9,11 @@ exports.PostFunc = (req, res, next) => {
             KTF: false,
             KReason: "post requst body should contain : ",
             body: {
-                NewFolderName: "" 
+                NewFolderName: "",
+                NewFileName:"",
+                NewItemName:"",
+                NewScreenName:"",
+                NewBodyAsJson:{}
             },
         });
         return;
@@ -17,6 +21,23 @@ exports.PostFunc = (req, res, next) => {
     if (("NewFolderName" in req.body) === false) {
         res.json({ KTF: false, KReason: "NewFolderName not found in body" })
         return;
+    };  
+     if (("NewFileName" in req.body) === false) {
+        res.json({ KTF: false, KReason: " NewFileName not found in body" })
+        return;
     };
+    if (("NewItemName" in req.body) === false) {
+        res.json({ KTF: false, KReason: "NewItemName not found in body" })
+        return;
+    };
+
+    if (("NewScreenName" in req.body) === false) {
+        res.json({ KTF: false, KReason: " NewScreenName not found in body" })
+         return;
+     };
+     if (("NewBodyAsJson" in req.body) === false) {
+         res.json({ KTF: false, KReason: " NewBodyAsJson not found in body" })
+         return;
+     };
     next();
 };
