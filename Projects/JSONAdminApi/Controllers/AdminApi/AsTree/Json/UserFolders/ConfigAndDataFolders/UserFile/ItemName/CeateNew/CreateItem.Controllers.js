@@ -10,10 +10,7 @@ let PostFunc = async (req, res) => {
     // });
 
     //res.json(LocalFromRepo);
-    res.end("testItme")
+    res.end("testItme");
 };
-
-
-
 
 module.exports = { PostFunc };
