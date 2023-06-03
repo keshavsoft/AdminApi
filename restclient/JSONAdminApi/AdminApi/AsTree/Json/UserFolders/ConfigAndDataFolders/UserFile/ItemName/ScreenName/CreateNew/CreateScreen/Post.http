@@ -1,5 +1,5 @@
 POST  http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ConfigAndDataFolders/UserFile/ItemName/ScreenName/CreateNew/CreateScreen
-Cookie: KToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IkZBUSIsIkRhdGFQayI6MTksImlhdCI6MTY4NTc4MDg5MX0.Hh_Hp0ueyT3IHBzo6Xmypsd82McnNQAZK0cDnFRep5c
+Cookie:KToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IkpBVElOIiwiRGF0YVBrIjoyMDAyLCJpYXQiOjE2ODU3OTUxMjF9.yn_qvnV1SURkSiXcaXSaxOt0dy6KY3z9BqeN8Y_xe38
 content-type: application/json
 
 {
