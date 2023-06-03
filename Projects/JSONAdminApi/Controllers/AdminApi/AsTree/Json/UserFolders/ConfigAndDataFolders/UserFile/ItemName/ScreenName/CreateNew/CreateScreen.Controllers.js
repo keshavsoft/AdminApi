@@ -5,7 +5,7 @@ let PostFunc = async (req, res) => {
    let LocalFolderName = req.body.FolderName;
    let LocalFileName = req.body.FileName;
    let LocalItemName = req.body.ItemName;
-   let LocalScreenName = req.body.inNewScreenName;
+   let LocalScreenName = req.body.NewScreenName;
 
    let LocalFromRepo = await Repos.PostFunc({
       DataPK: LocalDataPk,
