@@ -3,8 +3,21 @@ let Repos = require("../../../../../../../Repository/AdminApi/AsTree/Json/UserFo
 let PostFunc = async (req, res) => {
     let LocalDataPk = req.KeshavSoft.DataPk;
     let LocalFolderName = req.body.NewFolderName;
-    
+
     let LocalFromRepo = await Repos.PostFunc({
+        DataPK: LocalDataPk,
+        inFolderName: LocalFolderName
+    });
+
+    res.json(LocalFromRepo);
+    //res.end("test")
+};
+
+let DeleteFunc = async (req, res) => {
+    let LocalDataPk = req.KeshavSoft.DataPk;
+    let LocalFolderName = req.body.NewFolderName;
+
+    let LocalFromRepo = await Repos.DeleteFunc({
         DataPK: LocalDataPk,
         inFolderName: LocalFolderName
     });
@@ -16,4 +29,4 @@ let PostFunc = async (req, res) => {
 
 
 
-module.exports = { PostFunc };
+module.exports = { PostFunc, DeleteFunc };

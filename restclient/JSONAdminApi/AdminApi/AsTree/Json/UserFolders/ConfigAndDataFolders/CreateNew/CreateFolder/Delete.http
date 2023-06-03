@@ -1,0 +1,7 @@
+DELETE  http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ConfigAndDataFolders/CreateNew/CreateFolder
+Cookie: KToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IkZBUSIsIkRhdGFQayI6MTksImlhdCI6MTY4NTc5OTM2NH0.I2t3m1cPhUU8QtRoo2AEQpm1cin9viRBTjSSHnhIkOM
+content-type: application/json
+
+{
+     "NewFolderName":"Fold2"
+}
