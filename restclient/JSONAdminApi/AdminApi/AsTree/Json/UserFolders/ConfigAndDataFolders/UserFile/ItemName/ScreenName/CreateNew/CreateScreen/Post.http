@@ -1,10 +1,8 @@
 POST  http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ConfigAndDataFolders/UserFile/ItemName/ScreenName/CreateNew/CreateScreen
+Cookie: KToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IkZBUSIsIkRhdGFQayI6MTksImlhdCI6MTY4NTc4MDg5MX0.Hh_Hp0ueyT3IHBzo6Xmypsd82McnNQAZK0cDnFRep5c
 content-type: application/json
 
 {
-      "FolderName": "Fold2",
-    "FileName": "File2",
-"ItemName":"Item2",
-"NewScreenName":"Screen2"
+  
 
 }
