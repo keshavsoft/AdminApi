@@ -1,8 +1,7 @@
 POST  http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ConfigAndDataFolders/CreateNew/CreateFolder
-Cookie: KToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IkZBUSIsIkRhdGFQayI6MTksImlhdCI6MTY4NTY5MzA4M30.PqYoVq_uPT8t5F7IfqKi3J0gyfU20JEx7crESKc-vTE
+Cookie: KToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IkZBUSIsIkRhdGFQayI6MTksImlhdCI6MTY4NTc3MDcwMX0.S3xAQY3nEUxa2UWAkmXkQ2NDpbjhjvOixdx8Ivo5CTQ
 content-type: application/json
 
 {
-       "NewFolderName": "f2",
-       "NewFileName":"c"
+     "NewFolderName":"Fold1"
 }

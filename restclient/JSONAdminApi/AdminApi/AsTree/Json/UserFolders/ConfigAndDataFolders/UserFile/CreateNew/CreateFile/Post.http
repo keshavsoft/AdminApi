@@ -1,8 +1,7 @@
 POST  http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ConfigAndDataFolders/UserFile/CreateNew/CreateFile
-Cookie: KToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IkZBUSIsIkRhdGFQayI6MTksImlhdCI6MTY4NTcwMjY2MX0.oRm6OAlicE9mkeAVFdYC9--v-z9V1eVSUzcivPqGhnE
 content-type: application/json
 
 {
-   "FolderName": "Masters99",
-   "NewFileName":"Products"
+  "FolderName": "Fold1",
+    "NewFileName": "File1"
 }

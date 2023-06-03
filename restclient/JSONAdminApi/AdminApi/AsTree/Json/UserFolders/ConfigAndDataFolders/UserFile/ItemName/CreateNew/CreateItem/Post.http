@@ -1,9 +1,8 @@
 POST  http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ConfigAndDataFolders/UserFile/ItemName/CreateNew/CreateItem
-Cookie: KToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IjYxMTYiLCJEYXRhUGsiOjYxMTYsImlhdCI6MTY4NTcxNzY1Nn0.-yioAj-FuiGYHvB-XWjrephz_CVGScZCG0YFuFgbQTE
 content-type: application/json
 
 {
-    "FolderName": "Transactions",
-   "FileName":"Vouchers",
-    "NewItemName":"kkk"
+     "FolderName": "Fold1",
+    "FileName": "File1",
+"NewItemName":"Item1"
 }
