@@ -12,7 +12,7 @@ let PostFunc = async ({ DataPK, inFolderName, inFileName, inItemName,inNewScreen
             inFolderName: LocalFolderName,
             inFileName: LocalFileName,
             inItemName: LocalItemName,
-            inNewScreenName:LocalScreenName
+            inScreenName:LocalScreenName
         });
         // return await (LocalItemName);
         
