@@ -13,7 +13,21 @@ let PostFunc = async ({ DataPK, inFolderName, inNewFileName }) => {
         // return await (inFileName)
     };
 };
+let DeleteFunc = async ({ DataPK, inFolderName, inNewFileName }) => {
+    let LocalFolderName = inFolderName;
+    let LocalFileName = inNewFileName;
+
+    if (DataPK > 0) {
+        return await CommonDatasupply.StartFunc({
+            inDataPK: DataPK,
+            inFolderName: LocalFolderName,
+            inNewFileName: LocalFileName
+        });
+        // return await (inFileName)
+    };
+};
 
 module.exports = {
-    PostFunc
+    PostFunc,
+    DeleteFunc
 };

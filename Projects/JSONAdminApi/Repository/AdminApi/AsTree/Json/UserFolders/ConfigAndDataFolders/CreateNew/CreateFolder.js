@@ -7,3 +7,11 @@ exports.PostFunc = async ({ DataPK, inFolderName }) => {
         DataPK, inFolderName: LocalFolderName
     });
 };
+
+exports.DeleteFunc = async ({ DataPK, inFolderName }) => {
+    let LocalFolderName = inFolderName;
+
+    return await Dal.DeleteFunc({
+        DataPK, inFolderName: LocalFolderName
+    });
+};

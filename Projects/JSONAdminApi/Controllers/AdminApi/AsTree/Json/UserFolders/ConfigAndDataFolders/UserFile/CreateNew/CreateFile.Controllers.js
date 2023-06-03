@@ -13,5 +13,18 @@ let PostFunc = async (req, res) => {
 
     res.json(LocalFromRepo);
 };
+let DeleteFunc = async (req, res) => {
+    let LocalDataPk = req.KeshavSoft.DataPk;
+    let LocalFolderName = req.body.FolderName;
+    let LocalFileName = req.body.NewFileName;
 
-module.exports = { PostFunc };
+    let LocalFromRepo = await Repos.DeleteFunc({
+        DataPK: LocalDataPk,
+        inFolderName: LocalFolderName,
+        inNewFileName: LocalFileName
+    });
+
+    res.json(LocalFromRepo);
+};
+
+module.exports = { PostFunc,DeleteFunc };

@@ -1,0 +1,7 @@
+DELETE  http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ConfigAndDataFolders/UserFile/CreateNew/CreateFile
+content-type: application/json
+
+{
+  "FolderName": "Fold2",
+    "NewFileName": "File2"
+}
