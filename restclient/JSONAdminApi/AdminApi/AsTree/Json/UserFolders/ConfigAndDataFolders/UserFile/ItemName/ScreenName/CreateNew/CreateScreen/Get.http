@@ -3,8 +3,8 @@ content-type: application/json
 
 {
   
- "FolderName": "Fold3",
-    "FileName": "File3",
-    "ItemName": "Item3",
-    "NewScreenName": "Create"
+ "FolderName": "",
+    "FileName": "",
+    "ItemName": "",
+    "ScreenName": ""
 }

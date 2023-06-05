@@ -35,6 +35,8 @@ let DeleteFunc = async ({ DataPK, inFolderName, inFileName, inNewItemName }) => 
 
 
 let GetFunc = async ({ DataPK, inFolderName, inFileName, inNewItemName }) => {
+return("FromDal")
+
     let LocalFolderName = inFolderName;
     let LocalFileName = inFileName;
     let LocalItemName = inNewItemName;
