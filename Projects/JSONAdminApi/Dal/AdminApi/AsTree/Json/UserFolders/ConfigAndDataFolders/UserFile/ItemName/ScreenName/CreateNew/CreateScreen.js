@@ -43,6 +43,8 @@ let DeleteFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inNewScr
 };
 
 let GetFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inNewScreenName }) => {
+return("FromDal")
+
     let LocalFolderName = inFolderName;
     let LocalFileName = inFileName;
     let LocalItemName = inItemName;

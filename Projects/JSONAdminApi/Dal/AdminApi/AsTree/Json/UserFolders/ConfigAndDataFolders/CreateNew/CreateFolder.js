@@ -1,4 +1,4 @@
-let CommonDatasupply = require("../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigAndData/UserFolder/CreateFolder");
+// let CommonDatasupply = require("../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigAndData/UserFolder/CreateFolder");
 
 let PostFunc = async ({ DataPK, inFolderName }) => {
     let LocalFolderName = inFolderName;
@@ -22,6 +22,7 @@ let DeleteFunc = async ({ DataPK, inFolderName }) => {
 };
 
 let GetFunc = async ({ DataPK, inFolderName }) => {
+    return("FromDal")
     let LocalFolderName = inFolderName;
 
     if (DataPK > 0) {
