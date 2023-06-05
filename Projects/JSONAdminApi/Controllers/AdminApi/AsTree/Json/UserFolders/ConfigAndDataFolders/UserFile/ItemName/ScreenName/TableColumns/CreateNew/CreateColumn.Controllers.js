@@ -2,14 +2,12 @@ let Repos = require("../../../../../../../../../../../Repository/AdminApi/AsTree
 
 let PostFunc = async (req, res) => {
 
-
    let LocalDataPk = req.KeshavSoft.DataPk;
    let LocalFolderName = req.body.FolderName;
    let LocalFileName = req.body.FileName;
    let LocalItemName = req.body.ItemName;
    let LocalScreenName = req.body.ScreenName;
    let LocalNewColumnName = req.body.NewColumnName;
-
 
    let LocalFromRepo = await Repos.PostFunc({
       DataPK: LocalDataPk,
@@ -33,7 +31,6 @@ let DeleteFunc = async (req, res) => {
    let LocalScreenName = req.body.ScreenName;
    let LocalNewColumnName = req.body.NewColumnName;
 
-
    let LocalFromRepo = await Repos.DeleteFunc({
       DataPK: LocalDataPk,
       inFolderName: LocalFolderName,
@@ -55,7 +52,6 @@ let GetFunc = async (req, res) => {
    let LocalItemName = req.body.ItemName;
    let LocalScreenName = req.body.ScreenName;
    let LocalNewColumnName = req.body.NewColumnName;
-
 
    let LocalFromRepo = await Repos.GetFunc({
       DataPK: LocalDataPk,
