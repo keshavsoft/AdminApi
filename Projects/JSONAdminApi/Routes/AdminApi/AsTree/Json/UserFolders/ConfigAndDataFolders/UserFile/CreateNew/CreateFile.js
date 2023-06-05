@@ -4,7 +4,7 @@ let CommonControllers = require("../../../../../../../../Controllers/AdminApi/As
 let CommonMiddlewares = require("../../../../../../../../Middlewares/AdminApi/AsTree/Json/UserFolders/ConfigAndDataFolders/UserFile/CreateNew/CreateFile");
 
 router.post('/', CommonMiddlewares.PostFunc, CommonControllers.PostFunc);
-router.delete('/', CommonMiddlewares.PostFunc, CommonControllers.DeleteFunc);
+router.delete('/', CommonMiddlewares.DeleteFunc, CommonControllers.DeleteFunc);
 router.get('/', CommonMiddlewares.PostFunc, CommonControllers.GetFunc);
 
 module.exports = router;

@@ -20,7 +20,7 @@ let DeleteFunc = async (req, res) => {
    let LocalDataPk = req.KeshavSoft.DataPk;
    let LocalFolderName = req.body.FolderName;
    let LocalFileName = req.body.FileName;
-   let LocalItemName = req.body.NewItemName;
+   let LocalItemName = req.body.DeleteItemName;
 
    let LocalFromRepo = await Repos.DeleteFunc({
       DataPK: LocalDataPk,

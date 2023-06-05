@@ -24,7 +24,7 @@ let DeleteFunc = async (req, res) => {
    let LocalFolderName = req.body.FolderName;
    let LocalFileName = req.body.FileName;
    let LocalItemName = req.body.ItemName;
-   let LocalScreenName = req.body.NewScreenName;
+   let LocalScreenName = req.body.DeleteScreenName;
 
    let LocalFromRepo = await Repos.DeleteFunc({
       DataPK: LocalDataPk,
