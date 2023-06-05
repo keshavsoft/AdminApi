@@ -41,4 +41,4 @@ let GetFunc = async (req, res) => {
 
 
 
-module.exports = { PostFunc, DeleteFunc,GetFunc };
+module.exports = { PostFunc, DeleteFunc, GetFunc };

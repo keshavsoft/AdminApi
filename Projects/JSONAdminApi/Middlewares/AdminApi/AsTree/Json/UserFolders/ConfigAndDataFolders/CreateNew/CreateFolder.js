@@ -40,8 +40,8 @@ exports.DeleteFunc = (req, res, next) => {
         return;
     };
     
-    if (("NewFolderName" in req.body) === false) {
-        res.json({ KTF: false, KReason: "NewFolderName not found in body" })
+    if (("DeleteFolderName" in req.body) === false) {
+        res.json({ KTF: false, KReason: "DeleteFolderName not found in body" })
         return;
     };   
     next();
