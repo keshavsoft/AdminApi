@@ -5,5 +5,6 @@ let CommonMiddlewares = require("../../../../../../../Middlewares/AdminApi/AsTre
 
 router.post('/', CommonMiddlewares.PostFunc, CommonControllers.PostFunc);
 router.delete('/', CommonMiddlewares.PostFunc, CommonControllers.DeleteFunc);
+router.get('/', CommonMiddlewares.PostFunc, CommonControllers.GetFunc);
 
 module.exports = router;
