@@ -5,6 +5,8 @@ let PostFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inNewScree
     let LocalFileName = inFileName;
     let LocalItemName = inItemName;
     let LocalScreenName = inNewScreenName;
+    let LocalNewColumnName = inNewColumnName;
+
 
     let LocalFromDataSupply;
 
@@ -15,7 +17,9 @@ let PostFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inNewScree
         //     inFolderName: LocalFolderName,
         //     inFileName: LocalFileName,
         //     inItemName: LocalItemName,
-        //     inScreenName: LocalScreenName
+        //     inScreenName: LocalScreenName,
+       //inNewColumnName:LocalNewColumnName
+
         // });
     };
 
@@ -27,6 +31,8 @@ let DeleteFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inNewScr
     let LocalFileName = inFileName;
     let LocalItemName = inItemName;
     let LocalScreenName = inNewScreenName;
+    let LocalNewColumnName = inNewColumnName;
+
 
     let LocalFromDataSupply;
 
@@ -36,7 +42,34 @@ let DeleteFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inNewScr
             inFolderName: LocalFolderName,
             inFileName: LocalFileName,
             inItemName: LocalItemName,
-            inScreenName: LocalScreenName
+            inScreenName: LocalScreenName,
+            inNewColumnName:LocalNewColumnName
+
+        });
+    };
+
+    return await LocalFromDataSupply;
+};
+
+let GetFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inNewScreenName }) => {
+    let LocalFolderName = inFolderName;
+    let LocalFileName = inFileName;
+    let LocalItemName = inItemName;
+    let LocalScreenName = inNewScreenName;
+    let LocalNewColumnName = inNewColumnName;
+
+
+    let LocalFromDataSupply;
+
+    if (DataPK > 0) {
+        LocalFromDataSupply = await CommonDatasupply.StartFunc({
+            inDataPK: DataPK,
+            inFolderName: LocalFolderName,
+            inFileName: LocalFileName,
+            inItemName: LocalItemName,
+            inScreenName: LocalScreenName,
+            inNewColumnName:LocalNewColumnName
+
         });
     };
 
@@ -44,7 +77,10 @@ let DeleteFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inNewScr
 };
 
 
+
 module.exports = {
     PostFunc,
-    DeleteFunc
+    DeleteFunc,
+    GetFunc
+
 };

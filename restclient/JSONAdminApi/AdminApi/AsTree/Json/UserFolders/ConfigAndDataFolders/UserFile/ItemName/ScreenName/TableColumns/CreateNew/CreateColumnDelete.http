@@ -5,7 +5,6 @@ content-type: application/json
    "FolderName": "Fold3",
     "FileName": "File3",
     "ItemName": "Item3",
-    "ScreenName": "Create",
-     "NewColumnName": "ItemName"
+    "ScreenName": "Create"
  
 }

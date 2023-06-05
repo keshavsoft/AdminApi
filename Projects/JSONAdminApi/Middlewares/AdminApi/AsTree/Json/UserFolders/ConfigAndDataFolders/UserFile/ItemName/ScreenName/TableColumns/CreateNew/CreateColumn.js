@@ -12,7 +12,8 @@ exports.PostFunc = (req, res, next) => {
                 FolderName: "",
                 FileName: "",
                 ItemName: "",
-                ScreenName: ""
+                ScreenName: "",
+                ColumnName: ""
             },
         });
         return;
@@ -31,6 +32,10 @@ exports.PostFunc = (req, res, next) => {
     };
     if (("ScreenName" in req.body) === false) {
         res.json({ KTF: false, KReason: "ScreenName not found in body" })
+        return;
+    };
+    if (("NewColumnName" in req.body) === false) {
+        res.json({ KTF: false, KReason: "NewColumnName not found in body" })
         return;
     };
 
