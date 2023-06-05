@@ -7,8 +7,6 @@ exports.PostFunc = async ({ DataPK, inFolderName, inFileName, inItemName,inNewSc
     let LocalScreenName = inNewScreenName;
     let LocalNewColumnName = inNewColumnName;
 
-    
-
     return await Dal.PostFunc({
         DataPK, inFolderName: LocalFolderName,
         inFileName: LocalFileName,

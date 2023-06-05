@@ -1,26 +1,25 @@
-///let CommonDatasupply = require("../../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigAndData/UserFolder/UserFile/ItemName/ScreenName/CreateScreen");
+let CommonDatasupply = require("../../../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigAndData/UserFolder/UserFile/ItemName/ScreenName/TableColumns/CreateColumn");
 
-let PostFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inNewScreenName }) => {
+let PostFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inNewScreenName, inNewColumnName }) => {
+
     let LocalFolderName = inFolderName;
     let LocalFileName = inFileName;
     let LocalItemName = inItemName;
     let LocalScreenName = inNewScreenName;
     let LocalNewColumnName = inNewColumnName;
 
-
     let LocalFromDataSupply;
 
     if (DataPK > 0) {
-        console.log("srinivas");
-        // LocalFromDataSupply = await CommonDatasupply.StartFunc({
-        //     inDataPK: DataPK,
-        //     inFolderName: LocalFolderName,
-        //     inFileName: LocalFileName,
-        //     inItemName: LocalItemName,
-        //     inScreenName: LocalScreenName,
-       //inNewColumnName:LocalNewColumnName
+        LocalFromDataSupply = await CommonDatasupply.StartFunc({
+            inDataPK: DataPK,
+            inFolderName: LocalFolderName,
+            inFileName: LocalFileName,
+            inItemName: LocalItemName,
+            inScreenName: LocalScreenName,
+            inNewColumnName: LocalNewColumnName
 
-        // });
+        });
     };
 
     return await LocalFromDataSupply;
@@ -43,7 +42,7 @@ let DeleteFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inNewScr
             inFileName: LocalFileName,
             inItemName: LocalItemName,
             inScreenName: LocalScreenName,
-            inNewColumnName:LocalNewColumnName
+            inNewColumnName: LocalNewColumnName
 
         });
     };
@@ -68,7 +67,7 @@ let GetFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inNewScreen
             inFileName: LocalFileName,
             inItemName: LocalItemName,
             inScreenName: LocalScreenName,
-            inNewColumnName:LocalNewColumnName
+            inNewColumnName: LocalNewColumnName
 
         });
     };
