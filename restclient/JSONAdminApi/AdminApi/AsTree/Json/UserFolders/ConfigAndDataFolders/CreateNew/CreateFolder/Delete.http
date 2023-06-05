@@ -1,5 +1,5 @@
 DELETE  http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ConfigAndDataFolders/CreateNew/CreateFolder
-Cookie: KToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IkZBUSIsIkRhdGFQayI6MTksImlhdCI6MTY4NTk0NTg3Nn0.gBZI8TlU-Ln6kLBqBCLY7n7dNSr8_dGRjAYdrPba2Eg
+Cookie: KToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IkZBUSIsIkRhdGFQayI6MTksImlhdCI6MTY4NTk1NTk4OH0.IVuk4wBrxtDsKo0WtjG0NLsdbqeguqRMHlDENDFTVp0
 content-type: application/json
 
 {
