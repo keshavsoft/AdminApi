@@ -29,14 +29,13 @@ exports.PostFunc = (req, res, next) => {
         res.json({ KTF: false, KReason: "ItemName not found in body" })
         return;
     };
-    if (("ScreenName" in req.body) === false) {
-        res.json({ KTF: false, KReason: "ScreenName not found in body" })
+    if (("NewScreenName" in req.body) === false) {
+        res.json({ KTF: false, KReason: "NewScreenName not found in body" })
         return;
     };
 
     next();
 };
-
 
 exports.DeleteFunc = (req, res, next) => {
     if (("DataPk" in req.KeshavSoft) === false) {

@@ -11,10 +11,10 @@ let PostFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inNewScree
     if (DataPK > 0) {
         LocalFromDataSupply = await CommonDatasupply.StartFunc({
             inDataPK: DataPK,
-            inFolderName: LocalFolderName,
-            inFileName: LocalFileName,
-            inItemName: LocalItemName,
-            inScreenName: LocalScreenName
+            FolderName: LocalFolderName,
+            FileName: LocalFileName,
+            ItemName: LocalItemName,
+            NewScreenName: LocalScreenName
         });
     };
 
@@ -43,7 +43,7 @@ let DeleteFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inNewScr
 };
 
 let GetFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inNewScreenName }) => {
-return("FromDal")
+    return ("FromDal")
 
     let LocalFolderName = inFolderName;
     let LocalFileName = inFileName;
