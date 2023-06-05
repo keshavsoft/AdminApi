@@ -15,7 +15,7 @@ let PostFunc = async (req, res) => {
 
 let DeleteFunc = async (req, res) => {
     let LocalDataPk = req.KeshavSoft.DataPk;
-    let LocalFolderName = req.body.NewFolderName;
+    let LocalFolderName = req.body.DeleteFolderName;
 
     let LocalFromRepo = await Repos.DeleteFunc({
         DataPK: LocalDataPk,
