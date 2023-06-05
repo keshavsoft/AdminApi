@@ -12,7 +12,7 @@ exports.PostFunc = (req, res, next) => {
                 FolderName: "",
                 FileName: "",
                 ItemName: "",
-                NewScreenName: ""
+                ScreenName: ""
             },
         });
         return;
@@ -29,8 +29,8 @@ exports.PostFunc = (req, res, next) => {
         res.json({ KTF: false, KReason: "ItemName not found in body" })
         return;
     };
-    if (("NewScreenName" in req.body) === false) {
-        res.json({ KTF: false, KReason: "NewScreenName not found in body" })
+    if (("ScreenName" in req.body) === false) {
+        res.json({ KTF: false, KReason: "ScreenName not found in body" })
         return;
     };
 
