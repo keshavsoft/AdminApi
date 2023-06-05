@@ -19,3 +19,14 @@ exports.DeleteFunc = async ({ DataPK, inFolderName, inNewFileName }) => {
     });
 };
 
+
+exports.GetFunc = async ({ DataPK, inFolderName, inNewFileName }) => {
+    let LocalFolderName = inFolderName;
+    let LocalFileName = inNewFileName;
+
+    return await Dal.GetFunc({
+        DataPK, inFolderName: LocalFolderName,
+        inNewFileName: LocalFileName
+    });
+};
+

@@ -1,0 +1,10 @@
+GET   http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ConfigAndDataFolders/UserFile/ItemName/ScreenName/CreateNew/CreateScreen
+content-type: application/json
+
+{
+  
+ "FolderName": "Fold3",
+    "FileName": "File3",
+    "ItemName": "Item3",
+    "NewScreenName": "Create"
+}

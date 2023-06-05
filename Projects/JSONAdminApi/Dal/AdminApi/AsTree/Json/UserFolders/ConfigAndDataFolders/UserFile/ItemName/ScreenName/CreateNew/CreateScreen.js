@@ -42,8 +42,30 @@ let DeleteFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inNewScr
     return await LocalFromDataSupply;
 };
 
+let GetFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inNewScreenName }) => {
+    let LocalFolderName = inFolderName;
+    let LocalFileName = inFileName;
+    let LocalItemName = inItemName;
+    let LocalScreenName = inNewScreenName;
+
+    let LocalFromDataSupply;
+
+    if (DataPK > 0) {
+        LocalFromDataSupply = await CommonDatasupply.StartFunc({
+            inDataPK: DataPK,
+            inFolderName: LocalFolderName,
+            inFileName: LocalFileName,
+            inItemName: LocalItemName,
+            inScreenName: LocalScreenName
+        });
+    };
+
+    return await LocalFromDataSupply;
+};
+
 
 module.exports = {
     PostFunc,
-    DeleteFunc
+    DeleteFunc,
+    GetFunc
 };
