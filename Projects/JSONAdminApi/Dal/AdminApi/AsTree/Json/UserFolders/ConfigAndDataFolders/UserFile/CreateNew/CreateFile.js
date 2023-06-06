@@ -6,13 +6,14 @@ let PostFunc = async ({ DataPK, inFolderName, inNewFileName }) => {
 
     if (DataPK > 0) {
         return await CommonDatasupply.StartFunc({
-            inDataPK: DataPK,
-            inFolderName: LocalFolderName,
-            inNewFileName: LocalFileName
+            DataPK,
+            FolderName: LocalFolderName,
+            NewFileName: LocalFileName
         });
         // return await (inFileName)
     };
 };
+
 let DeleteFunc = async ({ DataPK, inFolderName, inNewFileName }) => {
     let LocalFolderName = inFolderName;
     let LocalFileName = inNewFileName;
@@ -28,7 +29,7 @@ let DeleteFunc = async ({ DataPK, inFolderName, inNewFileName }) => {
 };
 
 let GetFunc = async ({ DataPK, inFolderName, inNewFileName }) => {
-     return("FromDal")
+    return ("FromDal");
     let LocalFolderName = inFolderName;
     let LocalFileName = inNewFileName;
 
