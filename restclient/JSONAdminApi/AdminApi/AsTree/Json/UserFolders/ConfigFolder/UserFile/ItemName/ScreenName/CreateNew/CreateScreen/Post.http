@@ -1,0 +1,10 @@
+POST  http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ConfigAndDataFolders/UserFile/ItemName/ScreenName/CreateNew/CreateScreen
+content-type: application/json
+
+{
+  
+ "FolderName": "Folder8",
+    "FileName": "File8",
+    "ItemName": "Item8",
+    "NewScreenName": "Create1"
+}
