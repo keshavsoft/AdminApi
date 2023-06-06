@@ -2,6 +2,6 @@ POST  http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/Config
 content-type: application/json
 
 {
-  "FolderName": "Folder8",
-    "NewFileName": "File8"
+  "FolderName": "Masters",
+    "NewFileName": "Items"
 }
