@@ -1,4 +1,4 @@
-let Repos = require("../../../../../../../../Repository/AdminApi/AsTree/Json/UserFolders/ConfigFolder/UserFileAsFolder/CreateNew/CreateFile");
+let Repos = require("../../../../../../../../../../Repository/AdminApi/AsTree/Json/UserFolders/ConfigFolder/UserFileAsFolder/JsonItem/JsonScreen/CreateNew/CreateScreen");
 
 let GetFunc = async (req, res) => {
     let LocalDataPk = req.KeshavSoft.DataPk;
@@ -23,7 +23,6 @@ let PostFunc = async (req, res) => {
 
     res.json(LocalFromRepo);
 };
-
 let DeleteFunc = async (req, res) => {
     let LocalDataPk = req.KeshavSoft.DataPk;
     let LocalFolderName = req.body.FolderName;
@@ -38,4 +37,4 @@ let DeleteFunc = async (req, res) => {
     res.json(LocalFromRepo);
 };
 
-module.exports = { GetFunc, PostFunc, DeleteFunc };
+module.exports = { PostFunc,DeleteFunc,GetFunc };

@@ -1,5 +1,5 @@
-let CommonDatasupplyGetFunc = require("../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/getDirectoriesWithCheckAndDelete");
-let CommonDatasupply = require("../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/UserFolder/UserFileAsFolder/CreateFileAsFolder/FromInput");
+let CommonDatasupplyGetFunc = require("../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/getDirectoriesWithCheckAndDelete");
+let CommonDatasupply = require("../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/UserFolder/UserFileAsFolder/DisplayJsonFile/ItemName/PushData/FromInput");
 
 let GetFunc = async ({ DataPK }) => {
 
@@ -39,7 +39,7 @@ let DeleteFunc = async ({ DataPK, inFolderName, inNewFileName }) => {
 };
 
 module.exports = {
-    GetFunc,
     PostFunc,
-    DeleteFunc
+    DeleteFunc,
+    GetFunc
 };
