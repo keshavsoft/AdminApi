@@ -1,7 +1,5 @@
 GET   http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ConfigAndDataFolders/CreateNew/CreateFolder
-Cookie: KToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IkZBUSIsIkRhdGFQayI6MTksImlhdCI6MTY4NTk3MTkyNH0.aBT_SH4qyRYhTNojb9JcPu-8PqEtC9VWK6PR_Lce59k
 content-type: application/json
 
 {
-    "NewFolderName": ""
 }
