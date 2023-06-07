@@ -3,6 +3,6 @@ content-type: application/json
 
 {
      "FolderName": "Transactions",
-    "FileName": "Sales",
-    "NewItemName": "Bills"
+    "FileName": "All",
+    "NewItemName": "ACCOUNT-OPENINGS"
 }
