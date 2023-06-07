@@ -39,17 +39,9 @@ let DeleteFunc = async (req, res) => {
 };
 let GetFunc = async (req, res) => {
    let LocalDataPk = req.KeshavSoft.DataPk;
-   let LocalFolderName = req.body.FolderName;
-   let LocalFileName = req.body.FileName;
-   let LocalItemName = req.body.ItemName;
-   let LocalScreenName = req.body.NewScreenName;
 
    let LocalFromRepo = await Repos.GetFunc({
-      DataPK: LocalDataPk,
-      inFolderName: LocalFolderName,
-      inFileName: LocalFileName,
-      inItemName: LocalItemName,
-      inNewScreenName:LocalScreenName
+      DataPK: LocalDataPk
    });
 
    res.json(LocalFromRepo);

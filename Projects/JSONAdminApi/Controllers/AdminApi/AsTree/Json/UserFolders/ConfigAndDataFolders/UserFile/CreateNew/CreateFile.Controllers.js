@@ -29,16 +29,12 @@ let DeleteFunc = async (req, res) => {
 
 let GetFunc = async (req, res) => {
     let LocalDataPk = req.KeshavSoft.DataPk;
-    let LocalFolderName = req.body.FolderName;
-    let LocalFileName = req.body.NewFileName;
 
     let LocalFromRepo = await Repos.GetFunc({
-        DataPK: LocalDataPk,
-        inFolderName: LocalFolderName,
-        inNewFileName: LocalFileName
+        DataPK: LocalDataPk
     });
 
     res.json(LocalFromRepo);
 };
 
-module.exports = { PostFunc,DeleteFunc,GetFunc };
+module.exports = { PostFunc, DeleteFunc, GetFunc };
