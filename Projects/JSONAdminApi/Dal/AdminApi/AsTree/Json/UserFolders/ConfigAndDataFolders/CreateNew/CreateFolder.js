@@ -25,9 +25,7 @@ let DeleteFunc = async ({ DataPK, inFolderName }) => {
     };
 };
 
-let GetFunc = async ({ DataPK, inFolderName }) => {
-    // return ("FromDa------------l")
-    let LocalFolderName = inFolderName;
+let GetFunc = async ({ DataPK }) => {
 
     if (DataPK > 0) {
         return await CommonDatasupplyGetFunc.AsObject({

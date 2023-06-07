@@ -1,7 +1,6 @@
 let Dal = require("../../../../../../../Dal/AdminApi/AsTree/Json/UserFolders/ConfigAndDataFolders/CreateNew/CreateFolder");
 
 exports.PostFunc = async ({ DataPK, inFolderName }) => {
-    let LocalFolderName = inFolderName;
 
     return await Dal.PostFunc({
         DataPK, inFolderName: LocalFolderName
@@ -16,10 +15,9 @@ exports.DeleteFunc = async ({ DataPK, inFolderName }) => {
     });
 };
 
-exports.GetFunc = async ({ DataPK, inFolderName }) => {
-    let LocalFolderName = inFolderName;
+exports.GetFunc = async ({ DataPK }) => {
 
     return await Dal.GetFunc({
-        DataPK, inFolderName: LocalFolderName
+        DataPK
     });
 };
