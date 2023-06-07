@@ -1,0 +1,5 @@
+GET   http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ConfigAndDataFolders/CreateNew/CreateFolder
+content-type: application/json
+
+{
+}
