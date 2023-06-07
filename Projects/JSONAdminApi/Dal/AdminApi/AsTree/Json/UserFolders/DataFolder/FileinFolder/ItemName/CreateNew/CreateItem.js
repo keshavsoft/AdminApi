@@ -13,7 +13,7 @@ let PostFunc = async ({ DataPK, inFolderName, inFileName, inNewItemName }) => {
             inDataPK: DataPK,
             inFolderName: LocalFolderName,
             inFileNameOnly: LocalFileName,
-            inNewItemName: LocalItemName
+            inItemName: LocalItemName
         });
         // return await (LocalItemName);
     };
