@@ -17,7 +17,7 @@ let PostFunc = async ({ DataPK, inFolderName, inNewFileName }) => {
 
     if (DataPK > 0) {
         return await CommonDatasupply.StartFunc({
-            inDataPK: DataPK,
+            DataPK: DataPK,
             FolderName: LocalFolderName,
             NewFileName: LocalFileName
         });
