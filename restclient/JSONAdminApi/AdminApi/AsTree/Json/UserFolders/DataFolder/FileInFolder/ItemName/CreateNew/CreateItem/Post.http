@@ -1,0 +1,8 @@
+POST  http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/DataFolder/FileInFolder/ItemName/CreateNew/CreateItem
+content-type: application/json
+
+{
+     "FolderName": "Transactions",
+    "FileName": "Sales",
+    "NewItemName": "Bills"
+}
