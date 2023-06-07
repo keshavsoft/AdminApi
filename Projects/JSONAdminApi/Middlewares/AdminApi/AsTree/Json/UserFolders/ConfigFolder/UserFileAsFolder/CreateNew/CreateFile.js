@@ -1,4 +1,3 @@
-
 exports.PostFunc = (req, res, next) => {
     if (("DataPk" in req.KeshavSoft) === false) {
         res.json({ KTF: false, KReason: "DataPk not found in Request" })
@@ -26,6 +25,7 @@ exports.PostFunc = (req, res, next) => {
 
     next();
 };
+
 exports.DeleteFunc = (req, res, next) => {
     if (("DataPk" in req.KeshavSoft) === false) {
         res.json({ KTF: false, KReason: "DataPk not found in Request" })
