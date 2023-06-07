@@ -1,4 +1,6 @@
-let CommonDatasupply = require("../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigAndData/UserFolder/UserFile/ItemName/CreateItem");
+let CommonDatasupply = require("../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/DataFolder/UserFolder/UserJsonFile/ItemName/PushData/ItemNameOnly");
+
+
 let CommonDatasupplyGetFunc = require("../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/getDirectoriesWithCheckAndDelete");
 
 let PostFunc = async ({ DataPK, inFolderName, inFileName, inNewItemName }) => {
@@ -7,10 +9,10 @@ let PostFunc = async ({ DataPK, inFolderName, inFileName, inNewItemName }) => {
     let LocalItemName = inNewItemName;
 
     if (DataPK > 0) {
-        return await CommonDatasupply.StartFunc({
+        return  CommonDatasupply.StartFuncNoAsync({
             inDataPK: DataPK,
             inFolderName: LocalFolderName,
-            inFileName: LocalFileName,
+            inFileNameOnly: LocalFileName,
             inNewItemName: LocalItemName
         });
         // return await (LocalItemName);

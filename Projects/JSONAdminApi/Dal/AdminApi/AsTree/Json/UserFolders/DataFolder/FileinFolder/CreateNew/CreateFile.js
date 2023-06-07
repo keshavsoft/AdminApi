@@ -1,15 +1,19 @@
-let CommonDatasupply = require("../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigAndData/UserFolder/UserFile/CreateFile");
+let CommonDatasupply = require("../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/DataFolder/UserFolder/UserJsonFile/PushDataToFile/FromInput");
+
+
 let CommonDatasupplyGetFunc = require("../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/getDirectoriesWithCheckAndDelete");
+
 
 let PostFunc = async ({ DataPK, inFolderName, inNewFileName }) => {
     let LocalFolderName = inFolderName;
     let LocalFileName = inNewFileName;
 
     if (DataPK > 0) {
-        return await CommonDatasupply.StartFunc({
-            DataPK,
-            FolderName: LocalFolderName,
-            NewFileName: LocalFileName
+        return await CommonDatasupply.CreateFileWithData({
+            inDataPK: DataPK,
+            inFolderName: LocalFolderName,
+            inFileNameOnly: LocalFileName,
+            inData: {}
         });
         // return await (inFileName)
     };
