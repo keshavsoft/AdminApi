@@ -36,12 +36,10 @@ let DeleteFunc = async ({ DataPK, inFolderName, inNewFileName }) => {
 };
 
 let GetFunc = async ({ DataPK }) => {
-
     if (DataPK > 0) {
         return await CommonDatasupplyGetFunc.AsObject({
             inDataPK: DataPK
         });
-        // return await (inFileName)
     };
 };
 
