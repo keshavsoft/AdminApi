@@ -5,6 +5,6 @@ content-type: application/json
   
  "FolderName": "Masters",
     "FileName": "Items",
-    "ItemName": "ItemsNames",
+    "ItemName": "ItemNames",
     "NewScreenName": "Create"
 }
