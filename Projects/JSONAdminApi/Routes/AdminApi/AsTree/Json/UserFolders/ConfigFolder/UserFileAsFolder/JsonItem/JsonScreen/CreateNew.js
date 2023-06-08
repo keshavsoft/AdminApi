@@ -1,8 +1,8 @@
 let express = require("express");
 let router = express.Router();
 
-let CommonCreateFile = require("./CreateNew/CreateFile");
+let CommonCreateScreen = require("./CreateNew/CreateScreen");
 
-router.use("/CreateFile", CommonCreateFile);
+router.use("/CreateScreen", CommonCreateScreen);
 
 module.exports = router;

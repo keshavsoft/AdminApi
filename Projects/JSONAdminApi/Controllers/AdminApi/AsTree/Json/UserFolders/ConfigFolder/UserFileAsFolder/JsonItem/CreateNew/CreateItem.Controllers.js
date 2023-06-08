@@ -13,12 +13,14 @@ let GetFunc = async (req, res) => {
 let PostFunc = async (req, res) => {
     let LocalDataPk = req.KeshavSoft.DataPk;
     let LocalFolderName = req.body.FolderName;
-    let LocalFileName = req.body.NewFileName;
+    let LocalFileName = req.body.FileName;
+    let LocalNewItemName = req.body.NewItemName;
 
     let LocalFromRepo = await Repos.PostFunc({
         DataPK: LocalDataPk,
         inFolderName: LocalFolderName,
-        inNewFileName: LocalFileName
+        inFileName: LocalFileName,
+        inNewItemName: LocalNewItemName
     });
 
     res.json(LocalFromRepo);

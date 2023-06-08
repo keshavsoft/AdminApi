@@ -7,13 +7,15 @@ exports.GetFunc = async ({ DataPK }) => {
     });
 };
 
-exports.PostFunc = async ({ DataPK, inFolderName, inNewFileName }) => {
+exports.PostFunc = async ({ DataPK, inFolderName, inFileName, inNewItemName }) => {
     let LocalFolderName = inFolderName;
-    let LocalFileName = inNewFileName;
+    let LocalFileName = inFileName;
+    let LocalinNewItemName = inNewItemName;
 
     return await Dal.PostFunc({
         DataPK, inFolderName: LocalFolderName,
-        inNewFileName: LocalFileName
+        inFileName: LocalFileName,
+        inNewItemName: LocalinNewItemName
     });
 };
 
