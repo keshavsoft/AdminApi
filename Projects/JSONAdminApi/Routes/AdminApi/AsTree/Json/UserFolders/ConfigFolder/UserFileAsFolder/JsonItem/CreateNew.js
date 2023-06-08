@@ -1,8 +1,8 @@
 let express = require("express");
 let router = express.Router();
 
-let CommonCreateFile = require("./CreateNew/CreateFile");
+let CommonCreateItem = require("./CreateNew/CreateItem");
 
-router.use("/CreateFile", CommonCreateFile);
+router.use("/CreateItem", CommonCreateItem);
 
 module.exports = router;

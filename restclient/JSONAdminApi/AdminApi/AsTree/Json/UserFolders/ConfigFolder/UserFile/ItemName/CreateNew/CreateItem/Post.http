@@ -2,7 +2,7 @@ POST  http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/Config
 content-type: application/json
 
 {
-     "FolderName": "Transactions",
-    "FileName": "All",
-    "NewItemName": "ACCOUNT-OPENINGS"
+     "FolderName": "Masters",
+    "FileName": "Items",
+    "NewItemName": "ItemsNames"
 }
