@@ -11,15 +11,17 @@ let GetFunc = async ({ DataPK }) => {
     };
 };
 
-let PostFunc = async ({ DataPK, inFolderName, inNewFileName }) => {
+let PostFunc = async ({ DataPK, inFolderName, inFileName, inNewItemName }) => {
     let LocalFolderName = inFolderName;
-    let LocalFileName = inNewFileName;
+    let LocalFileName = inFileName;
+    let LocalinNewItemName = inNewItemName;
 
     if (DataPK > 0) {
         return await CommonDatasupply.StartFunc({
             inDataPK: DataPK,
-            FolderName: LocalFolderName,
-            NewFileName: LocalFileName
+            inFolderName: LocalFolderName,
+            inFileNameOnly: LocalFileName,
+            inItemName: LocalinNewItemName
         });
         // return await (inFileName)
     };
