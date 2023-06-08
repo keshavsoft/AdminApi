@@ -3,10 +3,10 @@ content-type: application/json
 
 {
    
- "FolderName": "Masters",
-    "FileName": "Items",
-    "ItemName": "ItemNames",
-    "ScreenName": "Create",
+ "FolderName": "Transactions",
+    "FileName": "All",
+    "ItemName": "ACCOUNT-OPENINGS",
+    "NewScreenName": "Create",
    "NewColumnName": "ItemName"
   
  

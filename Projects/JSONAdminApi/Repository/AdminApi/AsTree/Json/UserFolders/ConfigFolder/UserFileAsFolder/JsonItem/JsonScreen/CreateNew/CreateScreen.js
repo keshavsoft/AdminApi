@@ -3,17 +3,21 @@ let Dal = require("../../../../../../../../../../Dal/AdminApi/AsTree/Json/UserFo
 exports.GetFunc = async ({ DataPK }) => {
 
     return await Dal.GetFunc({
-        DataPK,
+        DataPK
     });
 };
 
-exports.PostFunc = async ({ DataPK, inFolderName, inNewFileName }) => {
+exports.PostFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inNewFileName }) => {
     let LocalFolderName = inFolderName;
-    let LocalFileName = inNewFileName;
+    let LocalFileName = inFileName;
+    let LocalinItemName = inItemName;
+    let LocalinNewFileName = inNewFileName;
 
     return await Dal.PostFunc({
         DataPK, inFolderName: LocalFolderName,
-        inNewFileName: LocalFileName
+        inFileName: LocalFileName,
+        inItemName: LocalinItemName,
+        inNewScreenName: LocalinNewFileName
     });
 };
 
