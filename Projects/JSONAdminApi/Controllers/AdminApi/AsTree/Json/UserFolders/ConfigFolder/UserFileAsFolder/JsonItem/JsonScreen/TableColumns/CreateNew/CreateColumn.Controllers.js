@@ -14,7 +14,7 @@ let PostFunc = async (req, res) => {
       inFolderName: LocalFolderName,
       inFileName: LocalFileName,
       inItemName: LocalItemName,
-      inNewScreenName:LocalScreenName,
+      inScreenName:LocalScreenName,
       inNewColumnName:LocalNewColumnName
 
    });
