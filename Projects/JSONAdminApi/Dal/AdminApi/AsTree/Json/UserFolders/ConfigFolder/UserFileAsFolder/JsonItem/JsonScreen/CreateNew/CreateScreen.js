@@ -20,11 +20,12 @@ let PostFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inNewScree
 
     if (DataPK > 0) {
         return await CommonDatasupply.StartFuncNoSync({
-            inDataPK: DataPK,
-            inFolderName: LocalFolderName,
-            inFileNameOnly: LocalFileName,
-            inItemName: LocalinItemName,
-            inScreenName: LocalNewScreenName
+            DataPk: DataPK,
+            FolderName: LocalFolderName,
+            FileName: LocalFileName,
+            ItemName: LocalinItemName,
+            NewScreenName: LocalNewScreenName
+
         });
         // return await (inFileName)
     };

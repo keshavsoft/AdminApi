@@ -7,19 +7,18 @@ exports.GetFunc = async ({ DataPK }) => {
     });
 };
 
-exports.PostFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inScreenName, inNewColumnName }) => {
+exports.PostFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inNewScreenName }) => {
     let LocalFolderName = inFolderName;
     let LocalFileName = inFileName;
     let LocalinItemName = inItemName;
-    let LocalScreenName = inScreenName;
-    let LocalinNewColumnName = inNewColumnName;
+    let LocalNewScreenName = inNewScreenName;
 
     return await Dal.PostFunc({
-        DataPK, inFolderName: LocalFolderName,
+        DataPK,
+        inFolderName: LocalFolderName,
         inFileName: LocalFileName,
         inItemName: LocalinItemName,
-        inScreenName: LocalScreenName,
-        inNewColumnName:LocalinNewColumnName
+        inNewScreenName: LocalNewScreenName
     });
 };
 
