@@ -1,11 +1,12 @@
-let CommonDatasupply = require("../../../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigAndData/UserFolder/UserFile/ItemName/ScreenName/TableColumns/CreateColumn");
+// let CommonDatasupply = require("../../../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigAndData/UserFolder/UserFile/ItemName/ScreenName/TableColumns/CreateColumn");
+let CommonDatasupply = require("../../../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/UserFolder/UserFileAsFolder/DisplayJsonFile/ItemName/ScreenName/TableColumns/CreateNew/InsertNewColumn");
 
-let PostFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inNewScreenName, inNewColumnName }) => {
+let PostFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inScreenName, inNewColumnName }) => {
 
     let LocalFolderName = inFolderName;
     let LocalFileName = inFileName;
     let LocalItemName = inItemName;
-    let LocalScreenName = inNewScreenName;
+    let LocalScreenName = inScreenName;
     let LocalNewColumnName = inNewColumnName;
 
     let LocalFromDataSupply;
@@ -14,7 +15,7 @@ let PostFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inNewScree
         LocalFromDataSupply = await CommonDatasupply.StartFunc({
             inDataPK: DataPK,
             inFolderName: LocalFolderName,
-            inFileName: LocalFileName,
+            inFileNameOnly: LocalFileName,
             inItemName: LocalItemName,
             inScreenName: LocalScreenName,
             inNewColumnName: LocalNewColumnName

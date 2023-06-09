@@ -1,13 +1,13 @@
-POST  http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ConfigAndDataFolders/UserFile/ItemName/ScreenName/TableColumns/CreateNew/CreateColumn
+POST  http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ConfigFolder/UserFileAsFolder/JsonItem/JsonScreen/TableColumns/CreateNew/CreateColumn
 content-type: application/json
 
 {
    
  "FolderName": "Transactions",
-    "FileName": "All",
+    "FileName": "Sales",
     "ItemName": "ACCOUNT-OPENINGS",
-    "NewScreenName": "Create",
-   "NewColumnName": "ItemName"
+    "ScreenName": "Create",
+   "NewColumnName": "CustomerNumber"
   
  
 }
