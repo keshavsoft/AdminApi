@@ -1,4 +1,4 @@
-// let CommonDatasupply = require("../../../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigAndData/UserFolder/UserFile/ItemName/ScreenName/TableColumns/CreateColumn");
+let CommonDatasupplyGetFunc = require("../../../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/getDirectoriesWithCheckAndDelete");
 let CommonDatasupply = require("../../../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/UserFolder/UserFileAsFolder/DisplayJsonFile/ItemName/ScreenName/TableColumns/CreateNew/InsertNewColumn");
 
 let PostFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inScreenName, inNewColumnName }) => {
@@ -51,24 +51,11 @@ let DeleteFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inNewScr
     return await LocalFromDataSupply;
 };
 
-let GetFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inNewScreenName }) => {
-    let LocalFolderName = inFolderName;
-    let LocalFileName = inFileName;
-    let LocalItemName = inItemName;
-    let LocalScreenName = inNewScreenName;
-    let LocalNewColumnName = inNewColumnName;
-
-
-    let LocalFromDataSupply;
+let GetFunc = async ({ DataPK }) => {
 
     if (DataPK > 0) {
-        LocalFromDataSupply = await CommonDatasupply.StartFunc({
-            inDataPK: DataPK,
-            inFolderName: LocalFolderName,
-            inFileName: LocalFileName,
-            inItemName: LocalItemName,
-            inScreenName: LocalScreenName,
-            inNewColumnName: LocalNewColumnName
+        LocalFromDataSupply = await CommonDatasupplyGetFunc.AsObject({
+            inDataPK: DataPK
 
         });
     };
