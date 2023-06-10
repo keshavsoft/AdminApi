@@ -11,7 +11,7 @@ let PostFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inNewScree
 
     if (DataPK > 0) {
         LocalFromDataSupply = await CommonDatasupply.StartFunc({
-            DataPk: DataPK,
+            DataPK,
             FolderName: LocalFolderName,
             FileName: LocalFileName,
             ItemName: LocalItemName,
