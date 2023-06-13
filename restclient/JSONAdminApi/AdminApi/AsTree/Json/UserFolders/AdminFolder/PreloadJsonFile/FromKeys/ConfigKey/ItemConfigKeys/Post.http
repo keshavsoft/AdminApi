@@ -1,0 +1,6 @@
+POST  http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/AdminFolder/PreloadJsonFile/FromKeys/Delete
+content-type: application/json
+
+{
+    "NewFolderName":"Accounts"
+}
