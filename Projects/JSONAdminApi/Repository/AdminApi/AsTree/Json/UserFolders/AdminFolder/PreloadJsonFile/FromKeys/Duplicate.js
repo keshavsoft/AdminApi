@@ -1,10 +1,13 @@
 let Dal = require("../../../../../../../../Dal/AdminApi/AsTree/Json/UserFolders/AdminFolder/PreloadJsonFile/FromKeys/Duplicate");
 
-exports.PostFunc = async ({ DataPK, inFolderName }) => {
-    let LocalFolderName = inFolderName;
+exports.PostFunc = async ({ DataPK, fromKeyName, inNewKeyName }) => {
 
+    let LocalfromKeyName = fromKeyName;
+    let LocalinNewKeyName = inNewKeyName;
     return await Dal.PostFunc({
-        DataPK, inFolderName: LocalFolderName
+        DataPK,
+        fromKeyName: LocalfromKeyName,
+        inNewKeyName: LocalinNewKeyName
     });
 };
 
