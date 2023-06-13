@@ -1,17 +1,17 @@
-// let CommonDatasupply = require("../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigAndData/UserFolder/CreateFolder");
-// let CommonDatasupplyDeleteFolder = require("../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigAndData/UserFolder/DeleteFolder");
-// let CommonDatasupplyGetFunc = require("../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/getDirectoriesWithCheckAndDelete");
+let CommonDatasupplyGetFunc = require("../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/AdminFolder/PreloadJsonFile/FromKey/Duplicate/GetFunc");
+let CommonDatasupplyPostFunc = require("../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/AdminFolder/PreloadJsonFile/FromKey/Duplicate/FromKey");
 
-let PostFunc = async ({ DataPK, inFolderName }) => {
-    return await "From DAL";
-    // let LocalFolderName = inFolderName;
+let PostFunc = async ({ DataPK, fromKeyName, inNewKeyName }) => {
+    let LocalfromKeyName = fromKeyName;
+    let LocalinNewKeyName = inNewKeyName;
 
-    // if (DataPK > 0) {
-    //     return await CommonDatasupply.StartFunc({
-    //         inDataPK: DataPK,
-    //         inFolderName: LocalFolderName
-    //     });
-    // };
+    if (DataPK > 0) {
+        return await CommonDatasupplyPostFunc.StartFunc({
+            DataPK,
+            fromKeyName: LocalfromKeyName,
+            inNewKeyName: LocalinNewKeyName
+        });
+    };
 };
 
 let DeleteFunc = async ({ DataPK, inFolderName }) => {
@@ -27,13 +27,12 @@ let DeleteFunc = async ({ DataPK, inFolderName }) => {
 };
 
 let GetFunc = async ({ DataPK }) => {
-    return await "From DAL";
 
-    // if (DataPK > 0) {
-    //     return await CommonDatasupplyGetFunc.AsObject({
-    //         inDataPK: DataPK
-    //     });
-    // };
+    if (DataPK > 0) {
+        return await CommonDatasupplyGetFunc.StartFunc({
+            DataPK
+        });
+    };
 };
 
 module.exports = {

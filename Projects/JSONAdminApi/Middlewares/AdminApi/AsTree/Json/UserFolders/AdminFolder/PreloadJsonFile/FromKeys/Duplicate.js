@@ -10,16 +10,21 @@ exports.PostFunc = (req, res, next) => {
             KTF: false,
             KReason: "post requst body should contain : ",
             body: {
-                NewFolderName: ""           
+                fromKeyName: "",
+                inNewKeyName: ""
             },
         });
         return;
     };
-    
-    if (("NewFolderName" in req.body) === false) {
-        res.json({ KTF: false, KReason: "NewFolderName not found in body" })
+    if (("fromKeyName" in req.body) === false) {
+        res.json({ KTF: false, KReason: "fromKeyName not found in body" })
         return;
-    };   
+    };
+
+    if (("inNewKeyName" in req.body) === false) {
+        res.json({ KTF: false, KReason: "inNewKeyName not found in body" })
+        return;
+    };
     next();
 };
 
@@ -34,16 +39,16 @@ exports.DeleteFunc = (req, res, next) => {
             KTF: false,
             KReason: "post requst body should contain : ",
             body: {
-                DeleteFolderName: ""           
+                DeleteFolderName: ""
             },
         });
         return;
     };
-    
+
     if (("DeleteFolderName" in req.body) === false) {
         res.json({ KTF: false, KReason: "DeleteFolderName not found in body" })
         return;
-    };   
+    };
     next();
 };
 
@@ -58,16 +63,16 @@ exports.GetFunc = (req, res, next) => {
             KTF: false,
             KReason: "post requst body should contain : ",
             body: {
-                
-                NewFolderName: ""           
+
+                NewFolderName: ""
             },
         });
         return;
     };
-    
+
     if (("DeleteFolderName" in req.body) === false) {
         res.json({ KTF: false, KReason: "DeleteFolderName not found in body" })
         return;
-    };   
+    };
     next();
 };
