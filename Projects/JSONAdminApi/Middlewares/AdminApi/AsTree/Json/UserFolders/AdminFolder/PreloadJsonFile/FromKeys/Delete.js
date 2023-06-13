@@ -59,14 +59,14 @@ exports.GetFunc = (req, res, next) => {
             KReason: "post requst body should contain : ",
             body: {
                 
-                NewFolderName: ""           
+                DataPk: ""           
             },
         });
         return;
     };
     
-    if (("DeleteFolderName" in req.body) === false) {
-        res.json({ KTF: false, KReason: "DeleteFolderName not found in body" })
+    if (("DataPk" in req.body) === false) {
+        res.json({ KTF: false, KReason: "DataPk not found in body" })
         return;
     };   
     next();
