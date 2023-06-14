@@ -1,10 +1,11 @@
 let Dal = require("../../../../../../../../Dal/AdminApi/AsTree/Json/UserFolders/AdminFolder/PreloadJsonFile/CreateNew/InsertKey");
 
-exports.PostFunc = async ({ DataPK, inFolderName }) => {
-    let LocalFolderName = inFolderName;
+exports.PostFunc = async ({ DataPK, inNewKeyName }) => {
+    let LocalinNewKeyName = inNewKeyName;
 
     return await Dal.PostFunc({
-        DataPK, inFolderName: LocalFolderName
+        DataPK,
+        inNewKeyName: LocalinNewKeyName
     });
 };
 

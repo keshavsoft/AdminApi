@@ -2,5 +2,5 @@ POST  http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/AdminF
 content-type: application/json
 
 {
-    "NewFolderName":"ss"
+    "inNewKeyName":"HHHHHHHHHHHHHH"
 }

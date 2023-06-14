@@ -3,11 +3,11 @@ let Repos = require("../../../../../../../../Repository/AdminApi/AsTree/Json/Use
 let PostFunc = async (req, res) => {
     res.end("FromPost")
     let LocalDataPk = req.KeshavSoft.DataPk;
-    let LocalFolderName = req.body.NewFolderName;
+    let LocalinNewKeyName = req.body.inNewKeyName;
 
     let LocalFromRepo = await Repos.PostFunc({
         DataPK: LocalDataPk,
-        inFolderName: LocalFolderName
+        inNewKeyName: LocalinNewKeyName
     });
 
     res.json(LocalFromRepo);
