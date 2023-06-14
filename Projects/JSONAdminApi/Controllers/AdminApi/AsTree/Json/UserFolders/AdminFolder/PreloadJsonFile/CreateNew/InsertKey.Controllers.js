@@ -1,7 +1,6 @@
 let Repos = require("../../../../../../../../Repository/AdminApi/AsTree/Json/UserFolders/AdminFolder/PreloadJsonFile/CreateNew/InsertKey");
 
 let PostFunc = async (req, res) => {
-    res.end("FromPost")
     let LocalDataPk = req.KeshavSoft.DataPk;
     let LocalinNewKeyName = req.body.inNewKeyName;
 
