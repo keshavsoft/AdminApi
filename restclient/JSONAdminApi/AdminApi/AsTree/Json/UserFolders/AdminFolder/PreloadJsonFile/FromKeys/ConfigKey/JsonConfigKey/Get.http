@@ -1,0 +1,4 @@
+GET http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/AdminFolder/PreloadJsonFile/FromKeys/ConfigKey/JsonConfigKey
+content-type: application/json
+   
+{}

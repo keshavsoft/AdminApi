@@ -1,0 +1,7 @@
+DELETE  http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/AdminFolder/PreloadJsonFile/FromKeys/Duplicate
+Cookie: KToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IjkwMiIsIkRhdGFQayI6OTAyLCJpYXQiOjE2ODY3MzI0OTV9.ovuo1-Zt8tBt6A3qwYCfILOQoQbVGOw9mn9Dj2jNbLc
+content-type: application/json
+
+{
+    "DeleteFolderName": "Sales"
+}
