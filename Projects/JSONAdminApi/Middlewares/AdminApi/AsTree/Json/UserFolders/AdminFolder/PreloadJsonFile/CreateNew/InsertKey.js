@@ -10,14 +10,14 @@ exports.PostFunc = (req, res, next) => {
             KTF: false,
             KReason: "post requst body should contain : ",
             body: {
-                NewFolderName: ""           
+                inNewKeyName: ""           
             },
         });
         return;
     };
     
-    if (("NewFolderName" in req.body) === false) {
-        res.json({ KTF: false, KReason: "NewFolderName not found in body" })
+    if (("inNewKeyName" in req.body) === false) {
+        res.json({ KTF: false, KReason: "inNewKeyName not found in body" })
         return;
     };   
     next();
