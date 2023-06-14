@@ -28,7 +28,7 @@ let DeleteFunc = async (req, res) => {
 };
 
 let GetFunc = async (req, res) => {
-    console.log("jat8");
+    console.log("jat---------------");
     let LocalDataPk = req.KeshavSoft.DataPk;
 
     let LocalFromRepo = await Repos.GetFunc({
