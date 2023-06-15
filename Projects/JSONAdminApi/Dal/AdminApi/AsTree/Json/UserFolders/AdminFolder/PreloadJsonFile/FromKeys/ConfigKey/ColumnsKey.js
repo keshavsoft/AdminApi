@@ -16,14 +16,14 @@ let PostFunc = async ({ DataPK, inKeyName, inBodyAsJson }) => {
 };
 
 let DeleteFunc = async ({ DataPK, inFolderName }) => {
-    let LocalFolderName = inFolderName;
+    // let LocalFolderName = inFolderName;
 
-    if (DataPK > 0) {
-        return await CommonDatasupplyDeleteFolder.StartFunc({
-            inDataPK: DataPK,
-            inFolderName: LocalFolderName
-        });
-    };
+    // if (DataPK > 0) {
+    //     return await CommonDatasupplyDeleteFolder.StartFunc({
+    //         inDataPK: DataPK,
+    //         inFolderName: LocalFolderName
+    //     });
+    // };
 };
 
 let GetFunc = async ({ DataPK }) => {
