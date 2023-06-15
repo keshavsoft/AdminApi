@@ -1,0 +1,8 @@
+PATCH http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ScreensFromDisplayJson/TableInfo/SubMenu/SearchRowArray/Button/NewWindow
+Cookie: KToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IktJUkFOQSIsIkRhdGFQayI6MjAsImlhdCI6MTY4NTUxOTU4NX0.V6z0lVNSFIki3ppSDYMVDr9DcPYScF1Vw5L6kc0bris
+content-type: application/json
+
+{
+
+}
+  
