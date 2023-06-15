@@ -1,17 +1,18 @@
-// let CommonDatasupply = require("../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigAndData/UserFolder/CreateFolder");
-let CommonDatasupplyDeleteFolder = require("../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/AdminFolder/PreloadJsonFile/FromKey/Delete/FromKey");
-//let CommonDatasupplyGetFunc = require("../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/AdminFolder/PreloadJsonFile/ItemConfig/CheckItemConfig");
+let CommonDatasupply = require("../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/AdminFolder/PreloadJsonFile/DataListInfo/Update");
+// let CommonDatasupplyDeleteFolder = require("../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/AdminFolder/PreloadJsonFile/FromKey/Delete/FromKey");
+let CommonDatasupplyGetFunc = require("../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/AdminFolder/PreloadJsonFile/FromKey/Duplicate/GetFunc");
 
-let PostFunc = async ({ DataPK, inFolderName }) => {
-    return await "From DAL";
-    // let LocalFolderName = inFolderName;
+let PostFunc = async ({ DataPK, inKeyName, inBodyAsJson  }) => {
+    let localinKeyName = inKeyName;
+    let LocalBodyAsJson = inBodyAsJson;
 
-    // if (DataPK > 0) {
-    //     return await CommonDatasupply.StartFunc({
-    //         inDataPK: DataPK,
-    //         inFolderName: LocalFolderName
-    //     });
-    // };
+    if (DataPK > 0) {
+        return await CommonDatasupply.StartFunc({
+            DataPK,
+            KeyName: localinKeyName,
+            BodyAsJson: LocalBodyAsJson
+        });
+    };
 };
 
 let DeleteFunc = async ({ DataPK, inFolderName }) => {
@@ -26,13 +27,11 @@ let DeleteFunc = async ({ DataPK, inFolderName }) => {
 };
 
 let GetFunc = async ({ DataPK }) => {
-    return await "From DAL";
-    // if (DataPK > 0) {
-    //     return await CommonDatasupplyGetFunc.StartFunc({
-    //         DataPK,
-    //         KeyName
-    //     });
-    // };
+    if (DataPK > 0) {
+        return await CommonDatasupplyGetFunc.StartFunc({
+            DataPK
+        });
+    };
 };
 
 module.exports = {
