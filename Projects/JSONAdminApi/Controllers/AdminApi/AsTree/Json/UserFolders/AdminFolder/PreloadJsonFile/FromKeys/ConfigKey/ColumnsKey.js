@@ -1,13 +1,14 @@
 let Repos = require("../../../../../../../../../Repository/AdminApi/AsTree/Json/UserFolders/AdminFolder/PreloadJsonFile/FromKeys/ConfigKey/ColumnsKey");
 
 let PostFunc = async (req, res) => {
-    res.end("FromPost")
     let LocalDataPk = req.KeshavSoft.DataPk;
-    let LocalFolderName = req.body.NewFolderName;
+    let LocalKeyName = req.body.KeyName;
+    let LocalBodyAsJson = req.body.BodyAsJson;
 
     let LocalFromRepo = await Repos.PostFunc({
-        DataPK: LocalDataPk,
-        inFolderName: LocalFolderName
+        iDataPK: LocalDataPk,
+        inKeyName: LocalKeyName,
+        inBodyAsJson: LocalBodyAsJson
     });
 
     res.json(LocalFromRepo);
@@ -28,7 +29,6 @@ let DeleteFunc = async (req, res) => {
 };
 
 let GetFunc = async (req, res) => {
-    console.log("jat8");
     let LocalDataPk = req.KeshavSoft.DataPk;
 
     let LocalFromRepo = await Repos.GetFunc({

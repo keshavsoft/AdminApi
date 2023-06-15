@@ -1,10 +1,13 @@
 let Dal = require("../../../../../../../../../Dal/AdminApi/AsTree/Json/UserFolders/AdminFolder/PreloadJsonFile/FromKeys/ConfigKey/ColumnsKey");
 
-exports.PostFunc = async ({ DataPK, inFolderName }) => {
-    let LocalFolderName = inFolderName;
+exports.PostFunc = async ({ DataPK, inKeyName, inBodyAsJson  }) => {
+    let localinKeyName = inKeyName;
+    let LocalBodyAsJson = inBodyAsJson;
 
     return await Dal.PostFunc({
-        DataPK, inFolderName: LocalFolderName
+        DataPK,
+        inKeyName: localinKeyName,
+        inBodyAsJson: LocalBodyAsJson
     });
 };
 

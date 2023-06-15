@@ -3,7 +3,7 @@ var router = express.Router();
 let CommonControllers = require("../../../../../../../../../Controllers/AdminApi/AsTree/Json/UserFolders/AdminFolder/PreloadJsonFile/FromKeys/ConfigKey/ColumnsKey");
 let CommonMiddlewares = require("../../../../../../../../../Middlewares/AdminApi/AsTree/Json/UserFolders/AdminFolder/PreloadJsonFile/FromKeys/ConfigKey/ColumnsKey");
 
-router.post('/', CommonMiddlewares.PostFunc, CommonControllers.PostFunc);
+router.post('/', CommonControllers.PostFunc);
 router.delete('/', CommonMiddlewares.DeleteFunc, CommonControllers.DeleteFunc);
 router.get('/', CommonControllers.GetFunc);
 
