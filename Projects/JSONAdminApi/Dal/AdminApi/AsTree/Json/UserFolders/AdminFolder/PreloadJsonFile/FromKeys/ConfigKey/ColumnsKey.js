@@ -2,15 +2,15 @@ let CommonDatasupply = require("../../../../../../../../../../../DataSupply/Fs/C
 // let CommonDatasupplyDeleteFolder = require("../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/AdminFolder/PreloadJsonFile/FromKey/Delete/FromKey");
 let CommonDatasupplyGetFunc = require("../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/AdminFolder/PreloadJsonFile/FromKey/Duplicate/GetFunc");
 
-let PostFunc = async ({ DataPK, inKeyName, inBodyAsJson }) => {
+let PostFunc = async ({ DataPK, inKeyName, inArrayAsString }) => {
     let localinKeyName = inKeyName;
-    let LocalBodyAsJson = inBodyAsJson;
+    let LocalinArrayAsString = inArrayAsString;
 
     if (DataPK > 0) {
         return await CommonDatasupply.StartFunc({
             DataPK,
             KeyName: localinKeyName,
-            BodyAsJson: LocalBodyAsJson
+            inArrayAsString: LocalinArrayAsString
         });
     };
 };
