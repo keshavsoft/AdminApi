@@ -1,6 +1,6 @@
 let CommonDatasupply = require("../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/AdminFolder/PreloadJsonFile/FromKey/InsertNew/FromKeys");
 // let CommonDatasupplyDeleteFolder = require("../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigAndData/UserFolder/DeleteFolder");
-// let CommonDatasupplyGetFunc = require("../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/getDirectoriesWithCheckAndDelete");
+let CommonDatasupplyGetFunc = require("../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/AdminFolder/PreloadJsonFile/FromKey/Duplicate/GetFunc");
 
 let PostFunc = async ({ DataPK, inNewKeyName }) => {
 
@@ -27,13 +27,12 @@ let DeleteFunc = async ({ DataPK, inFolderName }) => {
 };
 
 let GetFunc = async ({ DataPK }) => {
-    return await "From DAL";
 
-    // if (DataPK > 0) {
-    //     return await CommonDatasupplyGetFunc.AsObject({
-    //         inDataPK: DataPK
-    //     });
-    // };
+    if (DataPK > 0) {
+        return await CommonDatasupplyGetFunc.StartFunc({
+         DataPK
+        });
+    };
 };
 
 module.exports = {
