@@ -13,12 +13,12 @@ let PostFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inScreenNa
 
     if (DataPK > 0) {
         LocalFromDataSupply = await CommonDatasupply.StartFunc({
-            inDataPK: DataPK,
-            inFolderName: LocalFolderName,
-            inFileNameOnly: LocalFileName,
-            inItemName: LocalItemName,
-            inScreenName: LocalScreenName,
-            inNewColumnName: LocalNewColumnName
+            DataPK,
+            FolderName: LocalFolderName,
+            FileName: LocalFileName,
+            ItemName: LocalItemName,
+            ScreenName: LocalScreenName,
+            NewColumnName: LocalNewColumnName
 
         });
     };
