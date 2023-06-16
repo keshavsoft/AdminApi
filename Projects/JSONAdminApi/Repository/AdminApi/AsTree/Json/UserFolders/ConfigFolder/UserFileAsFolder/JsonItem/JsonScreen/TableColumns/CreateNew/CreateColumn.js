@@ -1,17 +1,17 @@
-let Dal = require("../../../../../../../../../../../Dal/AdminApi/AsTree/Json/UserFolders/ConfigAndDataFolders/UserFile/ItemName/ScreenName/TableColumns/CreateNew/CreateColumn");
+let Dal = require("../../../../../../../../../../../Dal/AdminApi/AsTree/Json/UserFolders/ConfigFolder/UserFileAsFolder/JsonItem/JsonScreen/TableColumns/CreateNew/CreateColumn");
 
-exports.PostFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inNewScreenName, inNewColumnName }) => {
+exports.PostFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inScreenName, inNewColumnName }) => {
     let LocalFolderName = inFolderName;
     let LocalFileName = inFileName;
     let LocalItemName = inItemName;
-    let LocalScreenName = inNewScreenName;
+    let LocalScreenName = inScreenName;
     let LocalNewColumnName = inNewColumnName;
 
     return await Dal.PostFunc({
         DataPK, inFolderName: LocalFolderName,
         inFileName: LocalFileName,
         inItemName: LocalItemName,
-        inNewScreenName: LocalScreenName,
+        inScreenName: LocalScreenName,
         inNewColumnName: LocalNewColumnName
     });
 };

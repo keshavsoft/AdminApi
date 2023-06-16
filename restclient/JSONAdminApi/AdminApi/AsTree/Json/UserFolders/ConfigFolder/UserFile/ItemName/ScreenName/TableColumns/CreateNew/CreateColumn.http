@@ -3,11 +3,11 @@ content-type: application/json
 
 {
    
- "FolderName": "Transactions",
-    "FileName": "Sales",
-    "ItemName": "ACCOUNT-OPENINGS",
+"FolderName": "Transactions",
+    "FileName": "GST-SALES",
+    "ItemName": "GST-SALE",
     "ScreenName": "Create",
-   "NewColumnName": "CustomerNumber"
+    "NewColumnName": "sreeeee"
   
  
 }
