@@ -1,7 +1,6 @@
 let Repos = require("../../../../../../../../../../../Repository/AdminApi/AsTree/Json/UserFolders/ConfigFolder/UserFileAsFolder/JsonItem/JsonScreen/TableColumns/CreateNew/CreateColumn");
 
 let PostFunc = async (req, res) => {
-
    let LocalDataPk = req.KeshavSoft.DataPk;
    let LocalFolderName = req.body.FolderName;
    let LocalFileName = req.body.FileName;
@@ -14,13 +13,11 @@ let PostFunc = async (req, res) => {
       inFolderName: LocalFolderName,
       inFileName: LocalFileName,
       inItemName: LocalItemName,
-      inScreenName:LocalScreenName,
-      inNewColumnName:LocalNewColumnName
-
+      inScreenName: LocalScreenName,
+      inNewColumnName: LocalNewColumnName
    });
 
    res.json(LocalFromRepo);
-   //res.end("testItme");
 };
 
 let DeleteFunc = async (req, res) => {
@@ -36,9 +33,8 @@ let DeleteFunc = async (req, res) => {
       inFolderName: LocalFolderName,
       inFileName: LocalFileName,
       inItemName: LocalItemName,
-      inNewScreenName:LocalScreenName,
-      inNewColumnName:LocalNewColumnName
-
+      inNewScreenName: LocalScreenName,
+      inNewColumnName: LocalNewColumnName
    });
 
    res.json(LocalFromRepo);
@@ -50,7 +46,6 @@ let GetFunc = async (req, res) => {
 
    let LocalFromRepo = await Repos.GetFunc({
       DataPK: LocalDataPk
-
    });
 
    res.json(LocalFromRepo);
@@ -58,4 +53,4 @@ let GetFunc = async (req, res) => {
 };
 
 
-module.exports = { PostFunc,DeleteFunc,GetFunc };
+module.exports = { PostFunc, DeleteFunc, GetFunc };
