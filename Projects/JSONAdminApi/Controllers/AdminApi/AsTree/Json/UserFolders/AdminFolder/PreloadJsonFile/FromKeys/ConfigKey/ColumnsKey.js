@@ -8,7 +8,7 @@ let PostFunc = async (req, res) => {
     let LocalFromRepo = await Repos.PostFunc({
         DataPK: LocalDataPk,
         inKeyName: LocalKeyName,
-        inBodyAsJson: LocalBodyAsJson
+        inArrayAsString: LocalBodyAsJson
     });
 
     res.json(LocalFromRepo);
