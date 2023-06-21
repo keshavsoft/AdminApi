@@ -2,6 +2,7 @@
 //let CommonDataSupplyForUpdate = require("../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/UserFolder/UserFileAsFolder/DisplayJsonFile/ItemName/ScreenName/SubTableInfo/SubMenu/TableRowOptions/Delete/Update");
 
 let GetFuncs = async ({ DataPK }) => {
+    return "fromdal"
     if (DataPK > 0) {
         return await CommonDatasupply.AsObject({ inDataPK: DataPK });
     };
