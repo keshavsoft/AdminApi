@@ -4,8 +4,22 @@ exports.PatchFuncs = (req, res, next) => {
         res.json({ KTF: false, KReason: "DataPk not found in Request" })
         return;
     }
-    if (("folderName" in req.body) === false) {
-        res.json({ KTF: false, KReason: "folderName not found in Request" })
+    if (Object.keys(req.body).length === 0) {
+        res.json({
+            KTF: false,
+            KReason: "post requst body should contain : ",
+            body: {
+                FolderName: "", 
+                FileName:"", 
+                ItemName:"",
+                ScreenName:"", 
+                GridName:"",
+                BodyAsJson:{}    
+            },
+        })
+    }
+    if (("FolderName" in req.body) === false) {
+        res.json({ KTF: false, KReason: "FolderName not found in Request" })
         return;
     }
     if (("FileName" in req.body) === false) {
