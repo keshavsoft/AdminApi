@@ -1,4 +1,4 @@
-let Repos = require("../../../../../../../../../Repository/AdminApi/AsTree/Json/UserFolders/ScreensFromDisplayJson/TableInfo/SubMenu/TableRowOptions/Delete");
+let Repos = require("../../../../../../../../../Repository/AdminApi/AsTree/Json/UserFolders/ScreensFromDisplayJson/SubTableInfo/SubMenu/TableRowOptions/Delete");
 
 let GetFuncs = async (req, res) => {
     let LocalDataPk = req.KeshavSoft.DataPk;
@@ -16,17 +16,17 @@ let PatchFuncs = async (req, res) => {
     let jVarLocalFileName = req.body.FileName;
     let jVarLocalItemName = req.body.ItemName;
     let jVarLocalScreenName = req.body.ScreenName;
-    let jVarLocalDataAttribute = req.body.DataAttribute;
+    let jVarLocalGridName = req.body.GridName;
     let localUpdateBodyAsJson = req.body.BodyAsJson;
 
     let LocalFromRepo = await Repos.Update({
-        DataPK: LocalDataPk,
-        FolderName: jVarLocalfolderName,
-        FileName: jVarLocalFileName,
-        ItemName: jVarLocalItemName,
-        ScreenName: jVarLocalScreenName,
-        DataAttribute: jVarLocalDataAttribute,
-        BodyAsJson: localUpdateBodyAsJson
+        inDataPK: LocalDataPk,
+        inFolderName: jVarLocalfolderName,
+        inFileName: jVarLocalFileName,
+        inItemName: jVarLocalItemName,
+        inScreenName: jVarLocalScreenName,
+        inGridName: jVarLocalGridName,
+        inBodyAsJson: localUpdateBodyAsJson
     });
 
     if (LocalFromRepo.KTF) {

@@ -1,9 +1,9 @@
-let Dal = require("../../../../../../../../../Dal/AdminApi/AsTree/Json/UserFolders/ScreensFromDisplayJson/TableInfo/SubMenu/TableRowOptions/Delete");
+let Dal = require("../../../../../../../../../Dal/AdminApi/AsTree/Json/UserFolders/ScreensFromDisplayJson/SubTableInfo/SubMenu/TableRowOptions/Delete");
 
 exports.GetFuncs = async ({ DataPK }) => {
     return await Dal.GetFuncs({ DataPK });
 };
 
-exports.Update = async ({ DataPK, FolderName, FileName, ItemName, ScreenName, DataAttribute, BodyAsJson }) => {
-    return await Dal.Update({ DataPK, FolderName, FileName, ItemName, ScreenName, DataAttribute, BodyAsJson })
+exports.Update = async ({ inDataPK, inFolderName, inFileName, inItemName, inScreenName, inGridName, inBodyAsJson }) => {
+    return await Dal.Update({ inDataPK, inFolderName, inFileName, inItemName, inScreenName, inGridName, inBodyAsJson })
 };
