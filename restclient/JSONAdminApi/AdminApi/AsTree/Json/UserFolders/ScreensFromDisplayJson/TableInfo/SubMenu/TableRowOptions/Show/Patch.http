@@ -1,8 +1,16 @@
 PATCH  http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ScreensFromDisplayJson/TableInfo/SubMenu/TableRowOptions/Show
-Cookie: KToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IksxNCIsIkRhdGFQayI6MSwiaWF0IjoxNjg3NDMxNjI4fQ.cy47DZrU4Y4ZpvGBxZC9PDFfIrGxqltRamoXSKQzzlM
+Cookie: KToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IksxNCIsIkRhdGFQayI6MSwiaWF0IjoxNjg3NDMzMjE0fQ.UBCkVqgLBPN7WuiuEDuOIlEiMhfw4IcagkkpNre3zdM
 content-type: application/json
 
-{
-   
+
+   {
+    "folderName": "Transactions",
+    "FileName": "Sales",
+    "ItemName": "Bills",
+    "ScreenName": "Create",
+    "BodyAsJson": {
+        "Rowshow": false
+    }
 }
+
   
