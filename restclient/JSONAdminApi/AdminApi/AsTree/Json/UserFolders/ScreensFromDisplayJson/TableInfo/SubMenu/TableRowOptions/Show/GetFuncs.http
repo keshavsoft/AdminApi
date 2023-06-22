@@ -1,0 +1,6 @@
+GET http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ScreensFromDisplayJson/TableInfo/SubMenu/TableRowOptions/Show
+content-type: application/json
+
+{
+    
+}
