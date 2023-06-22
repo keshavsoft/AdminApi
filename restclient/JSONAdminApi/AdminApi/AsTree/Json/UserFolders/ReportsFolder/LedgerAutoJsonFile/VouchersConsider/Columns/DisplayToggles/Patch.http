@@ -1,0 +1,11 @@
+PATCH  http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ReportsFolder/LedgerAutoJsonFile/VouchersConsider/Columns/DisplayToggles
+Cookie: KToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IksyNSIsIkRhdGFQayI6MSwiaWF0IjoxNjg3MzM0NTIzfQ.nDF6VbD3_rtwA3DmoadXEZGcMbc7E4F1tm0ueVAObhI
+content-type: application/json
+
+{
+   "reportname": "bj",
+    "voucherconsiderpk": "jw",
+    "columnpk": "2",
+    "BodyAsJson": {}
+}
+  
