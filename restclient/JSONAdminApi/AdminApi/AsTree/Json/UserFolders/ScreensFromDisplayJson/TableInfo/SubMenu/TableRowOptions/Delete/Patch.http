@@ -1,0 +1,15 @@
+PATCH  http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ScreensFromDisplayJson/TableInfo/SubMenu/TableRowOptions/Delete
+Cookie: KToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IksxNCIsIkRhdGFQayI6MSwiaWF0IjoxNjg3NDMxNjI4fQ.cy47DZrU4Y4ZpvGBxZC9PDFfIrGxqltRamoXSKQzzlM
+content-type: application/json
+
+{
+        "folderName": "credits",
+    "FileName": "GST-SALES",
+    "ItemName": "GST-SALE",
+    "ScreenName": "Delete",
+    "DataAttribute": "",
+    "BodyAsJson": {"Simple": false}
+
+   
+}
+  
