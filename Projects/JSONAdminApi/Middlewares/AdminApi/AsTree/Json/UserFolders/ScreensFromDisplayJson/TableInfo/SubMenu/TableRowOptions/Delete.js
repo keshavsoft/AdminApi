@@ -22,7 +22,6 @@ exports.PatchFuncs = (req, res, next) => {
                 FileName: "",
                 ItemName: "",
                 ScreenName: "",
-                DataAttribute: "",
                 BodyAsJson: {}
             },
         });
@@ -45,11 +44,6 @@ exports.PatchFuncs = (req, res, next) => {
 
     if (("ScreenName" in req.body) === false) {
         res.json({ KTF: false, KReason: " ScreenName not found in body" })
-        return;
-    };
-
-    if (("DataAttribute" in req.body) === false) {
-        res.json({ KTF: false, KReason: "DataAttribute not found in body" })
         return;
     };
 

@@ -16,7 +16,6 @@ let PatchFuncs = async (req, res) => {
     let jVarLocalFileName = req.body.FileName;
     let jVarLocalItemName = req.body.ItemName;
     let jVarLocalScreenName = req.body.ScreenName;
-    let jVarLocalDataAttribute = req.body.DataAttribute;
     let localUpdateBodyAsJson = req.body.BodyAsJson;
 
     let LocalFromRepo = await Repos.Update({
@@ -25,7 +24,6 @@ let PatchFuncs = async (req, res) => {
         FileName: jVarLocalFileName,
         ItemName: jVarLocalItemName,
         ScreenName: jVarLocalScreenName,
-        DataAttribute: jVarLocalDataAttribute,
         BodyAsJson: localUpdateBodyAsJson
     });
 
