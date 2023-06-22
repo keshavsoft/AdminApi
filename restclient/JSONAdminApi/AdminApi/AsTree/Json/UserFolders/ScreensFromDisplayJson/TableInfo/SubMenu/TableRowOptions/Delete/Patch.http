@@ -3,13 +3,10 @@ Cookie: KToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IksxNCIsIkRh
 content-type: application/json
 
 {
-        "folderName": "credits",
-    "FileName": "GST-SALES",
-    "ItemName": "GST-SALE",
-    "ScreenName": "Delete",
-    "DataAttribute": "",
-    "BodyAsJson": {"Simple": false}
-
-   
+        "folderName": "Transactions",
+    "FileName": "Sales",
+    "ItemName": "Bills",
+    "ScreenName": "Create",
+    "BodyAsJson": {"Simple":false}
 }
   

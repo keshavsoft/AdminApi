@@ -6,6 +6,4 @@ let CommonMiddlewares = require("../../../../../../../../../Middlewares/AdminApi
 router.get('/',CommonMiddlewares.GetFuncs, CommonControllers.GetFuncs);
 router.patch('/',CommonMiddlewares.PatchFuncs, CommonControllers.PatchFuncs);
 
-
-
 module.exports = router;
