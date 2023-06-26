@@ -9,14 +9,14 @@ let GetFuncs = async ({ inDataPK }) => {
     };
 };
 
-let postFuncs = async ({ inDataPK, inToInsertKeyName }) => {
+let postFuncs = async ({ inDataPK, inNewReportName }) => {
     let LocalinDataPK = inDataPK;
-    let LocalinToInsertKeyName = inToInsertKeyName;
+    let LocalinNewReportName = inNewReportName;
 
     if (LocalinDataPK > 0) {
         return await CommonDataSupplyForUpdate.StartFunc({
             DataPK: LocalinDataPK,
-            ToInsertKeyName: LocalinToInsertKeyName
+            NewReportName: LocalinNewReportName
         })
     };
 };
