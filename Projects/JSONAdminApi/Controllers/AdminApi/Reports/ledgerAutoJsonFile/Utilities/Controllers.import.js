@@ -1,30 +1,22 @@
 let Repos = require("../../../../../Repository/AdminApi/Reports/LedgerAutoJsonFile/Utilities/import");
 
-let PostFunc = (req, res) => {
+let PostFunc = async (req, res) => {
     let LocalDataPk = req.KeshavSoft.DataPk;
 
-    if ("ToName" in req.body) {
-        let localToName = req.body.ToName;
+    let localToName = req.body.ToName;
+    let localReportConfigObject = req.body.ReportConfigObject;
 
-        if ("ReportConfigObject" in req.body) {
-            let localReportConfigObject = req.body.ReportConfigObject;
+    let LocalFromRepo = await Repos.PostFunc({
+        DataPK: LocalDataPk,
+        ToName: localToName,
+        ReportConfigObject: localReportConfigObject
 
-            Repos.PostFunc({
-                DataPK: LocalDataPk,
-                ToName: localToName,
-                ReportConfigObject: localReportConfigObject
-
-            });
-
-        } else {
-            res.json({ KTF: false, KReason: "ReportConfigObject not found in body" })
-        };
+    });
+    if (LocalFromRepo.KTF) {
+        res.sendStatus(200);
     } else {
-        res.json({ KTF: false, KReason: "ToName not found in body" })
+        res.sendStatus(204);
     };
-
-
-
 };
 
 module.exports = { PostFunc };
