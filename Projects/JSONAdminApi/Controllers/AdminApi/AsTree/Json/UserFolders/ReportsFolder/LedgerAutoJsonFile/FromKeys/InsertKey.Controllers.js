@@ -12,11 +12,11 @@ let GetFuncs = async (req, res) => {
 let postFuncs = async (req, res) => {
     let LocalDataPk = req.KeshavSoft.DataPk;
 
-    let jVarLocalToInsertKeyName = req.body.ToInsertKeyName;
+    let jVarLocalNewReportName = req.body.NewReportName;
 
     let LocalFromRepo = await Repos.postFuncs({
         inDataPK: LocalDataPk,
-        inToInsertKeyName: jVarLocalToInsertKeyName
+        inNewReportName: jVarLocalNewReportName
     });
 
     if (LocalFromRepo.KTF) {
