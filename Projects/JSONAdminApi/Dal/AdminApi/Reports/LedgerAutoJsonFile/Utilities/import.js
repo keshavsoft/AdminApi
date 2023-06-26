@@ -7,7 +7,11 @@ let PostFunc = async ({ DataPK, ToName, ReportConfigObject }) => {
     let LocalReportConfigObject = ReportConfigObject;
 
     if (LocalDataPk > 0) {
-        return await CommonDatadupply.StartFunc({ DataPK: LocalDataPk, ToName:LocalToName, ReportConfigObject:LocalReportConfigObject })
+        return await CommonDatadupply.StartFunc({
+            DataPK: LocalDataPk,
+            ToName: LocalToName,
+            ReportConfigObject: LocalReportConfigObject
+        })
     };
 };
 
