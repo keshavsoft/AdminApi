@@ -1,7 +1,7 @@
 let CommonDatadupply = require("../../../../../../../DataSupply/Fs/Reports/LedgerAutoJsonFile/Utilities/import");
 
-let PostFunc = async ({ DataPK, ToName, ReportConfigObject }) => {
 
+let PostFunc = async ({ DataPK, ToName, ReportConfigObject }) => {
     let LocalDataPk = DataPK;
     let LocalToName = ToName;
     let LocalReportConfigObject = ReportConfigObject;

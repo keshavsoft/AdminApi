@@ -1,11 +1,9 @@
 POST  http://localhost:4131/JSONAdminApi/AdminApi/Reports/ledgerAutoJsonFile/Utilities/import
 content-type: application/json
-    
-{
-    "ToName": "BankWithdrawalsOld2222",
+
+  {
+    "ToName": "Purchases1",
     "ReportConficObject": {
         "VouchersConsider": "hhhh"
     }
 }
-    
-
