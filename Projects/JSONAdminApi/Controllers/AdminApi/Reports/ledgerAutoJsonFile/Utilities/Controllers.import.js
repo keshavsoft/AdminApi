@@ -6,18 +6,18 @@ let PostFunc = (req, res) => {
     if ("ToName" in req.body) {
         let localToName = req.body.ToName;
 
-        if ("ReportConficObject" in req.body) {
-            let localReportConficObject = req.body.ReportConficObject;
+        if ("ReportConfigObject" in req.body) {
+            let localReportConfigObject = req.body.ReportConfigObject;
 
             Repos.PostFunc({
                 DataPK: LocalDataPk,
                 ToName: localToName,
-                ReportConficObject: localReportConficObject
+                ReportConfigObject: localReportConfigObject
 
             });
 
         } else {
-            res.json({ KTF: false, KReason: "ReportConficObject not found in body" })
+            res.json({ KTF: false, KReason: "ReportConfigObject not found in body" })
         };
     } else {
         res.json({ KTF: false, KReason: "ToName not found in body" })

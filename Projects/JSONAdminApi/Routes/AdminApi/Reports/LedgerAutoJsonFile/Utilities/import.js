@@ -1,8 +1,9 @@
 let express = require("express");
 let router = express.Router();
 
-let Controller = require("../../../../../Controllers/AdminApi/Reports/ledgerAutoJsonFile/Utilities/Controllers.import");
+let CommonController = require("../../../../../Controllers/AdminApi/Reports/ledgerAutoJsonFile/Utilities/Controllers.import");
+let CommonMiddlewares = require("../../../../../Middlewares/AdminApi/Reports/ledgerAutoJsonFile/Utilities/import");
 
-router.post('/', Controller.PostFunc);
+router.post('/',CommonMiddlewares.PostFunc, CommonController.PostFunc);
 
 module.exports = router;
