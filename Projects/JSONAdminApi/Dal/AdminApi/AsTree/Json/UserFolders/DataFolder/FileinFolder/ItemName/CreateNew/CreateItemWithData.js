@@ -3,10 +3,11 @@
 
 let path = require("path");
 
-let PostFunc = async ({ DataPK, inFolderName, inFileName, inNewItemName }) => {
+let PostFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inNewData }) => {
     let LocalFolderName = inFolderName;
     let LocalFileName = inFileName;
-    let LocalItemName = inNewItemName;
+    let LocalItemName = inItemName;
+    let LocalData = inNewData;
 
     if (DataPK > 0) {
         return "this is Dal";
@@ -15,16 +16,18 @@ let PostFunc = async ({ DataPK, inFolderName, inFileName, inNewItemName }) => {
         //     inFolderName: LocalFolderName,
         //     inFileNameOnly: path.parse(LocalFileName).name,
         //     inItemName: LocalItemName
+        //inNewData:LocalData
         // });
         // return await (LocalItemName);
     };
 };
 
 
-let DeleteFunc = async ({ DataPK, inFolderName, inFileName, inNewItemName }) => {
+let DeleteFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inNewData }) => {
     let LocalFolderName = inFolderName;
     let LocalFileName = inFileName;
-    let LocalItemName = inNewItemName;
+    let LocalItemName = inItemName;
+    let LocalData = inNewData;
 
     if (DataPK > 0) {
         return "this is Dal";
@@ -33,6 +36,7 @@ let DeleteFunc = async ({ DataPK, inFolderName, inFileName, inNewItemName }) => 
         //     inFolderName: LocalFolderName,
         //     inFileName: LocalFileName,
         //     inNewItemName: LocalItemName
+        //inNewData:LocalData
         // });
         // return await (LocalItemName);
     };

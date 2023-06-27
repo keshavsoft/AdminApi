@@ -11,7 +11,8 @@ exports.PostFunc = (req, res, next) => {
             body: {
                 FolderName: "",
                 FileName: "",
-                NewItemName: ""
+                ItemName: "",
+                NewData:""
             },
         });
         return;
@@ -24,8 +25,12 @@ exports.PostFunc = (req, res, next) => {
         res.json({ KTF: false, KReason: " FileName not found in body" })
         return;
     };
-    if (("NewItemName" in req.body) === false) {
-        res.json({ KTF: false, KReason: " NewItemName not found in body" })
+    if (("ItemName" in req.body) === false) {
+        res.json({ KTF: false, KReason: " ItemName not found in body" })
+        return;
+    };
+    if (("NewData" in req.body) === false) {
+        res.json({ KTF: false, KReason: " NewData not found in body" })
         return;
     };
 
@@ -44,7 +49,8 @@ exports.DeleteFunc = (req, res, next) => {
             body: {
                 FolderName: "",
                 FileName: "",
-                DeleteItemName: ""
+                ItemName: "",
+                DeleteData:"",
             },
         });
         return;
@@ -57,8 +63,12 @@ exports.DeleteFunc = (req, res, next) => {
         res.json({ KTF: false, KReason: " FileName not found in body" })
         return;
     };
-    if (("NewItemName" in req.body) === false) {
-        res.json({ KTF: false, KReason: " NewItemName not found in body" })
+    if (("ItemName" in req.body) === false) {
+        res.json({ KTF: false, KReason: "ItemName not found in body" })
+        return;
+    };
+    if (("DeleteData" in req.body) === false) {
+        res.json({ KTF: false, KReason: "DeleteData not found in body" })
         return;
     };
 
