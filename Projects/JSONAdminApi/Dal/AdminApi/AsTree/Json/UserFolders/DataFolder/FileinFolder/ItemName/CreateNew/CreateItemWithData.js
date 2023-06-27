@@ -1,4 +1,4 @@
-//let CommonDatasupply = require("../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/DataFolder/UserFolder/UserJsonFile/ItemName/PushData/ItemNameOnly");
+let CommonDatasupply = require("../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/DataFolder/UserFolder/UserJsonFile/ItemName/PushData/ItemNameWithData");
 //let CommonDatasupplyGetFunc = require("../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/DataFolder/getDirectoriesWithCheckAndDelete");
 
 let path = require("path");
@@ -10,15 +10,13 @@ let PostFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inNewData 
     let LocalData = inNewData;
 
     if (DataPK > 0) {
-        return "this is Dal";
-        // return CommonDatasupply.StartFuncNoAsync({
-        //     inDataPK: DataPK,
-        //     inFolderName: LocalFolderName,
-        //     inFileNameOnly: path.parse(LocalFileName).name,
-        //     inItemName: LocalItemName
-        //inNewData:LocalData
-        // });
-        // return await (LocalItemName);
+        return CommonDatasupply.StartFuncNoAsync({
+            DataPK: DataPK,
+            FolderName: LocalFolderName,
+            FileName: path.parse(LocalFileName).name,
+            ItemName: LocalItemName,
+            NewData: LocalData
+        });
     };
 };
 
