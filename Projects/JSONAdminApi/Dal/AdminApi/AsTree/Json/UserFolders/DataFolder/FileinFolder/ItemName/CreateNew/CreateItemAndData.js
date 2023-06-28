@@ -1,12 +1,11 @@
-let CommonDatasupply = require("../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/DataFolder/UserFolder/UserJsonFile/ItemName/PushData/ItemNameWithData");
+let CommonDatasupply = require("../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/DataFolder/UserFolder/UserJsonFile/ItemName/PushData/ItemNameAndData");
 //let CommonDatasupplyGetFunc = require("../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/DataFolder/getDirectoriesWithCheckAndDelete");
 
 let path = require("path");
 
-let PostFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inNewData }) => {
+let PostFunc = async ({ DataPK, inFolderName, inFileName,inNewData }) => {
     let LocalFolderName = inFolderName;
     let LocalFileName = inFileName;
-    let LocalItemName = inItemName;
     let LocalData = inNewData;
 
     if (DataPK > 0) {
@@ -14,7 +13,6 @@ let PostFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inNewData 
             DataPK: DataPK,
             FolderName: LocalFolderName,
             FileName: path.parse(LocalFileName).name,
-            ItemName: LocalItemName,
             NewData: LocalData
         });
     };
