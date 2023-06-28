@@ -1,20 +1,20 @@
-//let CommonDatasupply = require("../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/AsTree/ForTableInfo/SubMenu/TableRowOptions/Delete");
-//let CommonDataSupplyForUpdate = require("../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/UserFolder/UserFileAsFolder/DisplayJsonFile/ItemName/ScreenName/TableInfo/SubMenu/TableRowOptions/Delete/Update")
+let CommonDatasupply = require("../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/AsTree/ForTableInfo/SubMenu/TableRowOptions/Edit");
+let CommonDataSupplyForUpdate = require("../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ConfigFolder/UserFolder/UserFileAsFolder/DisplayJsonFile/ItemName/ScreenName/TableInfo/SubMenu/TableRowOptions/Edit/Update")
 
 let GetFuncs = async ({ DataPK }) => {
-    // if (DataPK > 0) {
-    //     return await CommonDatasupply.AsObject({ inDataPK: DataPK });
-    // };
-    return "this is dal"
+    if (DataPK > 0) {
+        return await CommonDatasupply.AsObject({ inDataPK: DataPK });
+    };
+
 };
 
 let Update = async ({ DataPK, FolderName, FileName, ItemName, ScreenName, BodyAsJson }) => {
     let LocalDataPk = DataPK;
 
-    // if (LocalDataPk > 0) {
-    //     return await CommonDataSupplyForUpdate.Update({ DataPK, FolderName, FileName, ItemName, ScreenName, BodyAsJson })
-    // };
-    return "this is dal"
+    if (LocalDataPk > 0) {
+        return await CommonDataSupplyForUpdate.Update({ DataPK, FolderName, FileName, ItemName, ScreenName, BodyAsJson })
+    };
+
 };
 
 module.exports = {
