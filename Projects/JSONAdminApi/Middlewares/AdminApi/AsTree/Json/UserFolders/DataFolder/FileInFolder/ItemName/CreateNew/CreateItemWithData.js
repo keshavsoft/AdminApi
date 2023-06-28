@@ -11,6 +11,7 @@ exports.PostFunc = (req, res, next) => {
             body: {
                 FolderName: "",
                 FileName: "",
+                ItemName: "",
                 NewData:""
             },
         });
@@ -22,6 +23,10 @@ exports.PostFunc = (req, res, next) => {
     };
     if (("FileName" in req.body) === false) {
         res.json({ KTF: false, KReason: " FileName not found in body" })
+        return;
+    };
+    if (("ItemName" in req.body) === false) {
+        res.json({ KTF: false, KReason: " ItemName not found in body" })
         return;
     };
     if (("NewData" in req.body) === false) {
