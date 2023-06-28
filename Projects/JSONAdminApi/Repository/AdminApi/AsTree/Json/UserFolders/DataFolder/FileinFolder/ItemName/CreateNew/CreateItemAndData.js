@@ -1,15 +1,13 @@
-let Dal = require("../../../../../../../../../Dal/AdminApi/AsTree/Json/UserFolders/DataFolder/FileinFolder/ItemName/CreateNew/CreateItemWithData");
+let Dal = require("../../../../../../../../../Dal/AdminApi/AsTree/Json/UserFolders/DataFolder/FileinFolder/ItemName/CreateNew/CreateItemAndData");
 
 exports.PostFunc = async ({ DataPK, inFolderName, inFileName, inItemName, inNewData }) => {
     let LocalFolderName = inFolderName;
     let LocalFileName = inFileName;
-    let LocalItemName = inItemName;
     let LocalData = inNewData;
 
     return await Dal.PostFunc({
         DataPK, inFolderName: LocalFolderName,
         inFileName: LocalFileName,
-        inItemName: LocalItemName,
         inNewData: LocalData
     });
 };

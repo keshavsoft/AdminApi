@@ -2,9 +2,9 @@ let express = require("express");
 let router = express.Router();
 
 let CommonCreateItem = require("./CreateNew/CreateItem");
-let CommonCreateItemWithData = require("./CreateNew/CreateItemWithData");
+let CommonCreateItemAndData = require("./CreateNew/CreateItemAndData");
 
 router.use("/CreateItem", CommonCreateItem);
-router.use("/CreateItemWithData", CommonCreateItemWithData);
+router.use("/CreateItemAndData", CommonCreateItemAndData);
 
 module.exports = router;
