@@ -12,7 +12,7 @@ let GetFuncs = async (req, res) => {
 let PatchFuncs = async (req, res) => {
     let LocalDataPk = req.KeshavSoft.DataPk;
 
-    let jVarLocalfolderName = req.body.folderName;
+    let jVarLocalfolderName = req.body.FolderName;
     let jVarLocalFileName = req.body.FileName;
     let jVarLocalItemName = req.body.ItemName;
     let jVarLocalScreenName = req.body.ScreenName;

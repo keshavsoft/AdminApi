@@ -28,7 +28,7 @@ exports.PatchFuncs = (req, res, next) => {
         });
         return;
     };
-    if (("folderName" in req.body) === false) {
+    if (("FolderName" in req.body) === false) {
         res.json({ KTF: false, KReason: "folderName not found in body" })
         return;
     };
