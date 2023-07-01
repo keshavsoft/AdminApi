@@ -18,7 +18,7 @@ exports.PatchFuncs = (req, res, next) => {
             KTF: false,
             KReason: "post requst body should contain : ",
             body: {
-                folderName: "",
+                FolderName: "",
                 FileName: "",
                 ItemName: "",
                 ScreenName: "",
@@ -27,8 +27,8 @@ exports.PatchFuncs = (req, res, next) => {
         });
         return;
     };
-    if (("folderName" in req.body) === false) {
-        res.json({ KTF: false, KReason: "folderName not found in body" })
+    if (("FolderName" in req.body) === false) {
+        res.json({ KTF: false, KReason: "FolderName not found in body" })
         return;
     };
 

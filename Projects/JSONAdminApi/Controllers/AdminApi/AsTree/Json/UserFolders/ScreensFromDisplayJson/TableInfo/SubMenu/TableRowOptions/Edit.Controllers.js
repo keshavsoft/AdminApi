@@ -4,7 +4,7 @@ let GetFuncs = async (req, res) => {
     let LocalDataPk = req.KeshavSoft.DataPk;
 
     let LocalFromRepo = await Repos.GetFuncs({
-        DataPK: LocalDataPk
+        inDataPK: LocalDataPk
     });
     res.json(LocalFromRepo)
 };
@@ -12,19 +12,19 @@ let GetFuncs = async (req, res) => {
 let PatchFuncs = async (req, res) => {
     let LocalDataPk = req.KeshavSoft.DataPk;
 
-    let jVarLocalfolderName = req.body.folderName;
+    let jVarLocalfolderName = req.body.FolderName;
     let jVarLocalFileName = req.body.FileName;
     let jVarLocalItemName = req.body.ItemName;
     let jVarLocalScreenName = req.body.ScreenName;
     let localUpdateBodyAsJson = req.body.BodyAsJson;
 
     let LocalFromRepo = await Repos.Update({
-        DataPK: LocalDataPk,
-        FolderName: jVarLocalfolderName,
-        FileName: jVarLocalFileName,
-        ItemName: jVarLocalItemName,
-        ScreenName: jVarLocalScreenName,
-        BodyAsJson: localUpdateBodyAsJson
+        inDataPK: LocalDataPk,
+        inFolderName: jVarLocalfolderName,
+        inFileName: jVarLocalFileName,
+        inItemName: jVarLocalItemName,
+        inScreenName: jVarLocalScreenName,
+        inBodyAsJson: localUpdateBodyAsJson
     });
 
     if (LocalFromRepo.KTF) {
