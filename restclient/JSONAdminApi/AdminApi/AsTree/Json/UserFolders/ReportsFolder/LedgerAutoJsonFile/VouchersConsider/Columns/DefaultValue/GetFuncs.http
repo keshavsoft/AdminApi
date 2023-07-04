@@ -1,0 +1,7 @@
+GET http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ReportsFolder/LedgerAutoJsonFile/VouchersConsider/Columns/DefaultValue
+Cookie: KToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IksxNCIsIkRhdGFQayI6MSwiaWF0IjoxNjg3NDE5NzczfQ.ZVE-m9vDa4GVmSAqrtSrqhM-Tx0xEE6Z3DAYhH14vXc
+content-type: application/json
+
+{
+  
+}
