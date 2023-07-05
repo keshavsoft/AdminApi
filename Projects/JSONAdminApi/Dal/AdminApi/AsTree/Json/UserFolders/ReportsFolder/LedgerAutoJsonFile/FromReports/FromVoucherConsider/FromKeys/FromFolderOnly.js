@@ -11,7 +11,7 @@ let Update = async ({  DataPK,  ItemName, voucher, BodyAsJson }) => {
     let LocalDataPk = DataPK;
 
     if (LocalDataPk > 0) {
-        return await CommonDataSupplyForUpdate.Update({ DataPK,  ItemName, voucher, BodyAsJson })
+        return await CommonDataSupplyForUpdate.StartFunc({ DataPK,  ItemName, voucher, BodyAsJson })
     };
 };
 
