@@ -2,6 +2,6 @@ POST http://localhost:4131/JSONAdminApi/Validate/Users/InUserDataJson/ForUserNam
 content-type: application/json
  
 {   
-"inUserName":"1022",
-"inPassWord":"1022"
+"inUserName":"DURGAPKL2223",
+"inPassWord":"DURGAPKL2223"
 }
