@@ -5,6 +5,7 @@ let CommonUtility = require("./AdminApi/Utility");
 let CommonConfig = require("./AdminApi/Config");
 let CommonReports = require("./AdminApi/Reports");
 let CommonAsTree = require("./AdminApi/AsTree");
+let CommonFromData = require("./AdminApi/FromData");
 
 let CommonMiddlewareItemScreenColumn = require("../../../common/Middleware/AdminApi/Columns/Extract");
 
@@ -13,5 +14,6 @@ router.use('/Utility', CommonUtility);
 router.use('/Config', CommonMiddlewareItemScreenColumn.ItemScreenColumn, CommonConfig);
 router.use('/Reports', CommonReports);
 router.use('/AsTree', CommonAsTree);
+router.use('/FromData', CommonFromData);
 
 module.exports = router;
