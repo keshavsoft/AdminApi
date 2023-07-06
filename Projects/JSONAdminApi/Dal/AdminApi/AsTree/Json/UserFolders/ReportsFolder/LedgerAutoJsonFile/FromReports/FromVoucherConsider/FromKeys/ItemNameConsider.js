@@ -15,6 +15,15 @@ let Update = async ({  DataPK,  ItemName, voucher, BodyAsJson }) => {
     };
 };
 
+
+let Post = async ({  inDataPK,  inVoucherPk, invoucher, inFolderName ,inFileName,inItemName,inItemNameConsider }) => {
+    let LocalDataPk = inDataPK;
+
+    if (LocalDataPk > 0) {
+        return await CommonDataSupplyForUpdate.Update({ DataPK, VoucherPk:inVoucherPk, voucher:invoucher, FolderName:inFolderName , FileName:inFileName ,ItemName:inItemName,ItemNameConsider:inItemNameConsider})
+    };
+};
+
 module.exports = {
-    GetFuncs, Update
+    GetFuncs, Update ,Post
 };
