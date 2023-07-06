@@ -20,7 +20,7 @@ let Post = async ({  inDataPK,  inVoucherPk, invoucher, inFolderName ,inFileName
     let LocalDataPk = inDataPK;
 
     if (LocalDataPk > 0) {
-        return await CommonDataSupplyForUpdate.Update({ DataPK, VoucherPk:inVoucherPk, voucher:invoucher, FolderName:inFolderName , FileName:inFileName ,ItemName:inItemName,ItemNameConsider:inItemNameConsider})
+        return await CommonDataSupplyForUpdate.Update({ DataPK:inDataPK, VoucherPk:inVoucherPk, voucher:invoucher, FolderName:inFolderName , FileName:inFileName ,ItemName:inItemName,ItemNameConsider:inItemNameConsider})
     };
 };
 
