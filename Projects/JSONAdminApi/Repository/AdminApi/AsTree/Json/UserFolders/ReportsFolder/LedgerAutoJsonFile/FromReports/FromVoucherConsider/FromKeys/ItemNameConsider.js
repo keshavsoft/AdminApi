@@ -7,3 +7,7 @@ exports.GetFuncs = async ({ DataPK }) => {
 exports.Update = async ({ DataPK,  ItemName, voucher, BodyAsJson }) => {
     return await Dal.Update({  DataPK,  ItemName, voucher, BodyAsJson })
 };
+
+exports.Post = async ({ inDataPK,  inVoucherPk, invoucher, inFolderName, inFileName,inItemName,inItemNameConsider }) => {
+    return await Dal.Post({  inDataPK,  inVoucherPk, invoucher, inFolderName,inFileName,inItemName, inItemNameConsider})
+};
