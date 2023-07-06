@@ -8,21 +8,17 @@ exports.PostFunc = (req, res, next) => {
     if (Object.keys(req.body).length === 0) {
         res.json({
             KTF: false,
-            KReason: "post requst body should contain : ",
+            KReason: "post request body should contain : ",
             body: {
                   KeyName:"",
                   BodyAsJson:{
-                    
+
                   }      
             },
         });
         return;
     };
     
-    if (("NewFolderName" in req.body) === false) {
-        res.json({ KTF: false, KReason: "NewFolderName not found in body" })
-        return;
-    };   
     next();
 };
 
