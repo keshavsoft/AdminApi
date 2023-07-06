@@ -1,0 +1,6 @@
+GET http://localhost:4131/JSONAdminApi/AdminApi/FromData/GetFoldersAsArray
+content-type: application/json
+
+{
+
+}

@@ -1,4 +1,4 @@
-// let Repo = require("../../../Repository")
+let Repo = require("../../../Repository/AdminApi/FromData/GetFoldersAsArray")
 let GetFunc = (req, res) => {
     let LocalDataPk = req.KeshavSoft.DataPk;
 
