@@ -17,14 +17,14 @@ let Update = async ({ DataPK, ItemName, voucher, BodyAsJson }) => {
 };
 
 
-let PostFuncs = async ({ inDataPK, inVoucherPk, invoucher, inFolderName, inFileName, inItemName, inItemNameConsider }) => {
+let PostFuncs = async ({ inDataPK, inVoucherPk, inReportName, inFolderName, inFileName, inItemName, inItemNameConsider }) => {
     let LocalDataPk = inDataPK;
 
     if (LocalDataPk > 0) {
         return await CommonDataSupplyForPost.Update({
             DataPK: inDataPK,
             VoucherPk: inVoucherPk,
-            voucher: invoucher,
+            ReportName: inReportName,
             FolderName: inFolderName,
             FileName: inFileName,
             ItemName: inItemName,

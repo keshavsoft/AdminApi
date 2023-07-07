@@ -12,8 +12,8 @@ let GetFuncs = async (req, res) => {
 let PatchFuncs = async (req, res) => {
     let LocalDataPk = req.KeshavSoft.DataPk;
 
-    let jVarLocalItemName = req.body.ItemName;
-    let jVarLocalvoucher = req.body.voucher;
+    let jVarLocalItemName = req.body.ReportName;
+    let jVarLocalvoucher = req.body.voucherPk;
 
     let localUpdateBodyAsJson = req.body.BodyAsJson;
 
@@ -35,7 +35,7 @@ let PostFuncs = async (req, res) => {
     let LocalDataPk = req.KeshavSoft.DataPk;
 
     let jVarLocalReportName = req.body.ReportName;
-    let jVarLocalvoucher = req.body.voucherPk;
+    let jVarLocalVoucherPk = req.body.VoucherPk;
     let localFolderName = req.body.BodyAsJson.FolderName;
     let localFileName = req.body.BodyAsJson.FileName;
     let localItemName = req.body.BodyAsJson.ItemName;
@@ -43,12 +43,12 @@ let PostFuncs = async (req, res) => {
 
     let LocalFromRepo = await Repos.PostFuncs({
         inDataPK: LocalDataPk,
-        inVoucherPk: jVarLocalvoucher,
-        invoucher: jVarLocalReportName,
+        inVoucherPk: jVarLocalVoucherPk,
+        inReportName: jVarLocalReportName,
         inFolderName: localFolderName,
         inFileName: localFileName,
-        inItemName : localItemName,
-        inItemNameConsider :localItemNameConsider
+        inItemName: localItemName,
+        inItemNameConsider: localItemNameConsider
 
     });
 
