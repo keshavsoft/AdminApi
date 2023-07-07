@@ -4,5 +4,6 @@ let CommonControllers = require("../../../../../../../../../../Controllers/Admin
 
 router.get('/', CommonControllers.GetFuncs);
 router.patch('/', CommonControllers.PatchFuncs);
+router.post('/', CommonControllers.PostFunc);
 
 module.exports = router;

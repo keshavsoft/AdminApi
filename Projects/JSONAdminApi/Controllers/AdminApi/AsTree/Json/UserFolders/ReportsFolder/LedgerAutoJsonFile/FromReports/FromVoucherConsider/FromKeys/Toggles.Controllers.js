@@ -31,5 +31,26 @@ let PatchFuncs = async (req, res) => {
     };
 };
 
+let PostFunc = async (req, res) => {
+    let LocalDataPk = req.KeshavSoft.DataPk;
 
-module.exports = { GetFuncs, PatchFuncs };
+    let jVarLocalReportName = req.body.ReportName;
+    let jVarLocalVoucherPk = req.body.VoucherPk;
+    let jVarLocalActive = req.body.BodyAsJson.Active;
+
+    let LocalFromRepo = await Repos.PostFunc({
+        inDataPK: LocalDataPk,
+        inReportName: jVarLocalReportName,
+        inVoucherPk: jVarLocalVoucherPk,
+        inActive: jVarLocalActive
+    });
+
+    if (LocalFromRepo.KTF) {
+        res.sendStatus(200);
+    } else {
+        res.sendStatus(204);
+    };
+};
+
+
+module.exports = { GetFuncs, PatchFuncs, PostFunc };
