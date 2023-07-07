@@ -42,7 +42,7 @@ let PostFuncs = async (req, res) => {
     let localItemName = req.body.BodyAsJson.ItemName;
     let localItemNameConsider = req.body.BodyAsJson.ItemNameConsider;
 
-    let LocalFromRepo = await Repos.Post({
+    let LocalFromRepo = await Repos.PostFuncs({
         inDataPK: LocalDataPk,
         inVoucherPk: jVarLocalItemName,
         invoucher: jVarLocalvoucher,
