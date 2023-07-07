@@ -18,12 +18,12 @@ exports.PatchFuncs = (req, res, next) => {
         return;
     };
     
-    if (("ItemName" in req.body) === false) {
-        res.json({ KTF: false, KReason: "ItemName not found in body" })
+    if (("ReportName" in req.body) === false) {
+        res.json({ KTF: false, KReason: "ReportName not found in body" })
         return;
     }; 
-    if (("voucher" in req.body) === false) {
-        res.json({ KTF: false, KReason: "voucher not found in body" })
+    if (("voucherPk" in req.body) === false) {
+        res.json({ KTF: false, KReason: "voucherPk not found in body" })
         return;
     }; 
     if (("BodyAsJson" in req.body) === false) {
@@ -52,12 +52,12 @@ exports.PostFuncs = (req, res, next) => {
         return;
     };
     
-    if (("ItemName" in req.body) === false) {
-        res.json({ KTF: false, KReason: "ItemName not found in body" })
+    if (("ReportName" in req.body) === false) {
+        res.json({ KTF: false, KReason: "ReportName not found in body" })
         return;
     }; 
-    if (("voucher" in req.body) === false) {
-        res.json({ KTF: false, KReason: "voucher not found in body" })
+    if (("VoucherPk" in req.body) === false) {
+        res.json({ KTF: false, KReason: "VoucherPk not found in body" })
         return;
     }; 
     if (("BodyAsJson" in req.body) === false) {
