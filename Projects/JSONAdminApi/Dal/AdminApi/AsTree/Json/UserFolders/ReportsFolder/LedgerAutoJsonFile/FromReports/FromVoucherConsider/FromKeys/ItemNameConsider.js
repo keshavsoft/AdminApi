@@ -1,5 +1,5 @@
 let CommonDatasupply = require("../../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ReportsFolder/LedgerAutoJsonFile/InsideReport/FromKeys/Configuration/ItemNameConsider/GetData");
-let CommonDataSupplyForUpdate = require("../../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ReportsFolder/LedgerAutoJsonFile/InsideReport/FromKeys/ItemNameConsider/Update");
+let CommonDataSupplyForUpdate = require("../../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ReportsFolder/LedgerAutoJsonFile/InsideReport/FromKeys/Configuration/ItemNameConsider/Update");
 let CommonDataSupplyForPost = require("../../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ReportsFolder/LedgerAutoJsonFile/InsideReport/FromKeys/Configuration/ItemNameConsider/Update");
 
 let GetFuncs = async ({ DataPK }) => {
@@ -8,11 +8,19 @@ let GetFuncs = async ({ DataPK }) => {
     };
 };
 
-let Update = async ({ DataPK, ItemName, voucher, BodyAsJson }) => {
-    let LocalDataPk = DataPK;
+let Update = async ({ inDataPK, inVoucherPk, inReportName, inFolderName, inFileName, inItemName, inItemNameConsider }) => {
+    let LocalDataPk = inDataPK;
 
     if (LocalDataPk > 0) {
-        return await CommonDataSupplyForUpdate.Update({ DataPK, ItemName, voucher, BodyAsJson })
+        return await CommonDataSupplyForUpdate.Update({ 
+            DataPK: inDataPK,
+            VoucherPk: inVoucherPk,
+            ReportName: inReportName,
+            FolderName: inFolderName,
+            FileName: inFileName,
+            ItemName: inItemName,
+            ItemNameConsider: inItemNameConsider 
+        })
     };
 };
 

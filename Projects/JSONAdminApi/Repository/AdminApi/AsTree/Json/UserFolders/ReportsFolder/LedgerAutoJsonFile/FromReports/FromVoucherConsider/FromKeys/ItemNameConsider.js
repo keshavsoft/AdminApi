@@ -4,8 +4,8 @@ exports.GetFuncs = async ({ DataPK }) => {
     return await Dal.GetFuncs({ DataPK });
 };
 
-exports.Update = async ({ DataPK,  ItemName, voucher, BodyAsJson }) => {
-    return await Dal.Update({  DataPK,  ItemName, voucher, BodyAsJson })
+exports.Update = async ({ inDataPK,  inVoucherPk, inReportName, inFolderName, inFileName,inItemName,inItemNameConsider }) => {
+    return await Dal.Update({  inDataPK,  inVoucherPk, inReportName, inFolderName, inFileName,inItemName,inItemNameConsider })
 };
 
 exports.PostFuncs = async ({ inDataPK,  inVoucherPk, inReportName, inFolderName, inFileName,inItemName,inItemNameConsider }) => {
