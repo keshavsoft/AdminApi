@@ -22,14 +22,14 @@ exports.PatchFuncs = (req, res, next) => {
         res.json({ KTF: false, KReason: "ReportName not found in body" })
         return;
     }; 
-    if (("voucherPk" in req.body) === false) {
-        res.json({ KTF: false, KReason: "voucherPk not found in body" })
+    if (("VoucherPk" in req.body) === false) {
+        res.json({ KTF: false, KReason: "VoucherPk not found in body" })
         return;
     }; 
     if (("BodyAsJson" in req.body) === false) {
         res.json({ KTF: false, KReason: "BodyAsJson not found in body" })
         return;
-    };   
+    };  
     next();
 };
 
