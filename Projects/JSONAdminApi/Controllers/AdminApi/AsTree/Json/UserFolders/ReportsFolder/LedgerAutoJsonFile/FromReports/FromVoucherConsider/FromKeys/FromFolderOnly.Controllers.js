@@ -9,6 +9,22 @@ let GetFuncs = async (req, res) => {
     res.json(LocalFromRepo)
 };
 
+let PostFuncs = async (req, res) => {
+    let LocalDataPk = req.KeshavSoft.DataPk;
+
+    let jVarLocalItemName = req.body.ItemName;
+    let jVarLocalvoucher = req.body.voucher;
+
+    let localUpdateBodyAsJson = req.body.BodyAsJson;
+
+    let LocalFromRepo = await Repos.PostFuncs({
+        DataPK: LocalDataPk,
+        ItemName: jVarLocalItemName,
+        voucher: jVarLocalvoucher,
+        BodyAsJson: localUpdateBodyAsJson
+    });
+};
+
 let PatchFuncs = async (req, res) => {
     let LocalDataPk = req.KeshavSoft.DataPk;
 
@@ -32,4 +48,4 @@ let PatchFuncs = async (req, res) => {
 };
 
 
-module.exports = { GetFuncs, PatchFuncs };
+module.exports = { GetFuncs, PatchFuncs, PostFuncs};
