@@ -12,16 +12,18 @@ let GetFuncs = async (req, res) => {
 let PostFuncs = async (req, res) => {
     let LocalDataPk = req.KeshavSoft.DataPk;
 
-    let jVarLocalItemName = req.body.ItemName;
-    let jVarLocalvoucher = req.body.voucher;
+    let jVarLocalItemName = req.body.ReportName;
+    let jVarLocalVoucher = req.body.VoucherPk;
 
-    let localUpdateBodyAsJson = req.body.BodyAsJson.FolderName;
+    let localUpdateBodyAsJsonFolderName = req.body.BodyAsJson.FolderName;
+    let localUpdateBodyAsJsonFromFolder = req.body.BodyAsJson.FromFolder;
 
     let LocalFromRepo = await Repos.PostFuncs({
-        DataPK: LocalDataPk,
-        ItemName: jVarLocalItemName,
-        voucher: jVarLocalvoucher,
-        BodyAsJson: localUpdateBodyAsJson
+        inDataPK: LocalDataPk,
+        inReportName: jVarLocalItemName,
+        inVoucherPk: jVarLocalVoucher,
+        inFolderName: localUpdateBodyAsJsonFolderName,
+        inFromFolder: localUpdateBodyAsJsonFromFolder
     });
 
     if (LocalFromRepo.KTF) {
@@ -35,14 +37,14 @@ let PatchFuncs = async (req, res) => {
     let LocalDataPk = req.KeshavSoft.DataPk;
 
     let jVarLocalItemName = req.body.ItemName;
-    let jVarLocalvoucher = req.body.voucher;
+    let jVarLocalVoucher = req.body.voucher;
 
     let localUpdateBodyAsJson = req.body.BodyAsJson;
 
     let LocalFromRepo = await Repos.Update({
         DataPK: LocalDataPk,
         ItemName: jVarLocalItemName,
-        voucher: jVarLocalvoucher,
+        voucher: jVarLocalVoucher,
         BodyAsJson: localUpdateBodyAsJson
     });
 

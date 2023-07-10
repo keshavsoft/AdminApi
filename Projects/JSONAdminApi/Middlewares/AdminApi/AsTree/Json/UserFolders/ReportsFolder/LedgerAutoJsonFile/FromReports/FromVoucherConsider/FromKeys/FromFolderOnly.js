@@ -44,20 +44,20 @@ exports.PostFuncs = (req, res, next) => {
             KTF: false,
             KReason: "post requst body should contain : ",
             body: {
-                ItemName: "",
-                voucher: "",
+                ReportName: "",
+                VoucherPk: "",
                 BodyAsJson: {}
             },
         });
         return;
     };
 
-    if (("ItemName" in req.body) === false) {
-        res.json({ KTF: false, KReason: "ItemName not found in body" })
+    if (("ReportName" in req.body) === false) {
+        res.json({ KTF: false, KReason: "ReportName not found in body" })
         return;
     };
-    if (("voucher" in req.body) === false) {
-        res.json({ KTF: false, KReason: "voucher not found in body" })
+    if (("VoucherPk" in req.body) === false) {
+        res.json({ KTF: false, KReason: "VoucherPk not found in body" })
         return;
     };
     if (("BodyAsJson" in req.body) === false) {
