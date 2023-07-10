@@ -56,12 +56,7 @@ let PostFuncs = async (req, res) => {
         inItemNameConsider: localItemNameConsider
 
     });
-    res.json(LocalFromRepo);
-    // if (LocalFromRepo.KTF) {
-    //     res.sendStatus(200);
-    // } else {
-    //     res.sendStatus(204);
-    // };
+    res.end(JSON.stringify(LocalFromRepo));
 };
 
 
