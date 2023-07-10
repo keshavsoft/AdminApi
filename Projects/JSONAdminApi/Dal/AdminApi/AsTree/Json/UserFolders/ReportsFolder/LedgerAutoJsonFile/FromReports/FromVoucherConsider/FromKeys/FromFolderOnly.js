@@ -12,7 +12,7 @@ let PostFuncs = async ({  inDataPK,  inReportName, inVoucherPk, inFolderName, in
     let LocalDataPk = inDataPK;
 
     if (LocalDataPk > 0) {
-        return await CommonDataSupplyForPost.StartFunc({ 
+        return await CommonDataSupplyForPost.Update({ 
             DataPK:inDataPK, 
             ReportName:inReportName,
             VoucherPk:inVoucherPk,

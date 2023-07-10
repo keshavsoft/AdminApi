@@ -26,11 +26,8 @@ let PostFuncs = async (req, res) => {
         inFromFolder: localUpdateBodyAsJsonFromFolder
     });
 
-    if (LocalFromRepo.KTF) {
-        res.sendStatus(200);
-    } else {
-        res.sendStatus(204);
-    };
+    res.end(JSON.stringify(LocalFromRepo));
+
 };
 
 let PatchFuncs = async (req, res) => {
