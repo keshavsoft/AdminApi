@@ -1,0 +1,15 @@
+PATCH  http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ReportsFolder/LedgerAutoJsonFile/FromReports/FromVoucherConsider/FromKeys/FromFolderOnly
+Cookie: KToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IksyNSIsIkRhdGFQayI6MSwiaWF0IjoxNjg3MzM0NTIzfQ.nDF6VbD3_rtwA3DmoadXEZGcMbc7E4F1tm0ueVAObhI
+content-type: application/json
+
+
+{
+    "ItemName": "Masters",
+    "voucher": "30",
+    "BodyAsJson": {
+        "FolderName": "Masters2",
+        "FromFolder": true
+    }
+}
+
+  
