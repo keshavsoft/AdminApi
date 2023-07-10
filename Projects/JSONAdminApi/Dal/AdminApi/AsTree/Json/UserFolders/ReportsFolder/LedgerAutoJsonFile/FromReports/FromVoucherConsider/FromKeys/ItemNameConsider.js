@@ -1,6 +1,7 @@
 let CommonDatasupply = require("../../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ReportsFolder/LedgerAutoJsonFile/InsideReport/FromKeys/Configuration/ItemNameConsider/GetData");
 let CommonDataSupplyForUpdate = require("../../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ReportsFolder/LedgerAutoJsonFile/InsideReport/FromKeys/Configuration/ItemNameConsider/Update");
-let CommonDataSupplyForPost = require("../../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ReportsFolder/LedgerAutoJsonFile/InsideReport/FromKeys/Configuration/ItemNameConsider/Update");
+// let CommonDataSupplyForPost = require("../../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ReportsFolder/LedgerAutoJsonFile/InsideReport/FromKeys/Configuration/ItemNameConsider/UpdateWithCheck");
+let CommonDataSupplyForPost = require("../../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ReportsFolder/LedgerAutoJsonFile/InsideReport/FromKeys/VouchersConsider/Configuration/ItemNameConsider/UpdateWithCheck");
 
 let GetFuncs = async ({ DataPK }) => {
     if (DataPK > 0) {
