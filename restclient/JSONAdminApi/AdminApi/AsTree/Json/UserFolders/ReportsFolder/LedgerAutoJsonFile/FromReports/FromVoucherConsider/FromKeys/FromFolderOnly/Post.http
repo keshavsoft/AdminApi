@@ -1,0 +1,16 @@
+post http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ReportsFolder/LedgerAutoJsonFile/FromReports/FromVoucherConsider/FromKeys/FromFolderOnly
+content-type: application/json
+
+
+{
+    "ReportName": "Masters",
+    "VoucherPk": "30",
+    "BodyAsJson": {
+        "FolderName": "Masters",
+        "FileName": "Items.json",
+        "ItemName": "ItemNames256",
+        "ItemNameConsider": false
+    }
+}
+
+  
