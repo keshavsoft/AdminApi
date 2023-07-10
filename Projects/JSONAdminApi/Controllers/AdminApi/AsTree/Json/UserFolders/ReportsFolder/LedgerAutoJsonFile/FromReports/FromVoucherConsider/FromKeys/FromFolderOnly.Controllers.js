@@ -15,7 +15,7 @@ let PostFuncs = async (req, res) => {
     let jVarLocalItemName = req.body.ItemName;
     let jVarLocalvoucher = req.body.voucher;
 
-    let localUpdateBodyAsJson = req.body.BodyAsJson;
+    let localUpdateBodyAsJson = req.body.BodyAsJson.FolderName;
 
     let LocalFromRepo = await Repos.PostFuncs({
         DataPK: LocalDataPk,
@@ -23,6 +23,12 @@ let PostFuncs = async (req, res) => {
         voucher: jVarLocalvoucher,
         BodyAsJson: localUpdateBodyAsJson
     });
+
+    if (LocalFromRepo.KTF) {
+        res.sendStatus(200);
+    } else {
+        res.sendStatus(204);
+    };
 };
 
 let PatchFuncs = async (req, res) => {
@@ -48,4 +54,4 @@ let PatchFuncs = async (req, res) => {
 };
 
 
-module.exports = { GetFuncs, PatchFuncs, PostFuncs};
+module.exports = { GetFuncs, PatchFuncs, PostFuncs };

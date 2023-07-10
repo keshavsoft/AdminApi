@@ -64,5 +64,13 @@ exports.PostFuncs = (req, res, next) => {
         res.json({ KTF: false, KReason: "BodyAsJson not found in body" })
         return;
     };
+    if (("FolderName" in req.body.BodyAsJson) === false) {
+        res.json({ KTF: false, KReason: "FolderName not found in body" })
+        return;
+    };
+    if (("FromFolder" in req.body.BodyAsJson) === false) {
+        res.json({ KTF: false, KReason: "FromFolder not found in body" })
+        return;
+    };
     next();
 };
