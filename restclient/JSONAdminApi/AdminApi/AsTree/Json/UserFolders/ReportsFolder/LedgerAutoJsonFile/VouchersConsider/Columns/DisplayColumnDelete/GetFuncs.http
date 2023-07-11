@@ -1,0 +1,6 @@
+GET http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ReportsFolder/LedgerAutoJsonFile/VouchersConsider/Columns/DisplayColumnDelete
+content-type: application/json
+
+{
+  
+}
