@@ -1,18 +1,23 @@
-//let CommonDatasupply = require("../../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ReportsFolder/LedgerAutoJsonFile/InsideReport/FromKeys/Toggles/GetData");
-//let CommonDataSupplyPostFunc = require("../../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ReportsFolder/LedgerAutoJsonFile/InsideReport/FromKeys/Toggles/Update");
+let CommonDatasupply = require("../../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ReportsFolder/LedgerAutoJsonFile/InsideReport/FromKeys/Delete/GetData");
+let CommonDataSupplyDelete = require("../../../../../../../../../../../../DataSupply/Fs/Config/JSONFolder/DataPkAsFolder/ReportsFolder/LedgerAutoJsonFile/InsideReport/FromKeys/Delete/Delete");
 
 let GetFuncs = async ({ inDataPK }) => {
-    if (inDataPK > 0) {
-        //return await CommonDatasupply.StartFunc({ DataPK:inDataPK });
-    };
-};
-
-let Delete = async ({ inDataPK, inReportName, inVoucherPk }) => {
     let LocalDataPk = inDataPK;
 
     if (LocalDataPk > 0) {
-        return "this dal"
-       // return await CommonDataSupplyForUpdate.Update({ inDataPK, inReportName, inVoucherPk })
+        return await CommonDatasupply.StartFunc({ inDataPK });
+    };
+};
+
+let DeleteFunc = async ({ inDataPK, inReportName, inVoucherPk }) => {
+    let LocalDataPk = inDataPK;
+
+    if (LocalDataPk > 0) {
+        return await CommonDataSupplyDelete.StartFunc({
+            DataPK: LocalDataPk,
+            ReportName: inReportName,
+            VoucherPk: inVoucherPk
+        })
     };
 };
 
@@ -26,5 +31,5 @@ let PostFunc = async ({ inDataPK, inReportName, inVoucherPk }) => {
 };
 
 module.exports = {
-    GetFuncs, Delete, PostFunc
+    GetFuncs, DeleteFunc, PostFunc
 };
