@@ -1,7 +1,7 @@
-exports.PatchFuncs = (req, res, next) => {
+exports.DeleteFuncs = (req, res, next) => {
     
     if (("DataPk" in req.KeshavSoft) === false) {
-        res.json({ KTF: false, KReason: "DataPk not found in Request" })
+        res.json({ KTF: false, KReason: "DataPk not found in KeshavSoft" })
         return;
     }
     if (Object.keys(req.body).length === 0) {
@@ -9,15 +9,14 @@ exports.PatchFuncs = (req, res, next) => {
             KTF: false,
             KReason: "post requst body should contain : ",
             body: {
-                Reportname: "",
+                ReportName: "",
                 Voucherpk:"", 
-                Columnpk:"",
-                BodyAsJson:{}    
+                Columnpk:""   
             },
         })
     }
-    if (("Reportname" in req.body) === false) {
-        res.json({ KTF: false, KReason: "Reportname not found in Request" })
+    if (("ReportName" in req.body) === false) {
+        res.json({ KTF: false, KReason: "ReportName not found in Request" })
         return;
     }
     if (("Voucherpk" in req.body) === false) {
@@ -26,10 +25,6 @@ exports.PatchFuncs = (req, res, next) => {
     }
     if (("Columnpk" in req.body) === false) {
         res.json({ KTF: false, KReason: "Columnpk not found in Request" })
-        return;
-    }
-    if (("BodyAsJson" in req.body) === false) {
-        res.json({ KTF: false, KReason: "BodyAsJson not found in Request" })
         return;
     }
       
@@ -38,8 +33,8 @@ exports.PatchFuncs = (req, res, next) => {
 
 exports.PostFuncs = (req, res, next) => {
     
-    if (("DataPk" in req.KeshavSoft) === false) {
-        res.json({ KTF: false, KReason: "DataPk not found in Request" })
+    if (("DataPK" in req.KeshavSoft) === false) {
+        res.json({ KTF: false, KReason: "DataPK not found in Request" })
         return;
     }
     if (Object.keys(req.body).length === 0) {
@@ -47,15 +42,14 @@ exports.PostFuncs = (req, res, next) => {
             KTF: false,
             KReason: "post requst body should contain : ",
             body: {
-                Reportname: "",
+                ReportName: "",
                 Voucherpk:"", 
-                Columnpk:"",
-                BodyAsJson:{}    
+                Columnpk:""   
             },
         })
     }
-    if (("Reportname" in req.body) === false) {
-        res.json({ KTF: false, KReason: "Reportname not found in Request" })
+    if (("ReportName" in req.body) === false) {
+        res.json({ KTF: false, KReason: "ReportName not found in Request" })
         return;
     }
     if (("Voucherpk" in req.body) === false) {
@@ -64,10 +58,6 @@ exports.PostFuncs = (req, res, next) => {
     }
     if (("Columnpk" in req.body) === false) {
         res.json({ KTF: false, KReason: "Columnpk not found in Request" })
-        return;
-    }
-    if (("BodyAsJson" in req.body) === false) {
-        res.json({ KTF: false, KReason: "BodyAsJson not found in Request" })
         return;
     }
       

@@ -4,7 +4,7 @@ let CommonControllers = require("../../../../../../../../../Controllers/AdminApi
 let CommonMiddlewares = require("../../../../../../../../../Middlewares/AdminApi/AsTree/Json/UserFolders/ReportsFolder/LedgerAutoJsonFile/VouchersConsider/Columns/DisplayColumnDelete");
 
 router.get('/', CommonControllers.GetFuncs);
-router.patch('/', CommonMiddlewares.PatchFuncs, CommonControllers.PatchFuncs);
+router.delete('/', CommonMiddlewares.DeleteFuncs, CommonControllers.DeleteFuncs);
 router.post('/', CommonMiddlewares.PostFuncs, CommonControllers.PostFuncs);
 
 module.exports = router;

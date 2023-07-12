@@ -4,10 +4,10 @@ exports.GetFuncs = async ({ inDataPK }) => {
     return await Dal.GetFuncs({ inDataPK });
 };
 
-exports.Delete = async ({ inDataPk,  inReportname, inVoucherpk,inColumnpk,inBodyAsJson }) => {
-    return await Dal.Delete({ inDataPk,  inReportname, inVoucherpk,inColumnpk,inBodyAsJson  })
+exports.Delete = async ({ inDataPK, inReportName, inVoucherpk, inColumnpk }) => {
+    return await Dal.Delete({ inDataPK, inReportName, inVoucherpk, inColumnpk  })
 };
 
-exports.DeleteWithCheck = async ({ inDataPk,  inReportname, inVoucherpk,inColumnpk,inBodyAsJson  }) => {
-    return await Dal.DeleteWithCheck({ inDataPk,  inReportname, inVoucherpk,inColumnpk,inBodyAsJson  })
+exports.DeleteWithCheck = async ({ inDataPK, inReportName, inVoucherpk, inColumnpk  }) => {
+    return await Dal.DeleteWithCheck({ inDataPK, inReportName, inVoucherpk, inColumnpk  })
 };
