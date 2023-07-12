@@ -1,0 +1,10 @@
+post http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ReportsFolder/LedgerAutoJsonFile/FromReports/FromVoucherConsider/FromKeys/VoucherDelete
+content-type: application/json
+
+
+{
+    "ReportName": "",
+    "VoucherPk": ""
+}
+
+  

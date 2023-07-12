@@ -7,6 +7,7 @@ let CommonConfiguration = require("./FromKeys/Configuration");
 let CommonFromFolder = require("./FromKeys/FromFolder");
 let CommonItemNameConsider= require("./FromKeys/ItemNameConsider");
 let CommonFromFolderOnly= require("./FromKeys/FromFolderOnly");
+let CommonVoucherDelete= require("./FromKeys/VoucherDelete");
 
 
 router.use("/Toggles", CommonToggles)
@@ -15,5 +16,6 @@ router.use("/Configuration", CommonConfiguration)
 router.use("/FromFolder", CommonFromFolder)
 router.use("/ItemNameConsider", CommonItemNameConsider)
 router.use("/FromFolderOnly", CommonFromFolderOnly)
+router.use("/VoucherDelete", CommonVoucherDelete)
 
 module.exports = router;
