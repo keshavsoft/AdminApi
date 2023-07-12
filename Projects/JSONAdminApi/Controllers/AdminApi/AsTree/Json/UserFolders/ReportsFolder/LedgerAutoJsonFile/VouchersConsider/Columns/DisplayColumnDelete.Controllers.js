@@ -1,30 +1,27 @@
 let Repos = require("../../../../../../../../../Repository/AdminApi/AsTree/Json/UserFolders/ReportsFolder/LedgerAutoJsonFile/VouchersConsider/Columns/DisplayColumnDelete");
 
 let GetFuncs = async (req, res) => {
-    let LocalDataPk = req.KeshavSoft.DataPk;
+
+    let LocalDataPK = req.KeshavSoft.DataPk;
 
     let LocalFromRepo = await Repos.GetFuncs({
-        inDataPK: LocalDataPk
+        inDataPK: LocalDataPK
     });
     res.json(LocalFromRepo)
 };
 
-let PatchFuncs = async (req, res) => {
-    let LocalDataPk = req.KeshavSoft.DataPk;
+let DeleteFuncs = async (req, res) => {
+    let LocalDataPK = req.KeshavSoft.DataPk;
 
-    let jVarLocalReportname = req.body.Reportname;
+    let jVarLocalReportName = req.body.ReportName;
     let jVarLocalVoucherpk = req.body.Voucherpk;
     let jVarLocalColumnpk = req.body.Columnpk;
-    let localUpdateBodyAsJson = req.body.BodyAsJson;
-
 
     let LocalFromRepo = await Repos.Delete({
-        inDataPk: LocalDataPk,
-        inReportname: jVarLocalReportname,
+        inDataPK: LocalDataPK,
+        inReportName: jVarLocalReportName,
         inVoucherpk: jVarLocalVoucherpk,
         inColumnpk: jVarLocalColumnpk,
-        inBodyAsJson: localUpdateBodyAsJson
-
     });
 
     if (LocalFromRepo.KTF) {
@@ -35,20 +32,18 @@ let PatchFuncs = async (req, res) => {
 };
 
 let PostFuncs = async (req, res) => {
-    let LocalDataPk = req.KeshavSoft.DataPk;
+    let LocalDataPK = req.KeshavSoft.DataPK;
 
-    let jVarLocalReportname = req.body.Reportname;
+    let jVarLocalReportName = req.body.ReportName;
     let jVarLocalVoucherpk = req.body.Voucherpk;
     let jVarLocalColumnpk = req.body.Columnpk;
-    let localUpdateBodyAsJson = req.body.BodyAsJson;
 
 
     let LocalFromRepo = await Repos.DeleteWithCheck({
-        inDataPk: LocalDataPk,
-        inReportname: jVarLocalReportname,
+        inDataPK: LocalDataPK,
+        inReportName: jVarLocalReportName,
         inVoucherpk: jVarLocalVoucherpk,
         inColumnpk: jVarLocalColumnpk,
-        inBodyAsJson: localUpdateBodyAsJson
 
     });
 
@@ -60,4 +55,4 @@ let PostFuncs = async (req, res) => {
     };
 };
 
-module.exports = { GetFuncs, PatchFuncs, PostFuncs };
+module.exports = { GetFuncs, DeleteFuncs, PostFuncs };

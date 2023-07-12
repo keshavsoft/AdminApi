@@ -1,0 +1,9 @@
+DELETE  http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ReportsFolder/LedgerAutoJsonFile/VouchersConsider/Columns/DisplayColumnDelete
+Cookie: KToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IjI2IiwiRGF0YVBrIjoxLCJpYXQiOjE2ODkxNDIxNjR9.0uJccDPI08k3i9t6OfDHwHuPJk4e2t16oNzJuUyxQaw
+content-type: application/json
+
+{
+}
+    
+
+  
