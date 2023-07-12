@@ -15,7 +15,7 @@ let DeleteFuncs = async (req, res) => {
     let jVarLocalReportName = req.body.ReportName;
     let jVarLocalVoucherPk = req.body.VoucherPk;
 
-    let LocalFromRepo = await Repos.Delete({
+    let LocalFromRepo = await Repos.DeleteFunc({
         inDataPK: LocalDataPk,
         inReportName: jVarLocalReportName,
         inVoucherPk: jVarLocalVoucherPk,
