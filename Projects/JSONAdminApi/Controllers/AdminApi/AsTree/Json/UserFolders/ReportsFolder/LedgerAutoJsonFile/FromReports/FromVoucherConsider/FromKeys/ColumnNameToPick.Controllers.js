@@ -16,7 +16,7 @@ let PatchFuncs = async (req, res) => {
     let jVarLocalvoucher = req.body.voucher;
 
     let localUpdateBodyAsJson = req.body.BodyAsJson;
-    
+
     let LocalFromRepo = await Repos.Update({
         DataPK: LocalDataPk,
         ItemName: jVarLocalItemName,
@@ -25,11 +25,28 @@ let PatchFuncs = async (req, res) => {
     });
 
     if (LocalFromRepo.KTF) {
-        res.sendStatus(200);
-    } else {
-        res.sendStatus(204);
+        res.json(LocalFromRepo)
+    };
+};
+let PostFunc = async (req, res) => {
+    let LocalDataPk = req.KeshavSoft.DataPk;
+
+    let jVarLocalItemName = req.body.ItemName;
+    let jVarLocalvoucher = req.body.voucher;
+
+    let localUpdateBodyAsJson = req.body.BodyAsJson;
+
+    let LocalFromRepo = await Repos.PostFunc({
+        DataPK: LocalDataPk,
+        ItemName: jVarLocalItemName,
+        voucher: jVarLocalvoucher,
+        BodyAsJson: localUpdateBodyAsJson
+    });
+
+    if (LocalFromRepo.KTF) {
+        res.json(LocalFromRepo)
     };
 };
 
 
-module.exports = { GetFuncs, PatchFuncs };
+module.exports = { GetFuncs, PatchFuncs, PostFunc };
