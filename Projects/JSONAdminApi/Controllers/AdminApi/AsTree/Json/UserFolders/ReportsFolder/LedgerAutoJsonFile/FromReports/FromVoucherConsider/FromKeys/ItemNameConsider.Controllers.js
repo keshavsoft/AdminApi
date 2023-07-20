@@ -28,12 +28,13 @@ let PatchFuncs = async (req, res) => {
         inItemName: localItemName,
         inItemNameConsider: localItemNameConsider
     });
+    res.end(JSON.stringify(LocalFromRepo));
 
-    if (LocalFromRepo.KTF) {
-        res.sendStatus(200);
-    } else {
-        res.sendStatus(204);
-    };
+    // if (LocalFromRepo.KTF) {
+    //     res.sendStatus(200);
+    // } else {
+    //     res.sendStatus(204);
+    // };
 };
 
 let PostFuncs = async (req, res) => {
