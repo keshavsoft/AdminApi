@@ -21,12 +21,12 @@ let PatchFuncs = async (req, res) => {
         ReportName: jVarLocalReportname,
         inVoucherConsiderpk: jVarLocalVouchersConsiderPK
     });
-
-    if (LocalFromRepo.KTF) {
-        res.sendStatus(200);
-    } else {
-        res.sendStatus(204);
-    };
+    res.json(LocalFromRepo);
+    // if (LocalFromRepo.KTF) {
+    //     res.sendStatus(200);
+    // } else {
+    //     res.sendStatus(204);
+    // };
 };
 
 
