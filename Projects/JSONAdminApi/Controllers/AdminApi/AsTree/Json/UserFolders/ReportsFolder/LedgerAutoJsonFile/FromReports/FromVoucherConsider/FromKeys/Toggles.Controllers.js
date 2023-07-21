@@ -44,12 +44,12 @@ let PostFunc = async (req, res) => {
         inVoucherPk: jVarLocalVoucherPk,
         inActive: jVarLocalActive
     });
-
-    if (LocalFromRepo.KTF) {
-        res.sendStatus(200);
-    } else {
-        res.sendStatus(204);
-    };
+    res.json(LocalFromRepo);
+    // if (LocalFromRepo.KTF) {
+    //     res.sendStatus(200);
+    // } else {
+    //     res.sendStatus(204);
+    // };
 };
 
 
