@@ -22,12 +22,12 @@ let Clone = async (req, res) => {
         VoucherConsiderPK: jVarLocalVoucherConsiderPK,
         ColumnPk: jVarLocalColumnPk
     });
-
-    if (LocalFromRepo.KTF) {
-        res.sendStatus(200);
-    } else {
-        res.sendStatus(204);
-    };
+    res.json(LocalFromRepo);
+    // if (LocalFromRepo.KTF) {
+    //     res.sendStatus(200);
+    // } else {
+    //     res.sendStatus(204);
+    // };
 };
 
 
