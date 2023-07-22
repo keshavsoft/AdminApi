@@ -13,7 +13,6 @@ let GetFuncs = async (req, res) => {
 
 let Update = async (req, res) => {
     let LocalDataPk = req.KeshavSoft.DataPk;
-    console.log("ssssssss",LocalDataPk);
 
     let jVarLocalfolderName = req.body.FolderName;
     let jVarLocalFileName = req.body.FileName;
@@ -31,11 +30,8 @@ let Update = async (req, res) => {
         DataAttribute: jVarLocalDataAttribute,
         BodyAsJson: localUpdateBodyAsJson
     });
-    if (LocalFromRepo.KTF) {
-        res.sendStatus(200);
-    } else {
-        res.sendStatus(204);
-    };
+    res.end(JSON.stringify(LocalFromRepo));
+
 };
 
 
