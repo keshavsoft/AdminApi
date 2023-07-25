@@ -29,11 +29,8 @@ let PatchFuncs = async (req, res) => {
         BodyAsJson: localUpdateBodyAsJson
     });
 
-    if (LocalFromRepo.KTF) {
-        res.sendStatus(200);
-    } else {
-        res.sendStatus(204);
-    };
+    res.end(JSON.stringify(LocalFromRepo));
+
 };
 
 
