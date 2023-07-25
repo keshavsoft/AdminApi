@@ -23,12 +23,12 @@ let DeleteFuncs = async (req, res) => {
         inVoucherpk: jVarLocalVoucherpk,
         inColumnpk: jVarLocalColumnpk,
     });
-
-    if (LocalFromRepo.KTF) {
-        res.sendStatus(200);
-    } else {
-        res.sendStatus(204);
-    };
+    res.json(LocalFromRepo);
+    // if (LocalFromRepo.KTF) {
+    //     res.sendStatus(200);
+    // } else {
+    //     res.sendStatus(204);
+    // };
 };
 
 let PostFuncs = async (req, res) => {
