@@ -29,7 +29,7 @@ let Update = async (req, res) => {
         DataAttribute: jVarLocalDataAttribute,
         BodyAsJson: localUpdateBodyAsJson
     });
-    res.json(LocalFromRepo);
+    res.end(JSON.stringify(LocalFromRepo));
     // if (LocalFromRepo.KTF) {
     //     res.sendStatus(200);
     // } else {
