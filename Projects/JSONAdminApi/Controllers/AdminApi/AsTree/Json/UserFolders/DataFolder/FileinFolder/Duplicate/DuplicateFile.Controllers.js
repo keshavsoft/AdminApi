@@ -25,11 +25,7 @@ let PatchFuncs = async (req, res) => {
     });
     // console.log("LocalFromRepo", LocalFromRepo);
 
-    if (LocalFromRepo.KTF) {
-        res.sendStatus(200);
-    } else {
-        res.sendStatus(204);
-    };
+    res.status(200).json(LocalFromRepo);
 };
 
 
