@@ -1,14 +1,12 @@
 let Dal = require("../../../../../../../../../Dal/AdminApi/AsTree/Json/UserFolders/DataFolder/FileinFolder/ItemName/InsertNew/InsertNew");
 
-exports.PostFunc = async ({ DataPK, inFolderName, inFileName, inNewItemName }) => {
+exports.PostFunc = async ({ DataPK, inFolderName, inFileName }) => {
     let LocalFolderName = inFolderName;
     let LocalFileName = inFileName;
-    let LocalItemName = inNewItemName;
 
     return await Dal.PostFunc({
         DataPK, inFolderName: LocalFolderName,
         inFileName: LocalFileName,
-        inNewItemName: LocalItemName
     });
 };
 exports.DeleteFunc = async ({ DataPK, inFolderName, inFileName, inNewItemName }) => {
