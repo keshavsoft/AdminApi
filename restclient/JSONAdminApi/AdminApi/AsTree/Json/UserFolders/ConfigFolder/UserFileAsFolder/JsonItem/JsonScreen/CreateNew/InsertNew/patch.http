@@ -1,0 +1,11 @@
+PATCH http://localhost:4119/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ConfigFolder/UserFileAsFolder/JsonItem/JsonScreen/CreateNew/InsertNew
+Cookie: KToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IkRVUkdBUEtMIiwiRGF0YVBrIjoxMDIyLCJpYXQiOjE2ODI0MzE2MjF9.Sq_2KPdd_OES0KwvpX0Cch_Q9Er9ZoornwZgJXI5Kp8
+content-type: application/json
+
+{
+    "FolderName": "",
+    "FileName":"",
+    "ItemName":"",
+    "ScreenName":"",
+    "ScreenNewData":""
+}
