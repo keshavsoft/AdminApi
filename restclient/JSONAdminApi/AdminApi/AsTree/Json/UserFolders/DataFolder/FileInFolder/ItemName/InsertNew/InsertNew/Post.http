@@ -1,8 +1,7 @@
-POST  http://localhost:4131/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/DataFolder/FileInFolder/ItemName/InsertNew/InsertNew
+POST  http://localhost:4119/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/DataFolder/FileInFolder/ItemName/InsertNew/InsertNew
 content-type: application/json
 
 {
      "FolderName": "Masters",
-    "FileName": "Items",
-    "NewItemName": "ItemNames"
+    "FileName": "Items"
 }

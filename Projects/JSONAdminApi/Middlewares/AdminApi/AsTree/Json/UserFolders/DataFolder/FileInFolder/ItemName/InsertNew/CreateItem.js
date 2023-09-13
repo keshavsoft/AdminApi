@@ -23,10 +23,6 @@ exports.PostFunc = (req, res, next) => {
         res.json({ KTF: false, KReason: " FileName not found in body" })
         return;
     };
-    if (("NewItemName" in req.body) === false) {
-        res.json({ KTF: false, KReason: " NewItemName not found in body" })
-        return;
-    };
 
     next();
 };
