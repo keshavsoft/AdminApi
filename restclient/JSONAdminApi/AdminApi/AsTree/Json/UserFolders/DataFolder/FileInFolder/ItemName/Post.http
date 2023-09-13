@@ -1,0 +1,7 @@
+POST  http://localhost:4119/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/DataFolder/FileInFolder/ItemName/ShowAll
+content-type: application/json
+
+{
+    "FolderName": "Washing",
+    "FileName": "ToFactory"
+}
