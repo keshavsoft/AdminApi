@@ -9,6 +9,7 @@ let CommonKDatasetStuff = require("./SubKeys/KDatasetStuff");
 let CommonServerSide = require("./SubKeys/ServerSide");
 let CommonKDataAttributes = require("./SubKeys/KDataAttributes");
 let CommonInputClass = require("./SubKeys/InputClass");
+let CommonClientEval = require("./SubKeys/ClientEval");
 
 router.use('/HtmlAttributes', CommonHtmlAttributes);
 router.use('/ParentClasses', CommonParentClasses);
@@ -19,5 +20,6 @@ router.use('/KDatasetStuff', CommonKDatasetStuff);
 router.use('/ServerSide', CommonServerSide);
 router.use('/KDataAttributes', CommonKDataAttributes);
 router.use('/InputClass', CommonInputClass);
+router.use('/ClientEval', CommonClientEval);
 
 module.exports = router;
