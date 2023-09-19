@@ -1,7 +1,13 @@
-PATCH http://localhost:4119/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ScreensFromDisplayJson/SubTableColumns/SubKeys/ClientEval
-Cookie: KToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6IkZBUSIsIkRhdGFQayI6MTksImlhdCI6MTY4NDU4MDI0MH0.z_oIBYkgTSjdp2wBBzcpWaXQnQwer0GkiORtZXkvem0
+PATCH http://localhost:4119/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ScreensFromDisplayJson/TableColumns/SubKeys/ClientEval
 content-type: application/json
 
 {
-  
+    "folderName": "CRM",
+    "FileName": "Customers",
+    "ItemName": "CustomerDetails",
+    "ScreenName": "Create",
+    "DataAttribute": "pk",
+    "BodyAsJson": {
+        "ClientEval": "ssss"
+    }
 }
