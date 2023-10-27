@@ -1,0 +1,6 @@
+GET http://localhost:4131/JSONAdminApi/AdminApi/AsTree/ForSubTableColumns/SubMenu/ServerSide/DefaultShowData
+content-type: application/json
+
+{
+  
+}
